@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Botox & Filler Sandy Springs | Skin Social Med Spa</title>
+  <meta name="description" content="Sandy Springs' #1 rated med spa. Voted Best Botox 2024 & 2025. Natural-looking results, same-week appointments. Book your free consultation today."/>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --dark:#1a0f0a;
+      --gold:#c9a96e;
+      --cream:#faf7f2;
+      --blush:#f5e6e0;
+      --text:#2c2018;
+      --light:#9e7d68;
+    }
+    body{font-family:'Georgia','Times New Roman',serif;background:var(--cream);color:var(--text);line-height:1.6}
+
+    /* HERO */
+    .hero{
+      background:linear-gradient(160deg,#1a0f0a 0%,#3d2010 45%,#6b3a20 100%);
+      color:#fff;padding:60px 20px 70px;text-align:center;position:relative;overflow:hidden;
+    }
+    .hero::before{
+      content:'';position:absolute;inset:0;
+      background:url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='40' cy='40' r='30' fill='%23c9a96e' fill-opacity='0.04'/%3E%3C/svg%3E");
+    }
+    .hero-inner{position:relative;z-index:1;max-width:680px;margin:0 auto}
+    .hero-eyebrow{
+      font-family:Arial,sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;
+      color:var(--gold);margin-bottom:16px;
+    }
+    .hero h1{font-size:clamp(30px,6vw,54px);font-weight:normal;line-height:1.2;margin-bottom:16px;color:#fff}
+    .hero h1 em{color:var(--gold);font-style:normal}
+    .hero-sub{font-family:Arial,sans-serif;font-size:16px;color:rgba(255,255,255,0.75);margin-bottom:32px;line-height:1.6}
+    
+    .awards-row{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-bottom:36px}
+    .award-chip{
+      background:rgba(201,169,110,0.15);border:1px solid rgba(201,169,110,0.4);
+      color:var(--gold);padding:6px 14px;border-radius:20px;
+      font-family:Arial,sans-serif;font-size:12px;letter-spacing:0.5px;
+    }
+
+    .cta-btn{
+      display:inline-block;background:var(--gold);color:var(--dark);
+      font-family:Arial,sans-serif;font-size:17px;font-weight:bold;
+      padding:18px 44px;border-radius:50px;text-decoration:none;
+      letter-spacing:0.5px;transition:transform 0.2s,box-shadow 0.2s;
+      box-shadow:0 4px 20px rgba(201,169,110,0.4);
+    }
+    .cta-btn:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(201,169,110,0.5)}
+    .cta-sub{font-family:Arial,sans-serif;font-size:12px;color:rgba(255,255,255,0.5);margin-top:12px}
+
+    /* TRUST BAR */
+    .trust-bar{background:#fff;padding:24px 20px;border-bottom:1px solid #ede8e0}
+    .trust-inner{max-width:800px;margin:0 auto;display:flex;justify-content:center;flex-wrap:wrap;gap:24px 40px;text-align:center}
+    .trust-item .num{font-size:28px;color:var(--text);margin-bottom:2px}
+    .trust-item .lbl{font-family:Arial,sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:var(--light)}
+    .stars-gold{color:var(--gold);font-size:18px}
+
+    /* SERVICES */
+    .section{max-width:780px;margin:0 auto;padding:60px 20px}
+    .section-title{font-size:26px;font-weight:normal;text-align:center;margin-bottom:8px}
+    .section-sub{font-family:Arial,sans-serif;font-size:14px;color:var(--light);text-align:center;margin-bottom:36px}
+    
+    .services-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
+    .service-card{
+      background:#fff;border-radius:14px;padding:24px 20px;
+      border:1px solid rgba(201,169,110,0.2);
+      box-shadow:0 2px 12px rgba(44,32,24,0.06);
+    }
+    .service-icon{font-size:28px;margin-bottom:10px}
+    .service-name{font-size:16px;color:var(--text);margin-bottom:6px}
+    .service-desc{font-family:Arial,sans-serif;font-size:13px;color:var(--light);line-height:1.5}
+
+    /* REVIEWS */
+    .reviews-section{background:#fff;padding:60px 20px}
+    .reviews-inner{max-width:780px;margin:0 auto}
+    .reviews-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px;margin-top:36px}
+    .review-card{
+      background:var(--cream);border-radius:14px;padding:22px;
+      border:1px solid rgba(201,169,110,0.15);
+    }
+    .review-stars{color:var(--gold);font-size:14px;margin-bottom:10px}
+    .review-text{font-family:Arial,sans-serif;font-size:13px;color:#4a3828;line-height:1.6;margin-bottom:12px;font-style:italic}
+    .review-author{font-family:Arial,sans-serif;font-size:12px;color:var(--light);font-weight:bold}
+
+    /* WHY US */
+    .why-section{background:linear-gradient(135deg,#2c2018,#5a3825);color:#fff;padding:60px 20px}
+    .why-inner{max-width:780px;margin:0 auto;text-align:center}
+    .why-title{font-size:26px;font-weight:normal;color:#fff;margin-bottom:8px}
+    .why-sub{font-family:Arial,sans-serif;font-size:14px;color:rgba(255,255,255,0.6);margin-bottom:40px}
+    .why-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:20px;margin-bottom:44px}
+    .why-item{padding:20px;background:rgba(201,169,110,0.1);border-radius:12px;border:1px solid rgba(201,169,110,0.2)}
+    .why-icon{font-size:28px;margin-bottom:10px}
+    .why-name{font-size:15px;color:var(--gold);margin-bottom:6px}
+    .why-desc{font-family:Arial,sans-serif;font-size:12px;color:rgba(255,255,255,0.6);line-height:1.5}
+
+    /* CTA BOTTOM */
+    .cta-section{padding:70px 20px;text-align:center;background:var(--blush)}
+    .cta-section h2{font-size:30px;font-weight:normal;margin-bottom:10px}
+    .cta-section p{font-family:Arial,sans-serif;font-size:15px;color:var(--light);margin-bottom:32px}
+    
+    /* LOCATION */
+    .location-bar{background:var(--dark);color:rgba(255,255,255,0.6);text-align:center;padding:20px;font-family:Arial,sans-serif;font-size:13px}
+    .location-bar span{color:var(--gold)}
+    .location-bar a{color:rgba(255,255,255,0.6);text-decoration:none}
+
+    /* STICKY MOBILE CTA */
+    .sticky-cta{
+      display:none;position:fixed;bottom:0;left:0;right:0;z-index:100;
+      background:var(--gold);padding:14px 20px;text-align:center;
+      box-shadow:0 -4px 20px rgba(0,0,0,0.2);
+    }
+    .sticky-cta a{color:var(--dark);font-family:Arial,sans-serif;font-weight:bold;font-size:16px;text-decoration:none;display:block}
+
+    @media(max-width:600px){
+      .sticky-cta{display:block}
+      body{padding-bottom:56px}
+      .trust-inner{gap:16px 24px}
+      .hero{padding:50px 16px 60px}
+    }
+  </style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Sandy Springs, Georgia</div>
+    <h1>Look Like You — <em>But Better.</em></h1>
+    <p class="hero-sub">Sandy Springs' most award-winning med spa. Natural-looking Botox, filler, and skin treatments from experts who believe in results that turn heads for the right reasons.</p>
+    <div class="awards-row">
+      <span class="award-chip">🏆 Best Botox — Best Self Atlanta 2024 & 2025</span>
+      <span class="award-chip">🏆 Best Facial — My Sandy Springs 2024 & 2025</span>
+    </div>
+    <a class="cta-btn" href="https://linktr.ee/skinsocialspa" target="_blank">Book Your Free Consultation</a>
+    <div class="cta-sub">No commitment · Same-week appointments available</div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-inner">
+    <div class="trust-item">
+      <div class="num stars-gold">★★★★★</div>
+      <div class="lbl">5.0 Rating</div>
+    </div>
+    <div class="trust-item">
+      <div class="num">979+</div>
+      <div class="lbl">5-Star Reviews</div>
+    </div>
+    <div class="trust-item">
+      <div class="num">500+</div>
+      <div class="lbl">Google Reviews</div>
+    </div>
+    <div class="trust-item">
+      <div class="num">4×</div>
+      <div class="lbl">Award Winner</div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<div class="section">
+  <h2 class="section-title">Treatments We're Known For</h2>
+  <p class="section-sub">From your first appointment, you'll see why patients travel from all over Atlanta to see us.</p>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-icon">💉</div>
+      <div class="service-name">Botox & Xeomin</div>
+      <div class="service-desc">Smooth lines naturally. Our injectors are known for results that look like you — just refreshed.</div>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">✨</div>
+      <div class="service-name">Lip & Facial Filler</div>
+      <div class="service-desc">Subtle volume and definition using premium fillers including our signature organic filler option.</div>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🌿</div>
+      <div class="service-name">Organic Filler</div>
+      <div class="service-desc">A natural alternative using your body's own biology. A true Skin Social specialty.</div>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">💎</div>
+      <div class="service-name">Microneedling</div>
+      <div class="service-desc">Stimulate collagen, refine texture, and address hyperpigmentation with minimal downtime.</div>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🔬</div>
+      <div class="service-name">PRP Therapy</div>
+      <div class="service-desc">Harness your body's growth factors for skin rejuvenation and hair restoration.</div>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🌊</div>
+      <div class="service-name">HydraFacial</div>
+      <div class="service-desc">Deep cleanse, exfoliate, and hydrate in one treatment. Zero downtime, instant glow.</div>
+    </div>
+  </div>
+</div>
+
+<!-- REVIEWS -->
+<div class="reviews-section">
+  <div class="reviews-inner">
+    <h2 class="section-title" style="text-align:center">What Our Patients Say</h2>
+    <p class="section-sub">979 five-star reviews and counting.</p>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Nicola is absolutely incredible. My results look so natural — everyone asks what I've done and I just say I look well-rested. That's the goal!"</p>
+        <div class="review-author">— Google Review</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Amanda is a true artist. I was nervous about filler but she walked me through everything. The result is exactly what I wanted — subtle but transformative."</p>
+        <div class="review-author">— Google Review</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"I've tried other med spas in Atlanta but Skin Social is on a different level. The care, the expertise, the results — nothing compares. I won't go anywhere else."</p>
+        <div class="review-author">— Google Review</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WHY US -->
+<div class="why-section">
+  <div class="why-inner">
+    <h2 class="why-title">Why Patients Choose Skin Social</h2>
+    <p class="why-sub">We're not a churn-and-burn clinic. We're a boutique practice that actually knows your face.</p>
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="why-icon">🎯</div>
+        <div class="why-name">Precision Results</div>
+        <div class="why-desc">Every treatment is customized. No cookie-cutter protocols.</div>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">🌿</div>
+        <div class="why-name">Natural Approach</div>
+        <div class="why-desc">Our philosophy: enhance, don't erase. We specialize in results that look effortless.</div>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">👩‍⚕️</div>
+        <div class="why-name">Expert Injectors</div>
+        <div class="why-desc">Award-winning providers praised by name in hundreds of reviews.</div>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">📅</div>
+        <div class="why-name">Easy Booking</div>
+        <div class="why-desc">Same-week appointments often available. Online booking in minutes.</div>
+      </div>
+    </div>
+    <a class="cta-btn" href="https://linktr.ee/skinsocialspa" target="_blank">Book Your Consultation</a>
+  </div>
+</div>
+
+<!-- BOTTOM CTA -->
+<div class="cta-section">
+  <h2>Ready to Book?</h2>
+  <p>Same-week appointments available. Consultations are always free.</p>
+  <a class="cta-btn" href="https://linktr.ee/skinsocialspa" target="_blank">Book Now →</a>
+  <div style="margin-top:16px;font-family:Arial,sans-serif;font-size:13px;color:var(--light)">
+    📍 5840 Roswell Rd, Sandy Springs, GA &nbsp;·&nbsp; ⭐ 5.0 (979 reviews)
+  </div>
+</div>
+
+<!-- LOCATION BAR -->
+<div class="location-bar">
+  <span>Skin Social Med Spa</span> &nbsp;·&nbsp; 5840 Roswell Rd, Sandy Springs, GA &nbsp;·&nbsp;
+  <a href="https://linktr.ee/skinsocialspa">Book Online</a>
+</div>
+
+<!-- STICKY MOBILE -->
+<div class="sticky-cta">
+  <a href="https://linktr.ee/skinsocialspa">📅 Book Free Consultation</a>
+</div>
+
+</body>
+</html>
