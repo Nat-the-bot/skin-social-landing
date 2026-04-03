@@ -1,0 +1,14 @@
+{
+  "error": {
+    "code": 400,
+    "message": "Unsupported alt type \"media\" for non byte stream request.",
+    "errors": [
+      {
+        "message": "Unsupported alt type \"media\" for non byte stream request.",
+        "domain": "global",
+        "reason": "badRequest"
+      }
+    ],
+    "status": "INVALID_ARGUMENT"
+  }
+}
