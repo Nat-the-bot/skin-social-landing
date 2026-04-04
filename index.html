@@ -28,19 +28,21 @@
     }
     .hero-bg{
       position:absolute;inset:0;
-      background:url('images/team6_hero.jpg') center 20%/cover no-repeat;
+      background:url('images/team6_hero.jpg') center 22%/cover no-repeat;
       transform:scale(1.02);
+      filter:brightness(0.55) saturate(0.9);
     }
     .hero-overlay{
       position:absolute;inset:0;
       background:linear-gradient(
         to bottom,
-        rgba(10,5,2,0.60) 0%,
-        rgba(10,5,2,0.45) 40%,
-        rgba(10,5,2,0.70) 100%
+        rgba(10,5,2,0.30) 0%,
+        rgba(10,5,2,0.15) 35%,
+        rgba(10,5,2,0.55) 75%,
+        rgba(10,5,2,0.80) 100%
       );
     }
-    .hero-content{position:relative;z-index:2;max-width:740px;margin:0 auto;padding:100px 24px 80px}
+    .hero-content{position:relative;z-index:2;max-width:680px;margin:0 auto;padding:100px 24px 80px;text-shadow:0 2px 20px rgba(0,0,0,0.4)}
     .eyebrow{
       font-family:Arial,sans-serif;font-size:11px;letter-spacing:4px;text-transform:uppercase;
       color:var(--gold);margin-bottom:20px;display:flex;align-items:center;justify-content:center;gap:12px;
@@ -186,18 +188,17 @@
   <div class="hero-bg"></div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
-    <div class="eyebrow">Sandy Springs, Georgia</div>
+    <div class="eyebrow">Sandy Springs, Georgia · Luxury Med Spa</div>
     <h1>The Art of<br><em>Natural Results.</em></h1>
-    <p class="hero-sub">Sandy Springs' most award-winning med spa — where clinical expertise meets luxury care.</p>
-    <p class="credentials">Certified Nurse Practitioners · Physician Assistants · Licensed Estheticians · Leading Industry Providers</p>
+    <p class="hero-sub">Award-winning Botox, filler & skin treatments by certified nurse practitioners and leading aesthetic providers.</p>
     <div class="awards-row">
-      <span class="chip">🏆 Best Botox — Best Self Atlanta 2024 & 2025</span>
-      <span class="chip">🏆 Best Facial — My Sandy Springs 2024, 2025 & 2026</span>
+      <span class="chip">🏆 Best Botox 2024 & 2025</span>
+      <span class="chip">🏆 Best Facial 2024, 2025 & 2026</span>
       <span class="chip">⭐ 979 Five-Star Reviews</span>
     </div>
     <div class="hero-cta-wrap">
       <button class="cta-btn" onclick="openBooking()">Book Your Free Consultation</button>
-      <span class="cta-note">No commitment · Same-week appointments · Free consultation</span>
+      <span class="cta-note">No commitment · Same-week appointments available</span>
     </div>
   </div>
 </section>
@@ -225,11 +226,11 @@
       <div class="ba-card">
         <div class="ba-imgs">
           <div class="ba-img-wrap">
-            <img src="images/lip3a_before.jpg" alt="Lip Filler Before — Skin Social"/>
+            <img src="images/lip3a_before_lips.jpg" alt="Lip Filler Before — Skin Social" style="height:180px;object-position:center center"/>
             <span class="ba-label before">BEFORE</span>
           </div>
           <div class="ba-img-wrap">
-            <img src="images/lip3a_after.jpg" alt="Lip Filler After — Skin Social"/>
+            <img src="images/lip3a_after_lips.jpg" alt="Lip Filler After — Skin Social" style="height:180px;object-position:center center"/>
             <span class="ba-label after">AFTER</span>
           </div>
         </div>
@@ -243,11 +244,11 @@
       <div class="ba-card">
         <div class="ba-imgs">
           <div class="ba-img-wrap">
-            <img src="images/lip3b_before.jpg" alt="Lip Filler Before — Skin Social"/>
+            <img src="images/lip3b_before_lips.jpg" alt="Lip Filler Before — Skin Social" style="height:180px;object-position:center center"/>
             <span class="ba-label before">BEFORE</span>
           </div>
           <div class="ba-img-wrap">
-            <img src="images/lip3b_after.jpg" alt="Lip Filler After — Skin Social"/>
+            <img src="images/lip3b_after_lips.jpg" alt="Lip Filler After — Skin Social" style="height:180px;object-position:center center"/>
             <span class="ba-label after">AFTER</span>
           </div>
         </div>
