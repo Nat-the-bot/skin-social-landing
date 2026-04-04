@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Botox & Filler Sandy Springs | Skin Social Med Spa</title>
-  <meta name="description" content="Sandy Springs' #1 rated med spa. Voted Best Botox 2024 & 2025. Natural-looking results, same-week appointments. Book your free consultation today."/>
+  <title>Med Spa Sandy Springs | Skin Social — Botox, Filler & Aesthetic Treatments</title>
+  <meta name="description" content="Sandy Springs' #1 rated luxury med spa. Award-winning Botox, filler & skin treatments by certified nurse practitioners & licensed providers. Book your free consultation."/>
   <style>
     *{box-sizing:border-box;margin:0;padding:0}
     :root{
@@ -13,302 +13,447 @@
       --gold-dark:#a07840;
       --cream:#faf7f2;
       --blush:#f5e6e0;
-      --blush-dark:#e8c9be;
       --text:#2c2018;
       --mid:#6b4e37;
       --light:#9e7d68;
-      --green:#27ae60;
       --white:#fff;
     }
     html{scroll-behavior:smooth}
     body{font-family:'Georgia','Times New Roman',serif;background:var(--cream);color:var(--text);line-height:1.6}
 
-    /* ── HERO ── */
+    /* ─── HERO ─── */
     .hero{
-      min-height:100vh;display:flex;flex-direction:column;justify-content:center;
-      background:
-        linear-gradient(to bottom, rgba(26,15,10,0.72) 0%, rgba(26,15,10,0.55) 50%, rgba(26,15,10,0.72) 100%),
-        url('images/team6_hero.jpg') center 25%/cover no-repeat;
-      color:#fff;padding:80px 24px 60px;text-align:center;position:relative;
+      position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;
+      overflow:hidden;text-align:center;
     }
-    .hero-inner{max-width:720px;margin:0 auto}
-    .eyebrow{font-family:Arial,sans-serif;font-size:11px;letter-spacing:3.5px;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
-    .hero h1{font-size:clamp(32px,6vw,58px);font-weight:normal;line-height:1.15;margin-bottom:20px}
+    .hero-bg{
+      position:absolute;inset:0;
+      background:url('images/team6_hero.jpg') center 20%/cover no-repeat;
+      transform:scale(1.02);
+    }
+    .hero-overlay{
+      position:absolute;inset:0;
+      background:linear-gradient(
+        to bottom,
+        rgba(10,5,2,0.60) 0%,
+        rgba(10,5,2,0.45) 40%,
+        rgba(10,5,2,0.70) 100%
+      );
+    }
+    .hero-content{position:relative;z-index:2;max-width:740px;margin:0 auto;padding:100px 24px 80px}
+    .eyebrow{
+      font-family:Arial,sans-serif;font-size:11px;letter-spacing:4px;text-transform:uppercase;
+      color:var(--gold);margin-bottom:20px;display:flex;align-items:center;justify-content:center;gap:12px;
+    }
+    .eyebrow::before,.eyebrow::after{content:'';flex:1;max-width:60px;height:1px;background:rgba(201,169,110,0.5)}
+    .hero h1{
+      font-size:clamp(34px,6vw,62px);font-weight:normal;line-height:1.1;
+      color:#fff;margin-bottom:20px;letter-spacing:-0.5px;
+    }
     .hero h1 em{color:var(--gold);font-style:normal}
-    .hero-sub{font-family:Arial,sans-serif;font-size:16px;color:rgba(255,255,255,0.78);margin-bottom:36px;max-width:500px;margin-left:auto;margin-right:auto}
-
+    .hero-sub{
+      font-family:Arial,sans-serif;font-size:17px;color:rgba(255,255,255,0.80);
+      margin-bottom:12px;line-height:1.6;max-width:560px;margin-left:auto;margin-right:auto;
+    }
+    .credentials{
+      font-family:Arial,sans-serif;font-size:12px;color:rgba(255,255,255,0.55);
+      margin-bottom:36px;letter-spacing:0.5px;
+    }
     .awards-row{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin-bottom:40px}
-    .chip{background:rgba(201,169,110,0.15);border:1px solid rgba(201,169,110,0.45);color:var(--gold);padding:7px 16px;border-radius:22px;font-family:Arial,sans-serif;font-size:12px;letter-spacing:0.5px}
-
+    .chip{
+      background:rgba(201,169,110,0.15);border:1px solid rgba(201,169,110,0.5);
+      color:var(--gold);padding:7px 16px;border-radius:22px;
+      font-family:Arial,sans-serif;font-size:12px;letter-spacing:0.5px;
+    }
+    .hero-cta-wrap{display:flex;flex-direction:column;align-items:center;gap:12px}
     .cta-btn{
       display:inline-block;background:var(--gold);color:var(--dark);
       font-family:Arial,sans-serif;font-size:17px;font-weight:bold;
-      padding:18px 48px;border-radius:50px;text-decoration:none;
-      box-shadow:0 6px 24px rgba(201,169,110,0.5);
-      transition:transform 0.2s,box-shadow 0.2s;cursor:pointer;border:none;
+      padding:18px 52px;border-radius:50px;text-decoration:none;border:none;cursor:pointer;
+      box-shadow:0 8px 30px rgba(201,169,110,0.45);
+      transition:transform 0.2s,box-shadow 0.2s;letter-spacing:0.3px;
     }
-    .cta-btn:hover{transform:translateY(-2px);box-shadow:0 10px 32px rgba(201,169,110,0.6)}
-    .cta-note{font-family:Arial,sans-serif;font-size:12px;color:rgba(255,255,255,0.45);margin-top:14px}
+    .cta-btn:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(201,169,110,0.55)}
+    .cta-btn.outline{
+      background:transparent;color:#fff;border:2px solid rgba(255,255,255,0.5);
+      box-shadow:none;font-size:14px;padding:12px 28px;
+    }
+    .cta-btn.outline:hover{background:rgba(255,255,255,0.1);border-color:rgba(255,255,255,0.8)}
+    .cta-note{font-family:Arial,sans-serif;font-size:12px;color:rgba(255,255,255,0.40)}
 
-    /* ── TRUST BAR ── */
-    .trust{background:var(--white);padding:28px 20px;border-bottom:1px solid #ede8e0}
-    .trust-inner{max-width:860px;margin:0 auto;display:flex;justify-content:center;flex-wrap:wrap;gap:20px 48px}
+    /* ─── TRUST BAR ─── */
+    .trust{background:var(--dark);padding:22px 20px}
+    .trust-inner{max-width:900px;margin:0 auto;display:flex;justify-content:center;flex-wrap:wrap;gap:16px 44px}
     .t-item{text-align:center}
-    .t-num{font-size:30px;color:var(--text)}
-    .t-lbl{font-family:Arial,sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:var(--light)}
-    .gold-stars{color:var(--gold);font-size:20px}
+    .t-num{font-size:26px;color:var(--gold)}
+    .t-lbl{font-family:Arial,sans-serif;font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:rgba(255,255,255,0.45);margin-top:2px}
 
-    /* ── SECTIONS ── */
-    .section{max-width:820px;margin:0 auto;padding:64px 20px}
-    .section-title{font-size:26px;font-weight:normal;text-align:center;margin-bottom:8px}
-    .section-sub{font-family:Arial,sans-serif;font-size:14px;color:var(--light);text-align:center;margin-bottom:40px}
+    /* ─── BEFORE/AFTER ─── */
+    .ba-section{background:var(--white);padding:72px 20px}
+    .ba-inner{max-width:920px;margin:0 auto}
+    .section-label{font-family:Arial,sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);text-align:center;margin-bottom:12px}
+    .section-title{font-size:28px;font-weight:normal;text-align:center;margin-bottom:8px}
+    .section-sub{font-family:Arial,sans-serif;font-size:14px;color:var(--light);text-align:center;margin-bottom:48px}
 
-    /* ── GALLERY ── */
-    .gallery-wrap{background:var(--white);padding:64px 20px}
-    .gallery-inner{max-width:900px;margin:0 auto}
-    .gallery-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;grid-template-rows:280px 200px;gap:10px}
-    .gallery-grid img{width:100%;height:100%;object-fit:cover;border-radius:10px;display:block}
-    .gallery-grid .tall{grid-row:1/3}
-    .gallery-grid .wide{grid-column:2/4}
+    .ba-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px}
+    .ba-card{border-radius:16px;overflow:hidden;box-shadow:0 6px 24px rgba(44,32,24,0.10);background:var(--cream);border:1px solid rgba(201,169,110,0.15)}
+    .ba-imgs{display:grid;grid-template-columns:1fr 1fr}
+    .ba-img-wrap{position:relative;overflow:hidden}
+    .ba-img-wrap img{width:100%;height:220px;object-fit:cover;object-position:center top;display:block;transition:transform 0.3s}
+    .ba-card:hover .ba-img-wrap img{transform:scale(1.02)}
+    .ba-label{
+      position:absolute;bottom:10px;left:10px;
+      font-family:Arial,sans-serif;font-size:10px;font-weight:bold;letter-spacing:1.5px;
+      padding:4px 10px;border-radius:20px;
+    }
+    .ba-label.before{background:rgba(0,0,0,0.65);color:rgba(255,255,255,0.9)}
+    .ba-label.after{background:var(--gold);color:var(--dark)}
+    .ba-divider{width:2px;background:var(--white)}
+    .ba-info{padding:18px 20px;border-top:1px solid rgba(201,169,110,0.15)}
+    .ba-treatment{font-size:16px;color:var(--text);margin-bottom:3px}
+    .ba-desc{font-family:Arial,sans-serif;font-size:12px;color:var(--light)}
 
-    /* ── TEAM STRIP ── */
-    .team-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:10px}
-    .team-strip img{width:100%;height:160px;object-fit:cover;border-radius:10px}
+    /* ─── GALLERY ─── */
+    .gallery-section{background:var(--cream);padding:72px 20px}
+    .gallery-inner{max-width:920px;margin:0 auto}
+    .masonry{columns:3;gap:12px}
+    .masonry img{width:100%;margin-bottom:12px;border-radius:10px;display:block;break-inside:avoid}
 
-    /* ── TREATMENTS ── */
-    .treatments-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
-    .tx-card{background:var(--white);border-radius:14px;padding:24px 20px;border:1px solid rgba(201,169,110,0.2);box-shadow:0 2px 12px rgba(44,32,24,0.06)}
-    .tx-icon{font-size:28px;margin-bottom:10px}
+    /* ─── CREDENTIALS ─── */
+    .creds-section{background:linear-gradient(135deg,#2c2018 0%,#5a3825 100%);padding:72px 20px;color:#fff}
+    .creds-inner{max-width:860px;margin:0 auto;text-align:center}
+    .creds-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px;margin:40px 0}
+    .cred-card{background:rgba(201,169,110,0.08);border:1px solid rgba(201,169,110,0.2);border-radius:14px;padding:24px 18px}
+    .cred-icon{font-size:28px;margin-bottom:10px}
+    .cred-title{font-size:15px;color:var(--gold);margin-bottom:8px}
+    .cred-desc{font-family:Arial,sans-serif;font-size:12px;color:rgba(255,255,255,0.6);line-height:1.6}
+
+    /* ─── TREATMENTS ─── */
+    .tx-section{background:var(--white);padding:72px 20px}
+    .tx-inner{max-width:860px;margin:0 auto}
+    .tx-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
+    .tx-card{border-radius:14px;padding:24px 20px;border:1px solid rgba(201,169,110,0.2);background:var(--cream)}
+    .tx-icon{font-size:26px;margin-bottom:10px}
     .tx-name{font-size:16px;margin-bottom:6px}
-    .tx-desc{font-family:Arial,sans-serif;font-size:13px;color:var(--light);line-height:1.5}
+    .tx-desc{font-family:Arial,sans-serif;font-size:13px;color:var(--light);line-height:1.55}
 
-    /* ── REVIEWS ── */
-    .reviews-bg{background:var(--white);padding:64px 20px}
-    .reviews-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px;margin-top:36px}
-    .rv-card{background:var(--cream);border-radius:14px;padding:22px;border:1px solid rgba(201,169,110,0.15)}
-    .rv-stars{color:var(--gold);font-size:15px;margin-bottom:10px}
-    .rv-text{font-family:Arial,sans-serif;font-size:13px;color:#4a3828;line-height:1.65;margin-bottom:12px;font-style:italic}
-    .rv-auth{font-family:Arial,sans-serif;font-size:12px;color:var(--light);font-weight:bold}
+    /* ─── REVIEWS ─── */
+    .rv-section{background:var(--cream);padding:72px 20px}
+    .rv-inner{max-width:860px;margin:0 auto}
+    .rv-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;margin-top:40px}
+    .rv-card{background:var(--white);border-radius:14px;padding:24px;border:1px solid rgba(201,169,110,0.15);box-shadow:0 2px 12px rgba(44,32,24,0.05)}
+    .rv-stars{color:var(--gold);font-size:14px;margin-bottom:12px}
+    .rv-text{font-family:Arial,sans-serif;font-size:13px;color:#4a3828;line-height:1.7;margin-bottom:14px;font-style:italic}
+    .rv-auth{font-family:Arial,sans-serif;font-size:12px;color:var(--light);font-weight:bold;display:flex;align-items:center;gap:6px}
 
-    /* ── WHY US ── */
-    .why-bg{background:linear-gradient(135deg,#2c2018,#5a3825);padding:64px 20px;color:#fff;text-align:center}
-    .why-inner{max-width:820px;margin:0 auto}
-    .why-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:18px;margin:40px 0}
-    .why-card{background:rgba(201,169,110,0.1);border:1px solid rgba(201,169,110,0.2);border-radius:12px;padding:22px 18px}
-    .why-icon{font-size:26px;margin-bottom:10px}
-    .why-name{font-size:15px;color:var(--gold);margin-bottom:6px}
-    .why-desc{font-family:Arial,sans-serif;font-size:12px;color:rgba(255,255,255,0.6);line-height:1.5}
+    /* ─── FINAL CTA ─── */
+    .final-cta{background:var(--blush);padding:80px 20px;text-align:center}
+    .final-cta h2{font-size:32px;font-weight:normal;margin-bottom:10px}
+    .final-cta p{font-family:Arial,sans-serif;font-size:15px;color:var(--mid);margin-bottom:36px;max-width:480px;margin-left:auto;margin-right:auto}
+    .location-note{margin-top:20px;font-family:Arial,sans-serif;font-size:13px;color:var(--light)}
 
-    /* ── BOOKING SECTION ── */
-    .book-section{padding:64px 20px;background:var(--blush);text-align:center}
-    .book-inner{max-width:700px;margin:0 auto}
-    .book-section h2{font-size:30px;font-weight:normal;margin-bottom:10px}
-    .book-section p{font-family:Arial,sans-serif;font-size:15px;color:var(--mid);margin-bottom:36px}
+    /* ─── FOOTER ─── */
+    footer{background:var(--dark);color:rgba(255,255,255,0.4);text-align:center;padding:24px;font-family:Arial,sans-serif;font-size:12px;letter-spacing:0.5px}
+    footer a{color:var(--gold);text-decoration:none}
 
-    /* ── FOOTER ── */
-    footer{background:var(--dark);color:rgba(255,255,255,0.5);text-align:center;padding:24px;font-family:Arial,sans-serif;font-size:12px;letter-spacing:1px}
-    footer span{color:var(--gold)}
+    /* ─── STICKY MOBILE ─── */
+    .sticky{display:none;position:fixed;bottom:0;left:0;right:0;z-index:100;background:var(--gold);padding:15px;text-align:center;box-shadow:0 -4px 20px rgba(0,0,0,0.2)}
+    .sticky button{color:var(--dark);font-family:Arial,sans-serif;font-weight:bold;font-size:16px;background:none;border:none;cursor:pointer;width:100%;letter-spacing:0.3px}
 
-    /* ── STICKY MOBILE CTA ── */
-    .sticky{display:none;position:fixed;bottom:0;left:0;right:0;z-index:100;background:var(--gold);padding:14px;text-align:center;box-shadow:0 -4px 20px rgba(0,0,0,0.2)}
-    .sticky button{color:var(--dark);font-family:Arial,sans-serif;font-weight:bold;font-size:16px;background:none;border:none;cursor:pointer;width:100%}
-
+    /* ─── RESPONSIVE ─── */
     @media(max-width:700px){
-      .gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:200px 200px 160px}
-      .gallery-grid .tall{grid-row:auto}
-      .gallery-grid .wide{grid-column:auto}
-      .team-strip{grid-template-columns:repeat(2,1fr)}
+      .ba-grid{grid-template-columns:1fr}
+      .ba-img-wrap img{height:180px}
+      .masonry{columns:2}
+      .creds-grid{grid-template-columns:1fr 1fr}
+      .tx-grid{grid-template-columns:1fr 1fr}
+      .rv-grid{grid-template-columns:1fr}
       .sticky{display:block}
-      body{padding-bottom:54px}
-      .hero{min-height:auto;padding:70px 20px 50px}
+      body{padding-bottom:56px}
+      .hero-content{padding:80px 20px 60px}
+    }
+    @media(max-width:440px){
+      .masonry{columns:1}
+      .tx-grid{grid-template-columns:1fr}
+      .creds-grid{grid-template-columns:1fr}
     }
   </style>
 </head>
 <body>
 
-<!-- HERO -->
-<section class="hero" id="top">
-  <div class="hero-inner">
-    <div class="eyebrow">Sandy Springs, Georgia · Award-Winning Med Spa</div>
-    <h1>Look Like You —<br><em>But Refreshed.</em></h1>
-    <p class="hero-sub">Natural-looking Botox, filler, and skin treatments from Sandy Springs' most trusted providers. No frozen faces. Just you, enhanced.</p>
+<!-- ══ HERO ══ -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="eyebrow">Sandy Springs, Georgia</div>
+    <h1>The Art of<br><em>Natural Results.</em></h1>
+    <p class="hero-sub">Sandy Springs' most award-winning med spa — where clinical expertise meets luxury care.</p>
+    <p class="credentials">Certified Nurse Practitioners · Physician Assistants · Licensed Estheticians · Leading Industry Providers</p>
     <div class="awards-row">
       <span class="chip">🏆 Best Botox — Best Self Atlanta 2024 & 2025</span>
       <span class="chip">🏆 Best Facial — My Sandy Springs 2024, 2025 & 2026</span>
       <span class="chip">⭐ 979 Five-Star Reviews</span>
     </div>
-    <button class="cta-btn" onclick="openBooking()">Book Your Free Consultation</button>
-    <div class="cta-note">No commitment · Same-week appointments available · Free consultation</div>
+    <div class="hero-cta-wrap">
+      <button class="cta-btn" onclick="openBooking()">Book Your Free Consultation</button>
+      <span class="cta-note">No commitment · Same-week appointments · Free consultation</span>
+    </div>
   </div>
 </section>
 
-<!-- TRUST BAR -->
+<!-- ══ TRUST BAR ══ -->
 <div class="trust">
   <div class="trust-inner">
-    <div class="t-item"><div class="gold-stars">★★★★★</div><div class="t-lbl">5.0 Rating</div></div>
-    <div class="t-item"><div class="t-num">979+</div><div class="t-lbl">5-Star Reviews</div></div>
-    <div class="t-item"><div class="t-num">500+</div><div class="t-lbl">Google Reviews</div></div>
+    <div class="t-item"><div class="t-num">979<span style="font-size:16px">+</span></div><div class="t-lbl">5-Star Reviews</div></div>
+    <div class="t-item"><div class="t-num" style="color:#fff;font-size:18px">★★★★★</div><div class="t-lbl">5.0 Rating</div></div>
+    <div class="t-item"><div class="t-num">500<span style="font-size:16px">+</span></div><div class="t-lbl">Google Reviews</div></div>
     <div class="t-item"><div class="t-num">4×</div><div class="t-lbl">Award Winner</div></div>
-    <div class="t-item"><div class="t-num">10+</div><div class="t-lbl">Years Serving Atlanta</div></div>
+    <div class="t-item"><div class="t-num">10<span style="font-size:16px">+</span></div><div class="t-lbl">Years in Atlanta</div></div>
   </div>
 </div>
 
-<!-- GALLERY -->
-<div class="gallery-wrap">
-  <div class="gallery-inner">
-    <h2 class="section-title" style="margin-bottom:8px">Inside Skin Social</h2>
-    <p class="section-sub" style="margin-bottom:28px">Real treatments. Real providers. Real results.</p>
-    <div class="gallery-grid">
-      <img src="images/treatment_4.jpg" alt="Botox injection at Skin Social Sandy Springs" class="tall"/>
-      <img src="images/treatment_3.jpg" alt="Injectable treatment"/>
-      <img src="images/treatment_5.jpg" alt="Skin Social provider"/>
-      <img src="images/treatment_6.jpg" alt="Treatment detail" class="wide" style="object-position:center 20%"/>
+<!-- ══ BEFORE & AFTER ══ -->
+<div class="ba-section">
+  <div class="ba-inner">
+    <div class="section-label">Patient Results</div>
+    <h2 class="section-title">Real Transformations.<br>Real Patients.</h2>
+    <p class="section-sub">Every result shown is from a real Skin Social patient. No filters. No stock photos.</p>
+    <div class="ba-grid">
+
+      <!-- Lip Filler -->
+      <div class="ba-card">
+        <div class="ba-imgs">
+          <div class="ba-img-wrap">
+            <img src="images/lip3a_before.jpg" alt="Lip Filler Before — Skin Social"/>
+            <span class="ba-label before">BEFORE</span>
+          </div>
+          <div class="ba-img-wrap">
+            <img src="images/lip3a_after.jpg" alt="Lip Filler After — Skin Social"/>
+            <span class="ba-label after">AFTER</span>
+          </div>
+        </div>
+        <div class="ba-info">
+          <div class="ba-treatment">Lip Filler</div>
+          <div class="ba-desc">Natural volume, definition & symmetry</div>
+        </div>
+      </div>
+
+      <!-- Lip Filler 2 -->
+      <div class="ba-card">
+        <div class="ba-imgs">
+          <div class="ba-img-wrap">
+            <img src="images/lip3b_before.jpg" alt="Lip Filler Before — Skin Social"/>
+            <span class="ba-label before">BEFORE</span>
+          </div>
+          <div class="ba-img-wrap">
+            <img src="images/lip3b_after.jpg" alt="Lip Filler After — Skin Social"/>
+            <span class="ba-label after">AFTER</span>
+          </div>
+        </div>
+        <div class="ba-info">
+          <div class="ba-treatment">Lip Filler</div>
+          <div class="ba-desc">Fuller lips with a natural finish</div>
+        </div>
+      </div>
+
+      <!-- Facial Balancing -->
+      <div class="ba-card">
+        <div class="ba-imgs">
+          <div class="ba-img-wrap">
+            <img src="images/fb2c_before.jpg" alt="Facial Balancing Before — Skin Social"/>
+            <span class="ba-label before">BEFORE</span>
+          </div>
+          <div class="ba-img-wrap">
+            <img src="images/fb2c_after.jpg" alt="Facial Balancing After — Skin Social"/>
+            <span class="ba-label after">AFTER</span>
+          </div>
+        </div>
+        <div class="ba-info">
+          <div class="ba-treatment">Full Facial Balancing</div>
+          <div class="ba-desc">Botox + filler for total facial harmony</div>
+        </div>
+      </div>
+
+      <!-- Facial Balancing 2 -->
+      <div class="ba-card">
+        <div class="ba-imgs">
+          <div class="ba-img-wrap">
+            <img src="images/fb2a_before.jpg" alt="Facial Balancing Before — Skin Social"/>
+            <span class="ba-label before">BEFORE</span>
+          </div>
+          <div class="ba-img-wrap">
+            <img src="images/fb2a_after.jpg" alt="Facial Balancing After — Skin Social"/>
+            <span class="ba-label after">AFTER</span>
+          </div>
+        </div>
+        <div class="ba-info">
+          <div class="ba-treatment">Full Facial Balancing</div>
+          <div class="ba-desc">Natural rejuvenation & contouring</div>
+        </div>
+      </div>
+
+      <!-- Microneedling -->
+      <div class="ba-card">
+        <div class="ba-imgs">
+          <div class="ba-img-wrap">
+            <img src="images/mn2a_before.jpg" alt="Microneedling Before — Skin Social"/>
+            <span class="ba-label before">BEFORE</span>
+          </div>
+          <div class="ba-img-wrap">
+            <img src="images/mn2a_after.jpg" alt="Microneedling After — Skin Social"/>
+            <span class="ba-label after">AFTER</span>
+          </div>
+        </div>
+        <div class="ba-info">
+          <div class="ba-treatment">Microneedling</div>
+          <div class="ba-desc">Texture, tone & collagen restoration</div>
+        </div>
+      </div>
+
+      <!-- Agnes RF -->
+      <div class="ba-card">
+        <div class="ba-imgs">
+          <div class="ba-img-wrap">
+            <img src="images/ba_agnes_before.jpg" alt="Agnes RF Before — Skin Social"/>
+            <span class="ba-label before">BEFORE</span>
+          </div>
+          <div class="ba-img-wrap">
+            <img src="images/ba_agnes_after.jpg" alt="Agnes RF After — Skin Social"/>
+            <span class="ba-label after">AFTER</span>
+          </div>
+        </div>
+        <div class="ba-info">
+          <div class="ba-treatment">Agnes RF Microneedling</div>
+          <div class="ba-desc">Skin tightening & targeted lifting</div>
+        </div>
+      </div>
+
     </div>
-    <div class="team-strip" style="margin-top:10px">
-      <img src="images/photo1_web.jpg" alt="Skin Social team"/>
+    <div style="text-align:center;margin-top:44px">
+      <button class="cta-btn" onclick="openBooking()">Book Your Consultation →</button>
+      <div style="margin-top:14px;font-family:Arial,sans-serif;font-size:12px;color:var(--light)">Free consultation · No pressure · Expert guidance on what's right for you</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ TREATMENT GALLERY ══ -->
+<div class="gallery-section">
+  <div class="gallery-inner">
+    <div class="section-label">Inside Skin Social</div>
+    <h2 class="section-title">Where Luxury Meets Medicine</h2>
+    <p class="section-sub" style="margin-bottom:36px">Our Sandy Springs med spa is designed to feel as good as the results you'll leave with.</p>
+    <div class="masonry">
+      <img src="images/treatment_4.jpg" alt="Botox injection at Skin Social"/>
+      <img src="images/photo1_web.jpg" alt="Skin Social provider"/>
+      <img src="images/treatment_3.jpg" alt="Injectable treatment"/>
+      <img src="images/photo3_web.jpg" alt="Skin Social team"/>
+      <img src="images/treatment_5.jpg" alt="Skin Social treatment room"/>
       <img src="images/photo2_web.jpg" alt="Skin Social reception"/>
-      <img src="images/photo3_web.jpg" alt="Skin Social providers"/>
+      <img src="images/treatment_7.jpg" alt="Treatment in progress"/>
       <img src="images/photo4_web.jpg" alt="Skin Social staff"/>
     </div>
   </div>
 </div>
 
-<!-- BEFORE & AFTER -->
-<div style="background:var(--cream);padding:64px 20px">
-  <div style="max-width:820px;margin:0 auto">
-    <h2 class="section-title" style="margin-bottom:8px">Real Results</h2>
-    <p class="section-sub" style="margin-bottom:40px">Before & after photos from actual Skin Social patients.</p>
-
-    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:24px">
-
-      <!-- Lip Filler -->
-      <div style="background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(44,32,24,0.08);border:1px solid rgba(201,169,110,0.15)">
-        <div style="display:grid;grid-template-columns:1fr 1fr">
-          <div style="position:relative">
-            <img src="images/ba_lip_before.jpg" alt="Lip Filler Before" style="width:100%;height:200px;object-fit:cover;object-position:center top;display:block"/>
-            <span style="position:absolute;bottom:8px;left:8px;background:rgba(0,0,0,0.6);color:#fff;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;padding:3px 8px;border-radius:10px;letter-spacing:1px">BEFORE</span>
-          </div>
-          <div style="position:relative">
-            <img src="images/ba_lip_after.jpg" alt="Lip Filler After" style="width:100%;height:200px;object-fit:cover;object-position:center top;display:block"/>
-            <span style="position:absolute;bottom:8px;left:8px;background:var(--gold);color:#1a0f0a;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;padding:3px 8px;border-radius:10px;letter-spacing:1px">AFTER</span>
-          </div>
-        </div>
-        <div style="padding:16px 18px">
-          <div style="font-size:15px;color:var(--text);margin-bottom:4px">Lip Filler</div>
-          <div style="font-family:Arial,sans-serif;font-size:12px;color:var(--light)">Natural volume & definition</div>
-        </div>
+<!-- ══ CREDENTIALS ══ -->
+<div class="creds-section">
+  <div class="creds-inner">
+    <div class="section-label" style="color:var(--gold)">Why Skin Social</div>
+    <h2 style="font-size:28px;font-weight:normal;color:#fff;margin-bottom:8px">Clinical Excellence.<br>Luxury Experience.</h2>
+    <p style="font-family:Arial,sans-serif;font-size:14px;color:rgba(255,255,255,0.6);margin-bottom:0">We're not a churn-and-burn clinic. Every patient receives a personalized treatment plan from a certified medical professional who takes the time to understand your goals.</p>
+    <div class="creds-grid">
+      <div class="cred-card">
+        <div class="cred-icon">🎓</div>
+        <div class="cred-title">Certified Nurse Practitioners</div>
+        <div class="cred-desc">Board-certified NPs with advanced aesthetic training and hundreds of 5-star reviews by name.</div>
       </div>
-
-      <!-- Agnes RF -->
-      <div style="background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(44,32,24,0.08);border:1px solid rgba(201,169,110,0.15)">
-        <div style="display:grid;grid-template-columns:1fr 1fr">
-          <div style="position:relative">
-            <img src="images/ba_agnes_before.jpg" alt="Agnes RF Before" style="width:100%;height:200px;object-fit:cover;object-position:center top;display:block"/>
-            <span style="position:absolute;bottom:8px;left:8px;background:rgba(0,0,0,0.6);color:#fff;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;padding:3px 8px;border-radius:10px;letter-spacing:1px">BEFORE</span>
-          </div>
-          <div style="position:relative">
-            <img src="images/ba_agnes_after.jpg" alt="Agnes RF After" style="width:100%;height:200px;object-fit:cover;object-position:center top;display:block"/>
-            <span style="position:absolute;bottom:8px;left:8px;background:var(--gold);color:#1a0f0a;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;padding:3px 8px;border-radius:10px;letter-spacing:1px">AFTER</span>
-          </div>
-        </div>
-        <div style="padding:16px 18px">
-          <div style="font-size:15px;color:var(--text);margin-bottom:4px">Agnes RF Microneedling</div>
-          <div style="font-family:Arial,sans-serif;font-size:12px;color:var(--light)">Skin tightening & texture</div>
-        </div>
+      <div class="cred-card">
+        <div class="cred-icon">⚕️</div>
+        <div class="cred-title">Physician Assistants</div>
+        <div class="cred-desc">PA-level providers delivering medical-grade treatments with precision and artistry.</div>
       </div>
-
-      <!-- PDO Thread -->
-      <div style="background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(44,32,24,0.08);border:1px solid rgba(201,169,110,0.15)">
-        <div style="display:grid;grid-template-columns:1fr 1fr">
-          <div style="position:relative">
-            <img src="images/ba_pdo_before.jpg" alt="PDO Thread Lift Before" style="width:100%;height:200px;object-fit:cover;object-position:center top;display:block"/>
-            <span style="position:absolute;bottom:8px;left:8px;background:rgba(0,0,0,0.6);color:#fff;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;padding:3px 8px;border-radius:10px;letter-spacing:1px">BEFORE</span>
-          </div>
-          <div style="position:relative">
-            <img src="images/ba_pdo_after.jpg" alt="PDO Thread Lift After" style="width:100%;height:200px;object-fit:cover;object-position:center top;display:block"/>
-            <span style="position:absolute;bottom:8px;left:8px;background:var(--gold);color:#1a0f0a;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;padding:3px 8px;border-radius:10px;letter-spacing:1px">AFTER</span>
-          </div>
-        </div>
-        <div style="padding:16px 18px">
-          <div style="font-size:15px;color:var(--text);margin-bottom:4px">PDO Thread Lift</div>
-          <div style="font-family:Arial,sans-serif;font-size:12px;color:var(--light)">Non-surgical lift & contour</div>
-        </div>
+      <div class="cred-card">
+        <div class="cred-icon">✨</div>
+        <div class="cred-title">Licensed Estheticians</div>
+        <div class="cred-desc">Expert skin therapists specializing in advanced facials, peels, and skin health.</div>
       </div>
-
+      <div class="cred-card">
+        <div class="cred-icon">🏆</div>
+        <div class="cred-title">Industry-Leading Results</div>
+        <div class="cred-desc">4× award winner. 979+ five-star reviews. Sandy Springs' most trusted med spa since 2014.</div>
+      </div>
     </div>
-    <div style="text-align:center;margin-top:36px">
-      <button class="cta-btn" onclick="openBooking()">Get Your Results →</button>
+    <button class="cta-btn" onclick="openBooking()">Meet Our Team & Book →</button>
+  </div>
+</div>
+
+<!-- ══ TREATMENTS ══ -->
+<div class="tx-section">
+  <div class="tx-inner">
+    <div class="section-label">Our Services</div>
+    <h2 class="section-title">Treatments We're Known For</h2>
+    <p class="section-sub" style="margin-bottom:36px">From subtle enhancements to full facial rejuvenation — we do it all, and we do it beautifully.</p>
+    <div class="tx-grid">
+      <div class="tx-card"><div class="tx-icon">💉</div><div class="tx-name">Botox & Xeomin</div><div class="tx-desc">Smooth lines naturally. Known for results that look like you — just refreshed.</div></div>
+      <div class="tx-card"><div class="tx-icon">✨</div><div class="tx-name">Dermal Fillers</div><div class="tx-desc">Lips, cheeks, jawline & under eyes — subtle, natural volume that transforms.</div></div>
+      <div class="tx-card"><div class="tx-icon">🌿</div><div class="tx-name">Organic Filler</div><div class="tx-desc">Our signature specialty using your body's own biology for natural enhancement.</div></div>
+      <div class="tx-card"><div class="tx-icon">⚡</div><div class="tx-name">Agnes RF Microneedling</div><div class="tx-desc">Targeted radio frequency for tightening, lifting and fat reduction.</div></div>
+      <div class="tx-card"><div class="tx-icon">🧵</div><div class="tx-name">PDO Thread Lift</div><div class="tx-desc">Non-surgical lift and contour with immediate and long-lasting results.</div></div>
+      <div class="tx-card"><div class="tx-icon">🔬</div><div class="tx-name">PRP / PRF Therapy</div><div class="tx-desc">Your body's own growth factors for skin rejuvenation and hair restoration.</div></div>
+      <div class="tx-card"><div class="tx-icon">💎</div><div class="tx-name">Microneedling</div><div class="tx-desc">Collagen induction for texture, tone, scars and hyperpigmentation.</div></div>
+      <div class="tx-card"><div class="tx-icon">🌊</div><div class="tx-name">HydraFacial</div><div class="tx-desc">Deep cleanse, exfoliate, and hydrate. Zero downtime. Immediate glow.</div></div>
+    </div>
+    <div style="text-align:center;margin-top:40px">
+      <button class="cta-btn" onclick="openBooking()">Book a Free Consultation</button>
     </div>
   </div>
 </div>
 
-<!-- TREATMENTS -->
-<div class="section">
-  <h2 class="section-title">Treatments We're Known For</h2>
-  <p class="section-sub">From your very first visit, you'll understand why patients travel from across Atlanta to see us.</p>
-  <div class="treatments-grid">
-    <div class="tx-card"><div class="tx-icon">💉</div><div class="tx-name">Botox & Xeomin</div><div class="tx-desc">Smooth lines naturally. Our injectors are celebrated for results that look like you — just well-rested.</div></div>
-    <div class="tx-card"><div class="tx-icon">✨</div><div class="tx-name">Lip & Facial Filler</div><div class="tx-desc">Subtle volume and definition using premium fillers — including our signature organic filler option.</div></div>
-    <div class="tx-card"><div class="tx-icon">🌿</div><div class="tx-name">Organic Filler</div><div class="tx-desc">A natural alternative using your body's own biology. A true Skin Social specialty.</div></div>
-    <div class="tx-card"><div class="tx-icon">💎</div><div class="tx-name">Microneedling</div><div class="tx-desc">Stimulate collagen, refine texture, and address hyperpigmentation with minimal downtime.</div></div>
-    <div class="tx-card"><div class="tx-icon">🔬</div><div class="tx-name">PRP / PRF Therapy</div><div class="tx-desc">Harness your body's growth factors for skin rejuvenation and hair restoration.</div></div>
-    <div class="tx-card"><div class="tx-icon">🌊</div><div class="tx-name">HydraFacial</div><div class="tx-desc">Deep cleanse, exfoliate, and hydrate in one treatment. Zero downtime, instant glow.</div></div>
-  </div>
-  <div style="text-align:center;margin-top:36px">
-    <button class="cta-btn" onclick="openBooking()">Book a Consultation →</button>
-  </div>
-</div>
-
-<!-- REVIEWS -->
-<div class="reviews-bg">
-  <div style="max-width:820px;margin:0 auto">
-    <h2 class="section-title">What Our Patients Say</h2>
-    <p class="section-sub">979 five-star reviews and counting. Sandy Springs' most loved med spa.</p>
-    <div class="reviews-grid">
-      <div class="rv-card"><div class="rv-stars">★★★★★</div><p class="rv-text">"Nicola is absolutely incredible. My results look so natural — everyone asks what I've done and I just say I look well-rested. That's the goal!"</p><div class="rv-auth">— Google Review</div></div>
-      <div class="rv-card"><div class="rv-stars">★★★★★</div><p class="rv-text">"Amanda is a true artist. I was nervous about filler but she walked me through everything. The result is exactly what I wanted — subtle but transformative."</p><div class="rv-auth">— Google Review</div></div>
-      <div class="rv-card"><div class="rv-stars">★★★★★</div><p class="rv-text">"I've tried other med spas in Atlanta but Skin Social is on a different level. The care, expertise, results — nothing compares. I won't go anywhere else."</p><div class="rv-auth">— Google Review</div></div>
+<!-- ══ REVIEWS ══ -->
+<div class="rv-section">
+  <div class="rv-inner">
+    <div class="section-label">Patient Testimonials</div>
+    <h2 class="section-title">979 Reasons to Choose Us</h2>
+    <p class="section-sub">Our providers are praised by name. Here's what patients say about the Skin Social difference.</p>
+    <div class="rv-grid">
+      <div class="rv-card">
+        <div class="rv-stars">★★★★★</div>
+        <p class="rv-text">"Nicola is an absolute artist. My results look so natural — everyone asks what I've done and I say I look well-rested. That's exactly the goal. I won't go anywhere else."</p>
+        <div class="rv-auth">✓ Verified Patient · Google Review</div>
+      </div>
+      <div class="rv-card">
+        <div class="rv-stars">★★★★★</div>
+        <p class="rv-text">"Amanda walked me through every step. I was nervous about filler and she completely put me at ease. The result is exactly what I wanted — subtle but life-changing."</p>
+        <div class="rv-auth">✓ Verified Patient · Google Review</div>
+      </div>
+      <div class="rv-card">
+        <div class="rv-stars">★★★★★</div>
+        <p class="rv-text">"I've tried other med spas in Atlanta but Skin Social is on a completely different level. The care, the expertise, the luxury feel. Nothing compares. This is my forever place."</p>
+        <div class="rv-auth">✓ Verified Patient · Google Review</div>
+      </div>
     </div>
   </div>
 </div>
 
-<!-- WHY US -->
-<div class="why-bg">
-  <div class="why-inner">
-    <h2 style="font-size:26px;font-weight:normal;color:#fff;margin-bottom:8px">Why Patients Choose Skin Social</h2>
-    <p style="font-family:Arial,sans-serif;font-size:14px;color:rgba(255,255,255,0.6);margin-bottom:0">We're not a churn-and-burn clinic. We know your face.</p>
-    <div class="why-grid">
-      <div class="why-card"><div class="why-icon">🎯</div><div class="why-name">Precision Results</div><div class="why-desc">Every treatment is customized. No cookie-cutter protocols — ever.</div></div>
-      <div class="why-card"><div class="why-icon">🌿</div><div class="why-name">Natural Approach</div><div class="why-desc">Enhance, don't erase. We specialize in results that look completely effortless.</div></div>
-      <div class="why-card"><div class="why-icon">👩‍⚕️</div><div class="why-name">Award-Winning Providers</div><div class="why-desc">Named in hundreds of individual reviews for their skill and care.</div></div>
-      <div class="why-card"><div class="why-icon">📅</div><div class="why-name">Easy Booking</div><div class="why-desc">Same-week appointments often available. Free consultations always.</div></div>
-    </div>
-    <button class="cta-btn" onclick="openBooking()">Book Your Free Consultation</button>
-  </div>
-</div>
-
-<!-- BOOK SECTION -->
-<div class="book-section" id="book">
-  <div class="book-inner">
-    <h2>Ready to Book?</h2>
-    <p>Same-week appointments available. Consultations are always free. No pressure, just honest guidance on what's right for you.</p>
-    <button class="cta-btn" onclick="openBooking()">Book Now →</button>
-    <div style="margin-top:20px;font-family:Arial,sans-serif;font-size:13px;color:var(--light)">
-      📍 5840 Roswell Rd, Sandy Springs, GA &nbsp;·&nbsp; ⭐ 5.0 (979 reviews)
-    </div>
-  </div>
+<!-- ══ FINAL CTA ══ -->
+<div class="final-cta">
+  <h2>Your Best Self Starts Here.</h2>
+  <p>Free consultations. Same-week appointments available. Expert guidance with zero pressure. Come see why Sandy Springs trusts Skin Social.</p>
+  <button class="cta-btn" onclick="openBooking()">Book Now — It's Free →</button>
+  <div class="location-note">📍 5840 Roswell Rd, Sandy Springs, GA &nbsp;·&nbsp; ⭐ 5.0 (979 reviews) &nbsp;·&nbsp; <a href="https://skinsocialspa.com" style="color:var(--gold)">skinsocialspa.com</a></div>
 </div>
 
 <footer>
-  <span>Skin Social Med Spa</span> &nbsp;·&nbsp; 5840 Roswell Rd, Sandy Springs, GA &nbsp;·&nbsp; skinsocialspa.com
+  <span style="color:var(--gold)">Skin Social Med Spa</span> &nbsp;·&nbsp; 5840 Roswell Rd, Sandy Springs, GA &nbsp;·&nbsp; <a href="https://skinsocialspa.com">skinsocialspa.com</a>
 </footer>
 
-<!-- STICKY MOBILE CTA -->
+<!-- STICKY MOBILE -->
 <div class="sticky">
   <button onclick="openBooking()">📅 Book Free Consultation</button>
 </div>
 
-<!-- BOULEVARD BOOKING WIDGET (same as website) -->
+<!-- BOULEVARD BOOKING -->
 <script>
   (function(a){
     var b={businessId:'23dc87b0-dc5b-4747-a222-f94a44ff0eff'};
@@ -319,15 +464,10 @@
     c.onload=function(){blvd.init(b)};
     d.parentNode.insertBefore(c,d);
   })(document);
-
   function openBooking(){
-    if(typeof blvd !== 'undefined'){
-      blvd.openBooking();
-    } else {
-      window.open('https://skinsocialspa.com/#book-now','_blank');
-    }
+    if(typeof blvd!=='undefined'){blvd.openBooking()}
+    else{window.open('https://skinsocialspa.com/#book-now','_blank')}
   }
 </script>
-
 </body>
 </html>
