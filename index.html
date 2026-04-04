@@ -456,19 +456,26 @@
 
 <!-- BOULEVARD BOOKING -->
 <script>
+  function openBooking(){
+    window.open('https://skinsocialspa.com/#book-now','_blank');
+  }
+
+  // Also try to load Boulevard widget for enhanced experience
   (function(a){
     var b={businessId:'23dc87b0-dc5b-4747-a222-f94a44ff0eff'};
     var c=a.createElement('script');
     var d=a.querySelector('script');
     c.src='https://static.joinboulevard.com/injector.min.js';
     c.async=true;
-    c.onload=function(){blvd.init(b)};
+    c.onload=function(){
+      try{
+        blvd.init(b);
+        // Override openBooking to use native widget if it loaded
+        window.openBooking=function(){blvd.openBooking()};
+      }catch(e){}
+    };
     d.parentNode.insertBefore(c,d);
   })(document);
-  function openBooking(){
-    if(typeof blvd!=='undefined'){blvd.openBooking()}
-    else{window.open('https://skinsocialspa.com/#book-now','_blank')}
-  }
 </script>
 </body>
 </html>
