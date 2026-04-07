@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Claim $100 Off Botox | New Patient Offer | Skin Social Sandy Springs</title>
+  <meta name="description" content="New patients get $100 off their first Botox, Dysport, or lip filler treatment at Skin Social Sandy Springs. Sandy Springs' most-awarded med spa. Minimum $250. Book now." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --soft-oat: #F5EFE7;
+      --cream-beige: #EADFCB;
+      --warm-tan: #D6BFA9;
+      --soft-pink: #E8C4C4;
+      --charcoal: #3A3A3A;
+      --charcoal-mid: #6a6a6a;
+      --white: #ffffff;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Lato', sans-serif;
+      color: var(--charcoal);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    /* ── STICKY HEADER ── */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: var(--white);
+      border-bottom: 1px solid var(--cream-beige);
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header-logo {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      font-size: 1.25rem;
+      color: var(--charcoal);
+      letter-spacing: 0.04em;
+      text-decoration: none;
+    }
+
+    .btn-pill {
+      display: inline-block;
+      background: var(--warm-tan);
+      color: var(--charcoal);
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 0.875rem;
+      padding: 10px 22px;
+      border-radius: 100px;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+      border: none;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .btn-pill:hover {
+      background: #c9b09a;
+      transform: translateY(-1px);
+    }
+
+    .btn-pill-lg {
+      font-size: 1.1rem;
+      padding: 18px 40px;
+      letter-spacing: 0.01em;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(135deg, #3A3A3A 0%, #2a2a2a 100%);
+      padding: 80px 24px 72px;
+      text-align: center;
+      color: var(--cream-beige);
+    }
+
+    .hero-badge {
+      display: inline-block;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      font-size: 0.72rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--cream-beige);
+      border: 1px solid rgba(234, 223, 203, 0.45);
+      border-radius: 100px;
+      padding: 6px 20px;
+      margin-bottom: 28px;
+    }
+
+    .hero h1 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 300;
+      font-size: clamp(2.6rem, 8vw, 5rem);
+      color: var(--cream-beige);
+      line-height: 1.1;
+      margin-bottom: 24px;
+      letter-spacing: -0.01em;
+    }
+
+    .hero-sub {
+      font-family: 'Lato', sans-serif;
+      font-size: clamp(1rem, 2.5vw, 1.2rem);
+      color: rgba(234, 223, 203, 0.85);
+      max-width: 560px;
+      margin: 0 auto 12px;
+      font-weight: 300;
+    }
+
+    .hero-fine {
+      font-size: 0.78rem;
+      color: rgba(234, 223, 203, 0.5);
+      margin-bottom: 36px;
+      letter-spacing: 0.02em;
+    }
+
+    .hero-cta {
+      margin-bottom: 36px;
+    }
+
+    .trust-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px 28px;
+      font-size: 0.82rem;
+      color: rgba(234, 223, 203, 0.65);
+      font-weight: 400;
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* ── SOCIAL PROOF ── */
+    .section-social-proof {
+      background: var(--cream-beige);
+      padding: 72px 24px;
+      text-align: center;
+    }
+
+    .section-title {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      font-size: clamp(1.5rem, 4vw, 2.1rem);
+      color: var(--charcoal);
+      margin-bottom: 48px;
+      letter-spacing: -0.01em;
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 700px) {
+      .reviews-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .review-card {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 28px 24px;
+      text-align: left;
+      box-shadow: 0 2px 16px rgba(58, 58, 58, 0.07);
+    }
+
+    .stars {
+      color: #F5A623;
+      font-size: 1.1rem;
+      letter-spacing: 2px;
+      margin-bottom: 14px;
+    }
+
+    .review-text {
+      font-size: 0.93rem;
+      color: var(--charcoal);
+      line-height: 1.65;
+      margin-bottom: 16px;
+      font-style: italic;
+      font-weight: 300;
+    }
+
+    .review-author {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 0.85rem;
+      color: var(--charcoal);
+      margin-bottom: 4px;
+    }
+
+    .review-verified {
+      font-size: 0.75rem;
+      color: #4CAF50;
+    }
+
+    /* ── HOW TO CLAIM ── */
+    .section-how {
+      background: var(--soft-oat);
+      padding: 72px 24px;
+      text-align: center;
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 28px;
+      max-width: 860px;
+      margin: 0 auto 32px;
+    }
+
+    @media (min-width: 700px) {
+      .steps-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .step-card {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 32px 24px;
+      box-shadow: 0 2px 12px rgba(58, 58, 58, 0.06);
+    }
+
+    .step-number {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 2rem;
+      color: var(--warm-tan);
+      margin-bottom: 10px;
+    }
+
+    .step-emoji {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    .step-title {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 1rem;
+      color: var(--charcoal);
+      margin-bottom: 8px;
+    }
+
+    .step-desc {
+      font-size: 0.88rem;
+      color: var(--charcoal-mid);
+      line-height: 1.55;
+    }
+
+    .fine-print {
+      font-size: 0.76rem;
+      color: var(--charcoal-mid);
+      max-width: 520px;
+      margin: 0 auto 32px;
+      line-height: 1.5;
+    }
+
+    /* ── SERVICES ── */
+    .section-services {
+      background: var(--white);
+      padding: 72px 24px;
+      text-align: center;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 700px) {
+      .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .service-card {
+      background: var(--soft-oat);
+      border-radius: 16px;
+      padding: 36px 24px;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-3px);
+    }
+
+    .service-emoji {
+      font-size: 2.2rem;
+      margin-bottom: 14px;
+      display: block;
+    }
+
+    .service-name {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 1.05rem;
+      color: var(--charcoal);
+      margin-bottom: 10px;
+    }
+
+    .service-desc {
+      font-size: 0.88rem;
+      color: var(--charcoal-mid);
+      line-height: 1.6;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--charcoal);
+      color: rgba(234, 223, 203, 0.65);
+      text-align: center;
+      padding: 40px 24px;
+      font-size: 0.82rem;
+      line-height: 1.8;
+    }
+
+    footer a {
+      color: var(--warm-tan);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-brand {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      font-size: 1rem;
+      color: var(--cream-beige);
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- STICKY HEADER -->
+  <header>
+    <a href="#" class="header-logo">Skin Social</a>
+    <a href="https://linktr.ee/skinsocialspa" target="_blank" rel="noopener" class="btn-pill">Claim $100</a>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-badge">New Patient Exclusive</div>
+    <h1>$100 New Patient Credit</h1>
+    <p class="hero-sub">Claim your $100 toward Botox, Dysport, or lip filler at Sandy Springs' most-awarded med spa.</p>
+    <p class="hero-fine">Minimum $250 appointment. New patients only. Limited availability.</p>
+    <div class="hero-cta">
+      <a href="https://linktr.ee/skinsocialspa" target="_blank" rel="noopener" class="btn-pill btn-pill-lg">Claim My $100 — Book Now</a>
+    </div>
+    <div class="trust-row">
+      <span class="trust-item">⭐ 979 Five-Star Reviews</span>
+      <span class="trust-item">🏆 Best Botox Atlanta 2024 &amp; 2025</span>
+      <span class="trust-item">💉 Expert Injectors</span>
+    </div>
+  </section>
+
+  <!-- SOCIAL PROOF -->
+  <section class="section-social-proof">
+    <h2 class="section-title">Why Sandy Springs Chooses Skin Social</h2>
+    <div class="reviews-grid">
+
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">"Amanda is INCREDIBLE. I was nervous it was my first time getting Botox but she walked me through everything. My results look so natural — everyone thinks I just look refreshed. I'm obsessed."</p>
+        <div class="review-author">Sarah M.</div>
+        <div class="review-verified">✓ Verified Google Review</div>
+      </div>
+
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">"I've tried 3 other med spas in Atlanta and nothing compares to Skin Social. The environment is beautiful, the staff is warm, and the results are worth every single penny."</p>
+        <div class="review-author">Jessica T.</div>
+        <div class="review-verified">✓ Verified Google Review</div>
+      </div>
+
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">"Got lip filler for the first time and I was terrified. They made me feel so comfortable and the results are PERFECT — not overdone at all. Already booked my next appointment."</p>
+        <div class="review-author">Lauren K.</div>
+        <div class="review-verified">✓ Verified Google Review</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- HOW TO CLAIM -->
+  <section class="section-how">
+    <h2 class="section-title">How to Claim Your $100</h2>
+    <div class="steps-grid">
+
+      <div class="step-card">
+        <div class="step-emoji">📅</div>
+        <div class="step-number">01</div>
+        <div class="step-title">Book Your Appointment</div>
+        <p class="step-desc">Click the button and choose your preferred time. Same-week appointments available.</p>
+      </div>
+
+      <div class="step-card">
+        <div class="step-emoji">💬</div>
+        <div class="step-number">02</div>
+        <div class="step-title">Mention the Offer</div>
+        <p class="step-desc">Let us know you're a new patient claiming the $100 new patient credit.</p>
+      </div>
+
+      <div class="step-card">
+        <div class="step-emoji">💉</div>
+        <div class="step-number">03</div>
+        <div class="step-title">Enjoy Your Treatment</div>
+        <p class="step-desc">$100 credited toward your Botox, Dysport, or filler. Sit back and glow.</p>
+      </div>
+
+    </div>
+    <p class="fine-print">Valid for new patients only. Minimum $250 treatment required. Cannot be combined with other offers.</p>
+    <a href="https://linktr.ee/skinsocialspa" target="_blank" rel="noopener" class="btn-pill btn-pill-lg">Book My Appointment</a>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section-services">
+    <h2 class="section-title">Our Injectable Treatments</h2>
+    <div class="services-grid">
+
+      <div class="service-card">
+        <span class="service-emoji">💉</span>
+        <div class="service-name">Botox &amp; Dysport</div>
+        <p class="service-desc">Smooth expression lines with precision. FDA-approved neuromodulators for natural, refreshed results.</p>
+      </div>
+
+      <div class="service-card">
+        <span class="service-emoji">👄</span>
+        <div class="service-name">Lip Filler</div>
+        <p class="service-desc">Fuller, defined lips tailored to your anatomy. Subtle enhancement or full volume — you choose.</p>
+      </div>
+
+      <div class="service-card">
+        <span class="service-emoji">✨</span>
+        <div class="service-name">Dermal Filler</div>
+        <p class="service-desc">Restore volume, lift, and contour. Hyaluronic acid fillers by award-winning injectors.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-brand">Skin Social Med Spa</div>
+    <div>5840 Roswell Rd, Sandy Springs, GA 30328</div>
+    <div>
+      <a href="https://skinsocialspa.com" target="_blank" rel="noopener">skinsocialspa.com</a>
+    </div>
+    <div style="margin-top: 12px;">© 2026 Skin Social. All rights reserved.</div>
+  </footer>
+
+</body>
+</html>
