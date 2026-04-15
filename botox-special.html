@@ -37,7 +37,7 @@
       --radius:16px;
       --radius-sm:10px;
     }
-    html{scroll-behavior:smooth} /* v12-match */
+    html{scroll-behavior:smooth} /* v13-urgency */ /* v13-urgency */
     
     .hero .cta-btn{
       display:inline-block;
@@ -404,18 +404,37 @@
       .creds-grid{grid-template-columns:1fr}
     }
 
+  
+    /* ─── URGENCY BANNER ─── */
+    .urgency-bar{
+      background:var(--charcoal);
+      color:var(--white);
+      text-align:center;
+      padding:10px 20px;
+      font-family:'Poppins',sans-serif;
+      font-size:12px;
+      font-weight:500;
+      letter-spacing:2px;
+      text-transform:uppercase;
+    }
+    .urgency-bar span{
+      color:var(--warm-tan);
+      font-weight:600;
+    }
+
   </style>
 </head>
 <body>
 
 <!-- ══ HERO ══ -->
+<div class="urgency-bar">⚡ Only <span>10 New Patient Spots</span> Available This Month at $9/Unit</div>
 <section class="hero">
   <div class="hero-bg"></div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
-    <div class="eyebrow">Sandy Springs, Georgia · New Patient Offer</div>
+    <div class="eyebrow">Sandy Springs, Georgia · Limited Availability</div>
     <h1>Botox from <em>$9 Per Unit</em></h1>
-    <p class="hero-sub">New patients only. 20-unit minimum. Expert injectors. Natural results.</p>
+    <p class="hero-sub">Limited new patient spots available. 20-unit minimum. Expert injectors. Natural results.</p>
     <div class="awards-row">
       <span class="chip">🏆 Best Botox 2024 &amp; 2025</span>
       <span class="chip">🏆 Best Facial 2024 &amp; 2025</span>
@@ -427,7 +446,7 @@
       <div class="promo-code">FIRSTTIME</div>
         <div class="promo-note">Enter at checkout to redeem your $9/unit offer</div>
       </div>
-      <span class="cta-note">New patients only · 20-unit minimum · $180 minimum visit</span>
+      <span class="cta-note">New patients only · 20-unit minimum · Limited spots per month</span>
     </div>
   </div>
 </section>
@@ -464,7 +483,7 @@
     <div class="section-label">Exclusive Offer</div>
     <h2 class="section-title">Your First Botox, Your Way.</h2>
     <div class="accent-line"></div>
-    <p class="section-sub">At $9/unit for new patients, there's never been a better time to experience Skin Social.</p>
+    <p class="section-sub">At $9/unit for new patients — this is our most competitive offer. Spots are limited to 10 new patients per month. Don't miss out.</p>
     <div class="offer-card">
       <div class="offer-price">$9/unit</div>
       <div class="offer-name">New Patient Botox</div>
@@ -603,7 +622,7 @@
 <div class="final-cta">
   <h2>Claim Your $9/Unit Botox Today.</h2>
   <div class="accent-line"></div>
-  <p>New patients only. 20-unit minimum. Same-week appointments. Expert providers. Zero pressure.</p>
+  <p>Limited to 10 new patient spots per month. Same-week appointments available — but filling fast. Expert providers. Zero pressure.</p>
   <a class="cta-btn" href="https://skinsocialspa.com/#book-now" target="_blank">Book My $9/Unit Botox Appointment<span style="display:block;font-size:10px;font-weight:400;letter-spacing:3px;opacity:0.75;margin-top:4px;text-transform:uppercase;">Code: FIRSTTIME</span> →</a>
   <div class="location-note">📍 5840 Roswell Rd, Sandy Springs, GA &nbsp;·&nbsp; 📞 <a href="tel:+14708237842">(470) 823-7842</a></div>
 </div>
