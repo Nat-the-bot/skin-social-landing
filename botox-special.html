@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Botox $9/Unit — New Patient Offer | Skin Social Sandy Springs</title>
+  <meta name="description" content="New patients get Botox from just $9/unit at Skin Social Sandy Springs. Expert injectors, natural results, same-week appointments. 20-unit minimum. Book now."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      /* Brand primary palette */
+      --soft-oat:#F5EFE7;
+      --cream-beige:#EADFCB;
+      --warm-tan:#D6BFA9;
+      /* Brand secondary palette */
+      --soft-pink:#E8C4C4;
+      --baby-pink:#F2E5E5;
+      --warm-sand:#CBB8A0;
+      /* Text */
+      --charcoal:#3A3A3A;
+      --charcoal-mid:#6a6a6a;
+      --charcoal-light:#9a9a9a;
+      --white:#ffffff;
+      /* Utility */
+      --shadow:0 4px 24px rgba(58,58,58,0.09);
+      --shadow-hover:0 8px 40px rgba(58,58,58,0.16);
+      --radius:16px;
+      --radius-sm:10px;
+    }
+    html{scroll-behavior:smooth}
+    body{
+      font-family:'Lato','Helvetica Neue',sans-serif;
+      background:var(--soft-oat);
+      color:var(--charcoal);
+      line-height:1.65;
+    }
+
+    /* ─── HERO ─── */
+    .hero{
+      position:relative;min-height:100vh;
+      display:flex;align-items:center;justify-content:center;
+      overflow:hidden;text-align:center;
+    }
+    .hero-bg{
+      position:absolute;inset:0;
+      background:url('images/team6_hero.jpg') center 22%/cover no-repeat;
+      transform:scale(1.02);
+      filter:brightness(0.48) saturate(0.85);
+    }
+    .hero-overlay{
+      position:absolute;inset:0;
+      background:linear-gradient(
+        to bottom,
+        rgba(26,18,12,0.25) 0%,
+        rgba(26,18,12,0.10) 30%,
+        rgba(26,18,12,0.55) 72%,
+        rgba(26,18,12,0.82) 100%
+      );
+    }
+    .hero-content{
+      position:relative;z-index:2;
+      max-width:700px;margin:0 auto;
+      padding:110px 24px 90px;
+    }
+    .eyebrow{
+      font-family:'Poppins',sans-serif;font-size:10px;font-weight:500;
+      letter-spacing:4px;text-transform:uppercase;
+      color:var(--cream-beige);margin-bottom:22px;
+      display:flex;align-items:center;justify-content:center;gap:14px;
+      opacity:0.85;
+    }
+    .eyebrow::before,.eyebrow::after{
+      content:'';flex:1;max-width:56px;height:1px;
+      background:rgba(234,223,203,0.45);
+    }
+    .hero h1{
+      font-family:'Poppins',sans-serif;font-size:clamp(34px,6vw,60px);
+      font-weight:300;line-height:1.12;
+      color:var(--white);margin-bottom:20px;
+      letter-spacing:-0.5px;
+    }
+    .hero h1 em{
+      font-style:normal;font-weight:500;
+      color:var(--cream-beige);
+    }
+    .hero-sub{
+      font-family:'Lato',sans-serif;font-size:17px;font-weight:300;
+      color:rgba(255,255,255,0.78);
+      margin-bottom:36px;line-height:1.65;
+      max-width:560px;margin-left:auto;margin-right:auto;
+    }
+    .awards-row{
+      display:flex;justify-content:center;flex-wrap:wrap;
+      gap:8px;margin-bottom:44px;
+    }
+    .chip{
+      background:rgba(234,223,203,0.12);
+      border:1px solid rgba(234,223,203,0.40);
+      color:var(--cream-beige);
+      padding:7px 18px;border-radius:24px;
+      font-family:'Lato',sans-serif;font-size:12px;
+      font-weight:400;letter-spacing:0.4px;
+    }
+    .hero-cta-wrap{display:flex;flex-direction:column;align-items:center;gap:12px}
+    .cta-btn{
+      display:inline-block;
+      background:var(--warm-tan);color:var(--charcoal);
+      font-family:'Poppins',sans-serif;font-size:15px;font-weight:500;
+      padding:17px 52px;border-radius:50px;text-decoration:none;
+      border:none;cursor:pointer;letter-spacing:0.5px;
+      box-shadow:0 8px 32px rgba(214,191,169,0.38);
+      transition:transform 0.2s,box-shadow 0.2s,background 0.2s;
+    }
+    .cta-btn:hover{
+      transform:translateY(-2px);
+      background:var(--cream-beige);
+      box-shadow:0 14px 44px rgba(214,191,169,0.50);
+    }
+    .call-btn{display:inline-block;padding:11px 28px;border-radius:50px;font-family:'Poppins',sans-serif;font-size:13px;font-weight:500;text-decoration:none;cursor:pointer;transition:all .25s;background:transparent;color:var(--white);border:1.5px solid rgba(255,255,255,0.45);box-shadow:none;}
+    .call-btn:hover{background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.7)}
+    .cta-note{
+      font-family:'Lato',sans-serif;font-size:12px;
+      color:rgba(255,255,255,0.38);letter-spacing:0.3px;
+    }
+
+    /* ─── TRUST BAR ─── */
+    .trust{background:var(--charcoal);padding:26px 20px}
+    .trust-inner{
+      max-width:920px;margin:0 auto;
+      display:flex;justify-content:center;flex-wrap:wrap;gap:16px 52px;
+    }
+    .t-item{text-align:center}
+    .t-num{
+      font-family:'Poppins',sans-serif;font-size:26px;font-weight:300;
+      color:var(--cream-beige);
+    }
+    .t-lbl{
+      font-family:'Lato',sans-serif;font-size:10px;font-weight:400;
+      text-transform:uppercase;letter-spacing:1.8px;
+      color:rgba(255,255,255,0.40);margin-top:2px;
+    }
+
+    /* ─── SECTION SHARED ─── */
+    .section-label{
+      font-family:'Poppins',sans-serif;font-size:10px;font-weight:500;
+      letter-spacing:3.5px;text-transform:uppercase;
+      color:var(--warm-sand);text-align:center;margin-bottom:12px;
+    }
+    .section-title{
+      font-family:'Poppins',sans-serif;font-size:28px;font-weight:300;
+      color:var(--charcoal);text-align:center;margin-bottom:8px;line-height:1.3;
+    }
+    .section-sub{
+      font-family:'Lato',sans-serif;font-size:14px;
+      color:var(--charcoal-mid);text-align:center;margin-bottom:48px;
+    }
+
+    /* ─── OFFER SECTION ─── */
+    .offer-section{background:var(--white);padding:80px 20px}
+    .offer-inner{max-width:680px;margin:0 auto;text-align:center}
+    .offer-card{
+      background:var(--soft-oat);
+      border:1px solid var(--cream-beige);
+      border-radius:var(--radius);
+      padding:48px 40px;
+      margin:40px auto;
+      box-shadow:var(--shadow);
+      max-width:480px;
+    }
+    .offer-price{
+      font-family:'Poppins',sans-serif;
+      font-size:72px;font-weight:300;
+      color:var(--warm-tan);line-height:1;
+      margin-bottom:8px;
+      letter-spacing:-2px;
+    }
+    .offer-name{
+      font-family:'Poppins',sans-serif;
+      font-size:18px;font-weight:400;
+      color:var(--charcoal);margin-bottom:14px;
+    }
+    .offer-fine{
+      font-family:'Lato',sans-serif;font-size:11px;
+      color:var(--charcoal-light);letter-spacing:0.3px;
+    }
+
+    /* ─── WHAT TO EXPECT ─── */
+    .expect-section{background:var(--soft-oat);padding:80px 20px}
+    .expect-inner{max-width:880px;margin:0 auto}
+    .tx-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
+    .tx-card{
+      border-radius:var(--radius);padding:26px 22px;
+      background:var(--white);
+      border:1px solid var(--cream-beige);
+      transition:box-shadow 0.2s,transform 0.2s;
+    }
+    .tx-card:hover{box-shadow:var(--shadow);transform:translateY(-2px)}
+    .tx-icon{font-size:24px;margin-bottom:10px}
+    .tx-name{
+      font-family:'Poppins',sans-serif;font-size:15px;font-weight:500;
+      color:var(--charcoal);margin-bottom:6px;
+    }
+    .tx-desc{
+      font-family:'Lato',sans-serif;font-size:13px;
+      color:var(--charcoal-mid);line-height:1.6;
+    }
+
+    /* ─── CREDENTIALS ─── */
+    .creds-section{
+      background:var(--charcoal);
+      padding:80px 20px;color:var(--white);
+    }
+    .creds-inner{max-width:880px;margin:0 auto;text-align:center}
+    .creds-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+      gap:16px;margin:42px 0;
+    }
+    .cred-card{
+      background:rgba(234,223,203,0.07);
+      border:1px solid rgba(234,223,203,0.16);
+      border-radius:var(--radius);padding:26px 18px;
+      transition:background 0.2s;
+    }
+    .cred-card:hover{background:rgba(234,223,203,0.12)}
+    .cred-icon{font-size:26px;margin-bottom:10px}
+    .cred-title{
+      font-family:'Poppins',sans-serif;font-size:14px;font-weight:500;
+      color:var(--cream-beige);margin-bottom:8px;
+    }
+    .cred-desc{
+      font-family:'Lato',sans-serif;font-size:12px;
+      color:rgba(255,255,255,0.55);line-height:1.65;
+    }
+
+    /* ─── REVIEWS ─── */
+    .rv-section{background:var(--cream-beige);padding:80px 20px}
+    .rv-inner{max-width:880px;margin:0 auto}
+    .rv-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+      gap:16px;margin-top:44px;
+    }
+    .rv-card{
+      background:var(--white);border-radius:var(--radius);
+      padding:28px 24px;
+      border:1px solid rgba(214,191,169,0.30);
+      box-shadow:0 2px 14px rgba(58,58,58,0.05);
+    }
+    .rv-stars{
+      color:var(--warm-sand);font-size:16px;
+      letter-spacing:2px;margin-bottom:14px;
+    }
+    .rv-text{
+      font-family:'Lato',sans-serif;font-size:13px;
+      color:var(--charcoal);line-height:1.75;
+      margin-bottom:16px;font-style:italic;
+    }
+    .rv-auth{
+      font-family:'Lato',sans-serif;font-size:11px;
+      color:var(--charcoal-mid);font-weight:700;
+      letter-spacing:0.3px;display:flex;align-items:center;gap:6px;
+    }
+
+    /* ─── FAQ ─── */
+    .faq-section{background:var(--white);padding:80px 20px}
+    .faq-inner{max-width:680px;margin:0 auto}
+    .faq-item{
+      border:1px solid var(--cream-beige);
+      border-radius:var(--radius-sm);
+      margin-bottom:12px;
+      overflow:hidden;
+    }
+    .faq-q{
+      width:100%;background:var(--soft-oat);border:none;
+      padding:20px 24px;text-align:left;cursor:pointer;
+      font-family:'Poppins',sans-serif;font-size:15px;font-weight:400;
+      color:var(--charcoal);display:flex;justify-content:space-between;
+      align-items:center;gap:12px;transition:background 0.2s;
+    }
+    .faq-q:hover{background:var(--cream-beige)}
+    .faq-q .faq-arrow{
+      font-size:18px;color:var(--warm-sand);
+      transition:transform 0.25s;flex-shrink:0;
+    }
+    .faq-a{
+      font-family:'Lato',sans-serif;font-size:14px;
+      color:var(--charcoal-mid);line-height:1.7;
+      padding:0 24px;max-height:0;overflow:hidden;
+      transition:max-height 0.3s ease,padding 0.3s ease;
+    }
+    .faq-item.open .faq-a{max-height:200px;padding:16px 24px 20px}
+    .faq-item.open .faq-arrow{transform:rotate(180deg)}
+
+    /* ─── FINAL CTA ─── */
+    .final-cta{
+      background:var(--soft-pink);
+      padding:90px 20px;text-align:center;
+    }
+    .final-cta h2{
+      font-family:'Poppins',sans-serif;font-size:32px;font-weight:300;
+      color:var(--charcoal);margin-bottom:12px;
+    }
+    .final-cta p{
+      font-family:'Lato',sans-serif;font-size:15px;
+      color:var(--charcoal-mid);margin-bottom:40px;
+      max-width:480px;margin-left:auto;margin-right:auto;
+    }
+    .location-note{
+      margin-top:24px;font-family:'Lato',sans-serif;
+      font-size:13px;color:var(--charcoal-mid);
+    }
+    .location-note a{color:var(--charcoal);text-decoration:underline;text-underline-offset:3px}
+
+    /* ─── FOOTER ─── */
+    footer{
+      background:var(--charcoal);
+      color:rgba(255,255,255,0.40);
+      text-align:center;padding:28px 20px;
+      font-family:'Lato',sans-serif;font-size:12px;
+      letter-spacing:0.4px;
+    }
+    footer a{color:var(--cream-beige);text-decoration:none}
+
+    /* ─── STICKY MOBILE ─── */
+    .sticky{
+      display:none;position:fixed;bottom:0;left:0;right:0;
+      z-index:100;background:var(--warm-tan);
+      padding:16px;text-align:center;
+      box-shadow:0 -4px 20px rgba(58,58,58,0.15);
+    }
+    .sticky a{
+      color:var(--charcoal);
+      font-family:'Poppins',sans-serif;
+      font-weight:500;font-size:15px;
+      text-decoration:none;display:block;
+      letter-spacing:0.3px;
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media(max-width:720px){
+      .tx-grid{grid-template-columns:1fr 1fr}
+      .creds-grid{grid-template-columns:1fr 1fr}
+      .rv-grid{grid-template-columns:1fr}
+      .sticky{display:block}
+      body{padding-bottom:58px}
+      .hero-content{padding:90px 20px 70px}
+      .offer-card{padding:36px 24px}
+      .offer-price{font-size:56px}
+    }
+    @media(max-width:460px){
+      .tx-grid{grid-template-columns:1fr}
+      .creds-grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══ HERO ══ -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="eyebrow">Sandy Springs, Georgia · New Patient Offer</div>
+    <h1>Botox from <em>$9 Per Unit</em></h1>
+    <p class="hero-sub">New patients only. 20-unit minimum. Expert injectors. Natural results.</p>
+    <div class="awards-row">
+      <span class="chip">🏆 Best Botox 2024 &amp; 2025</span>
+      <span class="chip">🏆 Best Facial 2024 &amp; 2025</span>
+      <span class="chip">⭐ 979 Five-Star Reviews</span>
+    </div>
+    <div class="hero-cta-wrap">
+      <button class="cta-btn">Book My $9/Unit Appointment</button>
+      <a class="call-btn" href="tel:+14708237842">📞 Call (470) 823-7842</a>
+      <span class="cta-note">New patients only · 20-unit minimum · $180 minimum visit</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TRUST BAR ══ -->
+<div class="trust">
+  <div class="trust-inner">
+    <div class="t-item">
+      <div class="t-num">$9/Unit</div>
+      <div class="t-lbl">New Patient Offer</div>
+    </div>
+    <div class="t-item">
+      <div class="t-num">979</div>
+      <div class="t-lbl">Five-Star Reviews</div>
+    </div>
+    <div class="t-item">
+      <div class="t-num" style="color:var(--cream-beige);font-size:18px">★★★★★</div>
+      <div class="t-lbl">5.0 Rating</div>
+    </div>
+    <div class="t-item">
+      <div class="t-num">4×</div>
+      <div class="t-lbl">Award Winner</div>
+    </div>
+    <div class="t-item">
+      <div class="t-num">$180 Min</div>
+      <div class="t-lbl">First Visit</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ OFFER SECTION ══ -->
+<div class="offer-section">
+  <div class="offer-inner">
+    <div class="section-label">Exclusive Offer</div>
+    <h2 class="section-title">Your First Botox, Your Way.</h2>
+    <p class="section-sub">At $9/unit for new patients, there's never been a better time to experience Skin Social.</p>
+    <div class="offer-card">
+      <div class="offer-price">$9/unit</div>
+      <div class="offer-name">New Patient Botox</div>
+      <div class="offer-fine">20-unit minimum · $180 minimum visit · One per customer</div>
+    </div>
+    <button class="cta-btn">Claim This Offer →</button>
+  </div>
+</div>
+
+<!-- ══ WHAT TO EXPECT ══ -->
+<div class="expect-section">
+  <div class="expect-inner">
+    <div class="section-label">Your Experience</div>
+    <h2 class="section-title">What to Expect</h2>
+    <p class="section-sub" style="margin-bottom:36px">From consultation to glow-up — here's how your visit unfolds.</p>
+    <div class="tx-grid">
+      <div class="tx-card">
+        <div class="tx-icon">🗓️</div>
+        <div class="tx-name">Free Consultation</div>
+        <div class="tx-desc">We'll discuss your goals, answer every question, zero pressure.</div>
+      </div>
+      <div class="tx-card">
+        <div class="tx-icon">💉</div>
+        <div class="tx-name">Expert Injection</div>
+        <div class="tx-desc">Certified NP or PA performs your treatment with precision and artistry.</div>
+      </div>
+      <div class="tx-card">
+        <div class="tx-icon">✨</div>
+        <div class="tx-name">Instant Results</div>
+        <div class="tx-desc">Walk out looking refreshed. Most patients see results within 3–5 days.</div>
+      </div>
+      <div class="tx-card">
+        <div class="tx-icon">💛</div>
+        <div class="tx-name">Love It or We'll Fix It</div>
+        <div class="tx-desc">We stand behind our work. Your satisfaction is guaranteed.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ CREDENTIALS ══ -->
+<div class="creds-section">
+  <div class="creds-inner">
+    <div class="section-label" style="color:var(--warm-tan)">Why Skin Social</div>
+    <h2 style="font-family:'Poppins',sans-serif;font-size:28px;font-weight:300;color:var(--white);margin-bottom:10px;line-height:1.3">Clinical Excellence.<br>A Welcoming Experience.</h2>
+    <p style="font-family:'Lato',sans-serif;font-size:14px;color:rgba(255,255,255,0.55)">We're not a churn-and-burn clinic. Every patient receives a personalized treatment plan from a certified medical professional who takes the time to understand your goals.</p>
+    <div class="creds-grid">
+      <div class="cred-card">
+        <div class="cred-icon">🎓</div>
+        <div class="cred-title">Certified Nurse Practitioners</div>
+        <div class="cred-desc">Board-certified NPs with advanced aesthetic training and hundreds of 5-star reviews by name.</div>
+      </div>
+      <div class="cred-card">
+        <div class="cred-icon">⚕️</div>
+        <div class="cred-title">Physician Assistants</div>
+        <div class="cred-desc">PA-level providers delivering medical-grade treatments with precision and artistry.</div>
+      </div>
+      <div class="cred-card">
+        <div class="cred-icon">✨</div>
+        <div class="cred-title">Licensed Estheticians</div>
+        <div class="cred-desc">Expert skin therapists specializing in advanced facials, peels, and skin health.</div>
+      </div>
+      <div class="cred-card">
+        <div class="cred-icon">🏆</div>
+        <div class="cred-title">Industry-Leading Results</div>
+        <div class="cred-desc">4× award winner. 979 five-star reviews. Sandy Springs' most trusted med spa since 2014.</div>
+      </div>
+    </div>
+    <button class="cta-btn">Book My $9/Unit Appointment →</button>
+  </div>
+</div>
+
+<!-- ══ REVIEWS ══ -->
+<div class="rv-section">
+  <div class="rv-inner">
+    <div class="section-label">Patient Testimonials</div>
+    <h2 class="section-title">979 Reasons to Choose Us</h2>
+    <p class="section-sub">Our providers are praised by name. Here's what patients say about the Skin Social difference.</p>
+    <div class="rv-grid">
+      <div class="rv-card">
+        <div class="rv-stars">★★★★★</div>
+        <p class="rv-text">"Nicola is an absolute artist. My results look so natural — everyone asks what I've done and I say I look well-rested. That's exactly the goal. I won't go anywhere else."</p>
+        <div class="rv-auth">✓ Verified Patient · Google Review</div>
+      </div>
+      <div class="rv-card">
+        <div class="rv-stars">★★★★★</div>
+        <p class="rv-text">"Amanda walked me through every step. I was nervous about Botox and she completely put me at ease. The result is exactly what I wanted — subtle but life-changing."</p>
+        <div class="rv-auth">✓ Verified Patient · Google Review</div>
+      </div>
+      <div class="rv-card">
+        <div class="rv-stars">★★★★★</div>
+        <p class="rv-text">"I've tried other med spas in Atlanta but Skin Social is on a completely different level. The care, the expertise, the atmosphere. Nothing compares. This is my forever place."</p>
+        <div class="rv-auth">✓ Verified Patient · Google Review</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ FAQ ══ -->
+<div class="faq-section">
+  <div class="faq-inner">
+    <div class="section-label">Common Questions</div>
+    <h2 class="section-title" style="margin-bottom:36px">Everything You Need to Know</h2>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        How long does Botox take?
+        <span class="faq-arrow">▾</span>
+      </button>
+      <div class="faq-a">15–20 minutes. Most patients are in and out in under 30 minutes.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Does it hurt?
+        <span class="faq-arrow">▾</span>
+      </button>
+      <div class="faq-a">Most patients describe it as a tiny pinch. We use the finest needles available.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        How long do results last?
+        <span class="faq-arrow">▾</span>
+      </button>
+      <div class="faq-a">Typically 3–4 months. With consistent treatments, results often last longer.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ FINAL CTA ══ -->
+<div class="final-cta">
+  <h2>Claim Your $9/Unit Botox Today.</h2>
+  <p>New patients only. 20-unit minimum. Same-week appointments. Expert providers. Zero pressure.</p>
+  <button class="cta-btn">Book My $9/Unit Appointment →</button>
+  <div class="location-note">📍 5840 Roswell Rd, Sandy Springs, GA &nbsp;·&nbsp; 📞 <a href="tel:+14708237842">(470) 823-7842</a></div>
+</div>
+
+<footer>
+  <span style="color:var(--cream-beige)">Skin Social Med Spa</span> &nbsp;·&nbsp; 5840 Roswell Rd, Sandy Springs, GA &nbsp;·&nbsp; <a href="https://skinsocialspa.com">skinsocialspa.com</a>
+</footer>
+
+<!-- STICKY MOBILE -->
+<div class="sticky">
+  <a href="#" class="blvd-trigger">📅 Book $9/Unit Botox</a>  &nbsp;·&nbsp;  <a href="tel:+14708237842">📞 (470) 823-7842</a>
+</div>
+
+<!-- FAQ SCRIPT -->
+<script>
+  function toggleFaq(btn){
+    var item=btn.parentElement;
+    var isOpen=item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(function(el){el.classList.remove('open')});
+    if(!isOpen){item.classList.add('open')}
+  }
+</script>
+
+<!-- BOULEVARD BOOKING -->
+<script>
+  (function(a){
+    var b={businessId:'23dc87b0-dc5b-4747-a222-f94a44ff0eff'};
+    var c=a.createElement('script');
+    var d=a.querySelector('script');
+    c.src='https://static.joinboulevard.com/injector.min.js';
+    c.async=true;
+    c.onload=function(){
+      try{
+        blvd.init(b);
+        var btns=document.querySelectorAll('.cta-btn');
+        btns.forEach(function(btn){
+          btn.addEventListener('click',function(e){
+            e.preventDefault();
+            try{ blvd.openBooking(); }
+            catch(err){ window.open('https://skinsocialspa.com/#book-now','_blank'); }
+          });
+        });
+        var sticky=document.querySelector('.blvd-trigger');
+        if(sticky){sticky.addEventListener('click',function(e){
+          e.preventDefault();
+          try{ blvd.openBooking(); }
+          catch(err){ window.open('https://skinsocialspa.com/#book-now','_blank'); }
+        });}
+      }catch(e){
+        // If Boulevard fails entirely, let buttons fall back
+      }
+    };
+    c.onerror=function(){
+      // Boulevard failed to load
+    };
+    d.parentNode.insertBefore(c,d);
+  })(document);
+</script>
+</body>
+</html>
