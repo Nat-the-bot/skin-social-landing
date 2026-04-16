@@ -5,6 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Claim $100 Off Botox | New Patient Offer | Skin Social Sandy Springs</title>
   <meta name="description" content="New patients get $100 off their first Botox, Dysport, or lip filler treatment at Skin Social Sandy Springs. Sandy Springs' most-awarded med spa. Minimum $350. Book now." />
+  <!-- Google tag (gtag.js) - GA4 & Google Ads -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HEL1Z848JS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HEL1Z848JS');
+    gtag('config', 'AW-11244919819');
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
@@ -475,6 +484,17 @@
   </section>
 
   <!-- FOOTER -->
+  <script>
+    // Fire Google Ads conversion on all booking button clicks
+    document.querySelectorAll('a[href*="linktr.ee"]').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        if(typeof gtag !== 'undefined'){
+          gtag('event','conversion',{'send_to':'AW-11244919819/6Z_eCKb9kqkZEIu4__Ep','value':350,'currency':'USD'});
+        }
+      });
+    });
+  </script>
+
   <footer>
     <div class="footer-brand">Skin Social Med Spa</div>
     <div>5840 Roswell Rd, Sandy Springs, GA 30328</div>

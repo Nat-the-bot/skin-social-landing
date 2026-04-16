@@ -5,6 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Med Spa Sandy Springs | Skin Social — Botox, Filler & Aesthetic Treatments</title>
   <meta name="description" content="Sandy Springs' #1 rated luxury med spa. Award-winning Botox, filler & skin treatments by certified nurse practitioners & licensed providers. Book your free consultation."/>
+  <!-- Google tag (gtag.js) - GA4 & Google Ads -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HEL1Z848JS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HEL1Z848JS');
+    gtag('config', 'AW-11244919819');
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <style>
@@ -714,6 +723,9 @@
         btns.forEach(function(btn){
           btn.addEventListener('click',function(e){
             e.preventDefault();
+            if(typeof gtag !== 'undefined'){
+              gtag('event','conversion',{'send_to':'AW-11244919819/6Z_eCKb9kqkZEIu4__Ep','value':350,'currency':'USD'});
+            }
             try{ blvd.openBooking(); }
             catch(err){ window.open('https://skinsocialspa.com/#book-now','_blank'); }
           });
