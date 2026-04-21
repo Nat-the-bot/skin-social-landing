@@ -4,14 +4,22 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Botox $9/Unit — New Patient Offer | Skin Social Sandy Springs</title>
-  <meta name="description" content="New patients get Botox from just $9/unit at Skin Social Sandy Springs. Expert injectors, natural results, same-week appointments. 20-unit minimum. Book now."/>
+  <meta name="description" content="Sandy Springs' #1 rated luxury med spa. Award-winning Botox, filler & skin treatments by certified nurse practitioners & licensed providers. Book your free consultation."/>
+  <!-- Google tag (gtag.js) - GA4 & Google Ads -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HEL1Z848JS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HEL1Z848JS');
+    gtag('config', 'AW-11244919819');
+  </script>
   <link rel="preconnect" href="https://static.joinboulevard.com" crossorigin/>
   <link rel="preconnect" href="https://app.joinboulevard.com" crossorigin/>
   <link rel="dns-prefetch" href="https://static.joinboulevard.com"/>
   <link rel="preload" href="https://static.joinboulevard.com/injector.min.js" as="script"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
   <style>
     *{box-sizing:border-box;margin:0;padding:0}
     :root{
@@ -41,27 +49,10 @@
       --radius:16px;
       --radius-sm:10px;
     }
-    html{scroll-behavior:smooth} /* v13-urgency */ /* v13-urgency */
-    
-    .hero .cta-btn{
-      display:inline-block;
-      background:var(--warm-tan);color:var(--charcoal);
-      font-family:'Poppins',sans-serif;font-size:14px;font-weight:500;
-      padding:17px 52px;border-radius:50px;text-decoration:none;
-      border:none;cursor:pointer;letter-spacing:0.8px;
-      box-shadow:0 8px 32px rgba(45,45,45,0.30);
-      transition:transform 0.2s,box-shadow 0.2s,background 0.2s;
-      text-transform:uppercase;
-    }
-    .hero .cta-btn:hover{
-      transform:translateY(-2px);
-      background:#3A3A3A;
-      box-shadow:0 14px 44px rgba(45,45,45,0.40);
-    }
-
+    html{scroll-behavior:smooth}
     body{
       font-family:'Lato','Helvetica Neue',sans-serif;
-      background:var(--bg-warm);
+      background:var(--soft-oat);
       color:var(--text-primary);
       line-height:1.65;
     }
@@ -74,7 +65,7 @@
     }
     .hero-bg{
       position:absolute;inset:0;
-      background:url('images/team6_hero_orig.jpg') center center/cover no-repeat;
+      background:url('images/team6_hero.jpg') center top/cover no-repeat;
       transform:scale(1.02);
       filter:brightness(0.45) saturate(0.80);
     }
@@ -111,7 +102,7 @@
     }
     .hero h1 em{
       font-style:italic;font-weight:400;
-      color:var(--blush);
+      color:var(--soft-pink);
     }
     .hero-sub{
       font-family:'Lato',sans-serif;font-size:17px;font-weight:300;
@@ -134,7 +125,7 @@
     .hero-cta-wrap{display:flex;flex-direction:column;align-items:center;gap:12px}
     .cta-btn{
       display:inline-block;
-      background:#D6BFA9;color:#3A3A3A;
+      background:var(--warm-tan);color:var(--charcoal);
       font-family:'Poppins',sans-serif;font-size:14px;font-weight:500;
       padding:17px 52px;border-radius:50px;text-decoration:none;
       border:none;cursor:pointer;letter-spacing:0.8px;
@@ -144,11 +135,11 @@
     }
     .cta-btn:hover{
       transform:translateY(-2px);
-      background:#1A1A1A;
+      background:#3A3A3A;
       box-shadow:0 14px 44px rgba(45,45,45,0.40);
     }
     .cta-btn.light{
-      background:var(--white);color:var(--dark-mid);
+      background:var(--white);color:var(--charcoal);
     }
     .cta-btn.light:hover{
       background:var(--bg-section);
@@ -176,7 +167,7 @@
     .t-item{text-align:center}
     .t-num{
       font-family:'Poppins',serif;font-size:28px;font-weight:300;
-      color:var(--blush);
+      color:var(--soft-pink);
     }
     .t-lbl{
       font-family:'Lato',sans-serif;font-size:10px;font-weight:400;
@@ -188,7 +179,7 @@
     .section-label{
       font-family:'Poppins',sans-serif;font-size:10px;font-weight:500;
       letter-spacing:3.5px;text-transform:uppercase;
-      color:var(--blush-dark);text-align:center;margin-bottom:12px;
+      color:var(--soft-pink-dark);text-align:center;margin-bottom:12px;
     }
     .section-title{
       font-family:'Poppins',serif;font-size:36px;font-weight:300;
@@ -199,70 +190,62 @@
       color:var(--text-secondary);text-align:center;margin-bottom:48px;
     }
 
-    /* Accent divider */
-    .accent-line{
-      width:40px;height:1px;background:var(--blush);
-      margin:0 auto 20px;
-    }
-
-    /* ─── OFFER SECTION ─── */
-    .offer-section{background:var(--white);padding:80px 20px}
-    .offer-inner{max-width:680px;margin:0 auto;text-align:center}
-    .offer-card{
-      background:var(--white);
-      border:1px solid rgba(212,169,169,0.28);
-      border-radius:var(--radius);
-      padding:48px 40px;
-      margin:40px auto;
+    /* ─── BEFORE/AFTER ─── */
+    .ba-section{background:var(--white);padding:80px 20px}
+    .ba-inner{max-width:940px;margin:0 auto}
+    .ba-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px}
+    .ba-card{
+      border-radius:var(--radius);overflow:hidden;
       box-shadow:var(--shadow);
-      max-width:480px;
-      position:relative;
+      background:var(--white);
+      border:1px solid rgba(212,169,169,0.20);
+      transition:box-shadow 0.25s,transform 0.25s;
     }
-    .offer-card::before{
-      content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);
-      width:60px;height:2px;background:var(--blush);border-radius:2px;
+    .ba-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-3px)}
+    .ba-imgs{display:grid;grid-template-columns:1fr 1fr}
+    .ba-img-wrap{position:relative;overflow:hidden}
+    .ba-img-wrap img{
+      width:100%;height:220px;object-fit:cover;
+      object-position:center top;display:block;
+      transition:transform 0.35s;
     }
-    .offer-price{
-      font-family:'Poppins',serif;
-      font-size:80px;font-weight:300;
-      color:var(--blush-dark);line-height:1;
-      margin-bottom:8px;
-      letter-spacing:-2px;
+    .ba-card:hover .ba-img-wrap img{transform:scale(1.03)}
+    .ba-label{
+      position:absolute;bottom:10px;left:10px;
+      font-family:'Poppins',sans-serif;font-size:9px;
+      font-weight:600;letter-spacing:2px;text-transform:uppercase;
+      padding:4px 10px;border-radius:20px;
     }
-    .offer-name{
-      font-family:'Poppins',serif;
-      font-size:22px;font-weight:400;
-      color:var(--text-primary);margin-bottom:14px;
+    .ba-label.before{background:rgba(45,45,45,0.72);color:rgba(255,255,255,0.92)}
+    .ba-label.after{background:var(--soft-pink);color:var(--charcoal)}
+    .ba-info{
+      padding:18px 20px;
+      border-top:1px solid rgba(212,169,169,0.20);
     }
-    .offer-fine{
-      font-family:'Lato',sans-serif;font-size:11px;
-      color:var(--text-secondary);letter-spacing:0.3px;
+    .ba-treatment{
+      font-family:'Poppins',serif;font-size:18px;
+      font-weight:400;color:var(--text-primary);margin-bottom:3px;
+    }
+    .ba-desc{
+      font-family:'Lato',sans-serif;font-size:12px;
+      color:var(--text-secondary);
     }
 
-    /* ─── WHAT TO EXPECT ─── */
-    .expect-section{background:var(--bg-section);padding:80px 20px}
-    .expect-inner{max-width:880px;margin:0 auto}
-    .tx-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
-    .tx-card{
-      border-radius:var(--radius);padding:26px 22px;
-      background:var(--white);
-      border:1px solid rgba(212,169,169,0.18);
-      transition:box-shadow 0.2s,transform 0.2s;
+    /* ─── GALLERY ─── */
+    .gallery-section{background:var(--soft-oat);padding:80px 20px}
+    .gallery-inner{max-width:940px;margin:0 auto}
+    .masonry{columns:3;gap:14px}
+    .masonry img{
+      width:100%;margin-bottom:14px;
+      border-radius:var(--radius-sm);
+      display:block;break-inside:avoid;
+      transition:opacity 0.2s;
     }
-    .tx-card:hover{box-shadow:var(--shadow);transform:translateY(-2px)}
-    .tx-icon{font-size:24px;margin-bottom:10px;color:var(--blush)}
-    .tx-name{
-      font-family:'Poppins',serif;font-size:19px;font-weight:400;
-      color:var(--text-primary);margin-bottom:6px;
-    }
-    .tx-desc{
-      font-family:'Lato',sans-serif;font-size:13px;
-      color:var(--text-secondary);line-height:1.6;
-    }
+    .masonry img:hover{opacity:0.88}
 
     /* ─── CREDENTIALS ─── */
     .creds-section{
-      background:var(--dark-mid);
+      background:var(--charcoal);
       padding:80px 20px;color:var(--white);
     }
     .creds-inner{max-width:880px;margin:0 auto;text-align:center}
@@ -281,11 +264,32 @@
     .cred-icon{font-size:26px;margin-bottom:10px}
     .cred-title{
       font-family:'Poppins',serif;font-size:17px;font-weight:400;
-      color:var(--blush);margin-bottom:8px;
+      color:var(--soft-pink);margin-bottom:8px;
     }
     .cred-desc{
       font-family:'Lato',sans-serif;font-size:12px;
       color:rgba(255,255,255,0.55);line-height:1.65;
+    }
+
+    /* ─── TREATMENTS ─── */
+    .tx-section{background:var(--bg-section);padding:80px 20px}
+    .tx-inner{max-width:880px;margin:0 auto}
+    .tx-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
+    .tx-card{
+      border-radius:var(--radius);padding:26px 22px;
+      background:var(--white);
+      border:1px solid rgba(212,169,169,0.18);
+      transition:box-shadow 0.2s,transform 0.2s;
+    }
+    .tx-card:hover{box-shadow:var(--shadow);transform:translateY(-2px)}
+    .tx-icon{font-size:24px;margin-bottom:10px;color:var(--soft-pink)}
+    .tx-name{
+      font-family:'Poppins',serif;font-size:19px;font-weight:400;
+      color:var(--text-primary);margin-bottom:6px;
+    }
+    .tx-desc{
+      font-family:'Lato',sans-serif;font-size:13px;
+      color:var(--text-secondary);line-height:1.6;
     }
 
     /* ─── REVIEWS ─── */
@@ -303,7 +307,7 @@
       box-shadow:0 2px 14px rgba(45,45,45,0.05);
     }
     .rv-stars{
-      color:var(--blush);font-size:16px;
+      color:var(--soft-pink);font-size:16px;
       letter-spacing:2px;margin-bottom:14px;
     }
     .rv-text{
@@ -316,36 +320,6 @@
       color:var(--text-secondary);font-weight:700;
       letter-spacing:0.3px;display:flex;align-items:center;gap:6px;
     }
-
-    /* ─── FAQ ─── */
-    .faq-section{background:var(--white);padding:80px 20px}
-    .faq-inner{max-width:680px;margin:0 auto}
-    .faq-item{
-      border:1px solid rgba(212,169,169,0.22);
-      border-radius:var(--radius-sm);
-      margin-bottom:12px;
-      overflow:hidden;
-    }
-    .faq-q{
-      width:100%;background:var(--bg-warm);border:none;
-      padding:20px 24px;text-align:left;cursor:pointer;
-      font-family:'Poppins',serif;font-size:18px;font-weight:400;
-      color:var(--text-primary);display:flex;justify-content:space-between;
-      align-items:center;gap:12px;transition:background 0.2s;
-    }
-    .faq-q:hover{background:var(--bg-section)}
-    .faq-q .faq-arrow{
-      font-size:18px;color:var(--blush);
-      transition:transform 0.25s;flex-shrink:0;
-    }
-    .faq-a{
-      font-family:'Lato',sans-serif;font-size:14px;
-      color:var(--text-secondary);line-height:1.7;
-      padding:0 24px;max-height:0;overflow:hidden;
-      transition:max-height 0.3s ease,padding 0.3s ease;
-    }
-    .faq-item.open .faq-a{max-height:200px;padding:16px 24px 20px}
-    .faq-item.open .faq-arrow{transform:rotate(180deg)}
 
     /* ─── FINAL CTA ─── */
     .final-cta{
@@ -369,18 +343,18 @@
 
     /* ─── FOOTER ─── */
     footer{
-      background:var(--dark-mid);
+      background:var(--charcoal);
       color:rgba(255,255,255,0.40);
       text-align:center;padding:28px 20px;
       font-family:'Lato',sans-serif;font-size:12px;
       letter-spacing:0.4px;
     }
-    footer a{color:var(--blush);text-decoration:none}
+    footer a{color:var(--soft-pink);text-decoration:none}
 
     /* ─── STICKY MOBILE ─── */
     .sticky{
       display:none;position:fixed;bottom:0;left:0;right:0;
-      z-index:100;background:var(--dark-mid);
+      z-index:100;background:var(--charcoal);
       padding:16px;text-align:center;
       box-shadow:0 -4px 20px rgba(45,45,45,0.25);
     }
@@ -392,110 +366,84 @@
       letter-spacing:0.3px;
     }
 
+    /* Accent divider */
+    .accent-line{
+      width:40px;height:1px;background:var(--soft-pink);
+      margin:0 auto 20px;
+    }
+
     /* ─── RESPONSIVE ─── */
     @media(max-width:720px){
-      /* Hero — full team photo, content centered cleanly */
-      .hero{
-        min-height:100svh;
-        align-items:flex-end;
-      }
+      /* Hero — show full team on mobile */
       .hero-bg{
         background-image: url('images/team6_hero_orig.jpg') !important;
-        background-position: center top !important;
-        background-size: cover !important;
+        background-position: center center !important;
+        background-size: contain !important;
         background-color: #2a2a2a;
       }
-      .hero-overlay{
-        background:linear-gradient(
-          to bottom,
-          rgba(20,14,10,0.05) 0%,
-          rgba(20,14,10,0.10) 40%,
-          rgba(20,14,10,0.75) 70%,
-          rgba(20,14,10,0.92) 100%
-        ) !important;
-      }
-      .hero-content{
-        padding:24px 24px 80px;
-        width:100%;
-      }
-      .eyebrow{font-size:9px;letter-spacing:3px;margin-bottom:12px}
-      .hero h1{font-size:36px;margin-bottom:12px}
-      .hero-sub{font-size:14px;margin-bottom:16px}
-      /* Hide chips on mobile — clean look */
-      .awards-row{display:none}
-      /* Single centered CTA button */
-      .hero-cta-wrap{gap:10px;align-items:center}
-      .cta-btn{width:100%;max-width:360px;text-align:center;padding:18px 24px;font-size:14px}
-      .call-btn{width:100%;max-width:360px;text-align:center;padding:13px 24px;font-size:13px}
-      .cta-note{font-size:11px}
-      /* Promo code */
-      .promo-code{display:none}
-      .promo-note{display:none}
-      body{padding-bottom:80px}
+      .hero{min-height:100svh}
+      .hero-content{padding:80px 20px 90px}
+      .hero h1{font-size:clamp(32px,9vw,48px)}
+      .hero-sub{font-size:15px;margin-bottom:28px}
+      .awards-row{gap:6px;margin-bottom:32px}
+      .chip{font-size:11px;padding:6px 14px}
+      .hero-cta-wrap{gap:10px}
+      .cta-btn{width:100%;max-width:340px;text-align:center;padding:18px 24px;font-size:15px}
+      .call-btn{width:100%;max-width:340px;text-align:center;padding:14px 24px}
+      /* Trust bar */
+      .trust-inner{gap:12px 32px}
+      .t-num{font-size:22px}
+      /* Sections */
+      .ba-section{padding:60px 16px}
+      .gallery-section{padding:60px 16px}
+      .creds-section{padding:60px 16px}
+      .tx-section{padding:60px 16px}
+      .rv-section{padding:60px 16px}
+      .final-cta{padding:60px 16px}
+      .section-title{font-size:28px}
       /* Grids */
-      .tx-grid{grid-template-columns:1fr 1fr}
+      .ba-grid{grid-template-columns:1fr}
+      .ba-img-wrap img{height:200px}
+      .masonry{columns:2}
       .creds-grid{grid-template-columns:1fr 1fr}
+      .tx-grid{grid-template-columns:1fr 1fr}
       .rv-grid{grid-template-columns:1fr}
-      /* Offer card */
-      .offer-card{padding:36px 24px}
-      .offer-price{font-size:64px}
+      /* Final CTA button */
+      .final-cta .cta-btn{width:100%;max-width:340px}
       /* Sticky bar */
       .sticky{display:flex;gap:0}
-      .sticky a{flex:1;font-size:14px;padding:4px 0;text-align:center}
+      .sticky a{flex:1;font-size:14px;padding:4px 0}
       .sticky a:first-child{border-right:1px solid rgba(255,255,255,0.15)}
       body{padding-bottom:62px}
-      /* Sections */
-      .section-title{font-size:28px}
     }
     @media(max-width:460px){
+      .masonry{columns:1}
       .tx-grid{grid-template-columns:1fr}
       .creds-grid{grid-template-columns:1fr}
-      .hero h1{font-size:30px}
+      .hero h1{font-size:32px}
+      .cta-btn{padding:16px 20px}
     }
-
-  
-    /* ─── URGENCY BANNER ─── */
-    .urgency-bar{
-      background:var(--charcoal);
-      color:var(--white);
-      text-align:center;
-      padding:10px 20px;
-      font-family:'Poppins',sans-serif;
-      font-size:12px;
-      font-weight:500;
-      letter-spacing:2px;
-      text-transform:uppercase;
-    }
-    .urgency-bar span{
-      color:var(--warm-tan);
-      font-weight:600;
-    }
-
   </style>
 </head>
 <body>
 
 <!-- ══ HERO ══ -->
-<div class="urgency-bar">Only <span>10 New Patient Spots</span> Available This Month at $9/Unit</div>
 <section class="hero">
   <div class="hero-bg"></div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <div class="eyebrow">Sandy Springs, Georgia · Limited Availability</div>
-    <h1>Botox from <em>$9 Per Unit</em></h1>
-    <p class="hero-sub">Limited new patient spots available. 20-unit minimum. Expert injectors. Natural results.</p>
+    <h1>Botox from<br><em>$9 Per Unit</em></h1>
+    <p class="hero-sub">New patient exclusive. 20-unit minimum. Expert injectors. Natural results.</p>
     <div class="awards-row">
-      <span class="chip">🏆 Best Botox 2024 &amp; 2025</span>
-      <span class="chip">🏆 Best Facial 2024 &amp; 2025</span>
+      <span class="chip">🏆 Best Botox 2024 & 2025</span>
+      <span class="chip">🏆 Best Facial 2024, 2025 & 2026</span>
       <span class="chip">⭐ 979 Five-Star Reviews</span>
     </div>
     <div class="hero-cta-wrap">
-      <a class="cta-btn" href="https://dashboard.boulevard.io/booking/businesses/23dc87b0-dc5b-4747-a222-f94a44ff0eff/widget?path=%2Fcart%2Fmenu%2FNeurotoxin%253A%2520Botox%252C%2520Dysport%252C%2520Daxxify%2520and%2520Xeomin&locationId=5f240ba5-42b5-4cac-9090-83e9701eccc6&visitType=SELF_VISIT" target="_blank">Book My $9/Unit Botox Appointment<span style="display:block;font-size:10px;font-weight:400;letter-spacing:3px;opacity:0.75;margin-top:4px;text-transform:uppercase;">Code: FIRSTTIME</span></a>
+      <a class="cta-btn" href="https://dashboard.boulevard.io/booking/businesses/23dc87b0-dc5b-4747-a222-f94a44ff0eff/widget?path=%2Fcart%2Fmenu%2FNeurotoxin%253A%2520Botox%252C%2520Dysport%252C%2520Daxxify%2520and%2520Xeominhttps://skinsocialspa.com/#book-nowlocationId=5f240ba5-42b5-4cac-9090-83e9701eccc6https://skinsocialspa.com/#book-nowvisitType=SELF_VISIT" target="_blank">Book My $9/Unit Botox</a>
       <a class="call-btn" href="tel:+14708237842">📞 Call (470) 823-7842</a>
-      <div class="promo-code">FIRSTTIME</div>
-        <div class="promo-note">Enter at checkout to redeem your $9/unit offer</div>
-      </div>
-      <span class="cta-note">New patients only · 20-unit minimum · Limited spots per month</span>
+      <span class="cta-note">No commitment · Same-week appointments available</span>
     </div>
   </div>
 </section>
@@ -504,72 +452,163 @@
 <div class="trust">
   <div class="trust-inner">
     <div class="t-item">
-      <div class="t-num">$9/Unit</div>
-      <div class="t-lbl">New Patient Offer</div>
-    </div>
-    <div class="t-item">
-      <div class="t-num">979</div>
-      <div class="t-lbl">Five-Star Reviews</div>
+      <div class="t-num">600+</div>
+      <div class="t-lbl">5-Star Reviews</div>
     </div>
     <div class="t-item">
       <div class="t-num" style="font-size:20px">★★★★★</div>
       <div class="t-lbl">5.0 Rating</div>
     </div>
     <div class="t-item">
+      <div class="t-num">500+</div>
+      <div class="t-lbl">Google Reviews</div>
+    </div>
+    <div class="t-item">
       <div class="t-num">4×</div>
       <div class="t-lbl">Award Winner</div>
     </div>
     <div class="t-item">
-      <div class="t-num">$180 Min</div>
-      <div class="t-lbl">First Visit</div>
+      <div class="t-num">10+</div>
+      <div class="t-lbl">Years in Atlanta</div>
     </div>
   </div>
 </div>
 
-<!-- ══ OFFER SECTION ══ -->
-<div class="offer-section">
-  <div class="offer-inner">
-    <div class="section-label">Exclusive Offer</div>
-    <h2 class="section-title">Your First Botox, Your Way.</h2>
+<!-- ══ BEFORE & AFTER ══ -->
+<div class="ba-section">
+  <div class="ba-inner">
+    <div class="section-label">Patient Results</div>
+    <h2 class="section-title">Real Transformations.<br>Real Patients.</h2>
     <div class="accent-line"></div>
-    <p class="section-sub">At $9/unit for new patients — this is our most competitive offer. Spots are limited to 10 new patients per month. Don't miss out.</p>
-    <div class="offer-card">
-      <div class="offer-price">$9/unit</div>
-      <div class="offer-name">New Patient Botox</div>
-      <div class="offer-fine">20-unit minimum · $180 minimum visit · One per customer</div>
+    <p class="section-sub">Every result shown is from a real Skin Social patient. No filters. No stock photos.</p>
+    <div class="ba-grid">
+
+      <div class="ba-card">
+        <div class="ba-imgs">
+          <div class="ba-img-wrap">
+            <img src="images/lip3a_before_lips.jpg" alt="Lip Filler Before — Skin Social" style="height:180px;object-position:center center"/>
+            <span class="ba-label before">BEFORE</span>
+          </div>
+          <div class="ba-img-wrap">
+            <img src="images/lip3a_after_lips.jpg" alt="Lip Filler After — Skin Social" style="height:180px;object-position:center center"/>
+            <span class="ba-label after">AFTER</span>
+          </div>
+        </div>
+        <div class="ba-info">
+          <div class="ba-treatment">Lip Filler</div>
+          <div class="ba-desc">Natural volume, definition & symmetry</div>
+        </div>
+      </div>
+
+      <div class="ba-card">
+        <div class="ba-imgs">
+          <div class="ba-img-wrap">
+            <img src="images/lip3b_before_lips.jpg" alt="Lip Filler Before — Skin Social" style="height:180px;object-position:center center"/>
+            <span class="ba-label before">BEFORE</span>
+          </div>
+          <div class="ba-img-wrap">
+            <img src="images/lip3b_after_lips.jpg" alt="Lip Filler After — Skin Social" style="height:180px;object-position:center center"/>
+            <span class="ba-label after">AFTER</span>
+          </div>
+        </div>
+        <div class="ba-info">
+          <div class="ba-treatment">Lip Filler</div>
+          <div class="ba-desc">Fuller lips with a natural finish</div>
+        </div>
+      </div>
+
+      <div class="ba-card">
+        <div class="ba-imgs">
+          <div class="ba-img-wrap">
+            <img src="images/fb2c_before.jpg" alt="Facial Balancing Before — Skin Social"/>
+            <span class="ba-label before">BEFORE</span>
+          </div>
+          <div class="ba-img-wrap">
+            <img src="images/fb2c_after.jpg" alt="Facial Balancing After — Skin Social"/>
+            <span class="ba-label after">AFTER</span>
+          </div>
+        </div>
+        <div class="ba-info">
+          <div class="ba-treatment">Full Facial Balancing</div>
+          <div class="ba-desc">Botox + filler for total facial harmony</div>
+        </div>
+      </div>
+
+      <div class="ba-card">
+        <div class="ba-imgs">
+          <div class="ba-img-wrap">
+            <img src="images/fb2a_before.jpg" alt="Facial Balancing Before — Skin Social"/>
+            <span class="ba-label before">BEFORE</span>
+          </div>
+          <div class="ba-img-wrap">
+            <img src="images/fb2a_after.jpg" alt="Facial Balancing After — Skin Social"/>
+            <span class="ba-label after">AFTER</span>
+          </div>
+        </div>
+        <div class="ba-info">
+          <div class="ba-treatment">Full Facial Balancing</div>
+          <div class="ba-desc">Natural rejuvenation & contouring</div>
+        </div>
+      </div>
+
+      <div class="ba-card">
+        <div class="ba-imgs">
+          <div class="ba-img-wrap">
+            <img src="images/mn2a_before.jpg" alt="Microneedling Before — Skin Social"/>
+            <span class="ba-label before">BEFORE</span>
+          </div>
+          <div class="ba-img-wrap">
+            <img src="images/mn2a_after.jpg" alt="Microneedling After — Skin Social"/>
+            <span class="ba-label after">AFTER</span>
+          </div>
+        </div>
+        <div class="ba-info">
+          <div class="ba-treatment">Microneedling</div>
+          <div class="ba-desc">Texture, tone & collagen restoration</div>
+        </div>
+      </div>
+
+      <div class="ba-card">
+        <div class="ba-imgs">
+          <div class="ba-img-wrap">
+            <img src="images/ba_agnes_before.jpg" alt="Agnes RF Before — Skin Social"/>
+            <span class="ba-label before">BEFORE</span>
+          </div>
+          <div class="ba-img-wrap">
+            <img src="images/ba_agnes_after.jpg" alt="Agnes RF After — Skin Social"/>
+            <span class="ba-label after">AFTER</span>
+          </div>
+        </div>
+        <div class="ba-info">
+          <div class="ba-treatment">Agnes RF Microneedling</div>
+          <div class="ba-desc">Skin tightening & targeted lifting</div>
+        </div>
+      </div>
+
     </div>
-    <a class="cta-btn" href="https://dashboard.boulevard.io/booking/businesses/23dc87b0-dc5b-4747-a222-f94a44ff0eff/widget?path=%2Fcart%2Fmenu%2FNeurotoxin%253A%2520Botox%252C%2520Dysport%252C%2520Daxxify%2520and%2520Xeomin&locationId=5f240ba5-42b5-4cac-9090-83e9701eccc6&visitType=SELF_VISIT" target="_blank">Claim This Offer →</a>
+    <div style="text-align:center;margin-top:48px">
+      <a class="cta-btn" href="https://dashboard.boulevard.io/booking/businesses/23dc87b0-dc5b-4747-a222-f94a44ff0eff/widget?path=%2Fcart%2Fmenu%2FNeurotoxin%253A%2520Botox%252C%2520Dysport%252C%2520Daxxify%2520and%2520Xeominhttps://skinsocialspa.com/#book-nowlocationId=5f240ba5-42b5-4cac-9090-83e9701eccc6https://skinsocialspa.com/#book-nowvisitType=SELF_VISIT" target="_blank">Book My $9/Unit Botox →</a>
+      <div style="margin-top:14px;font-family:'Lato',sans-serif;font-size:12px;color:var(--text-secondary)">Free consultation · No pressure · Expert guidance on what's right for you</div>
+    </div>
   </div>
 </div>
 
-<!-- ══ WHAT TO EXPECT ══ -->
-<div class="expect-section">
-  <div class="expect-inner">
-    <div class="section-label">Your Experience</div>
-    <h2 class="section-title">What to Expect</h2>
+<!-- ══ TREATMENT GALLERY ══ -->
+<div class="gallery-section">
+  <div class="gallery-inner">
+    <div class="section-label">Inside Skin Social</div>
+    <h2 class="section-title">Where Comfort Meets Expertise</h2>
     <div class="accent-line"></div>
-    <p class="section-sub" style="margin-bottom:36px">From consultation to glow-up — here's how your visit unfolds.</p>
-    <div class="tx-grid">
-      <div class="tx-card">
-        <div class="tx-icon">🗓️</div>
-        <div class="tx-name">Free Consultation</div>
-        <div class="tx-desc">We'll discuss your goals, answer every question, zero pressure.</div>
-      </div>
-      <div class="tx-card">
-        <div class="tx-icon">💉</div>
-        <div class="tx-name">Expert Injection</div>
-        <div class="tx-desc">Certified NP or PA performs your treatment with precision and artistry.</div>
-      </div>
-      <div class="tx-card">
-        <div class="tx-icon">✨</div>
-        <div class="tx-name">Instant Results</div>
-        <div class="tx-desc">Walk out looking refreshed. Most patients see results within 3–5 days.</div>
-      </div>
-      <div class="tx-card">
-        <div class="tx-icon">💛</div>
-        <div class="tx-name">Love It or We'll Fix It</div>
-        <div class="tx-desc">We stand behind our work. Your satisfaction is guaranteed.</div>
-      </div>
+    <p class="section-sub" style="margin-bottom:36px">Our Sandy Springs med spa is designed to feel as good as the results you'll leave with.</p>
+    <div class="masonry">
+      <img src="images/treatment_4.jpg" alt="Botox injection at Skin Social"/>
+      <img src="images/photo1_web.jpg" alt="Skin Social provider"/>
+      <img src="images/treatment_3.jpg" alt="Injectable treatment"/>
+      <img src="images/photo3_web.jpg" alt="Skin Social team"/>
+      <img src="images/treatment_5.jpg" alt="Skin Social treatment room"/>
+      <img src="images/photo2_web.jpg" alt="Skin Social reception"/>
+      <img src="images/treatment_7.jpg" alt="Treatment in progress"/>
+      <img src="images/photo4_web.jpg" alt="Skin Social staff"/>
     </div>
   </div>
 </div>
@@ -577,9 +616,9 @@
 <!-- ══ CREDENTIALS ══ -->
 <div class="creds-section">
   <div class="creds-inner">
-    <div class="section-label" style="color:var(--blush)">Why Skin Social</div>
+    <div class="section-label" style="color:var(--soft-pink)">Why Skin Social</div>
     <h2 style="font-family:'Poppins',serif;font-size:38px;font-weight:300;color:var(--white);margin-bottom:10px;line-height:1.2">Clinical Excellence.<br>A Welcoming Experience.</h2>
-    <div class="accent-line" style="background:var(--blush)"></div>
+    <div class="accent-line" style="background:var(--soft-pink)"></div>
     <p style="font-family:'Lato',sans-serif;font-size:14px;color:rgba(255,255,255,0.55)">We're not a churn-and-burn clinic. Every patient receives a personalized treatment plan from a certified medical professional who takes the time to understand your goals.</p>
     <div class="creds-grid">
       <div class="cred-card">
@@ -600,10 +639,65 @@
       <div class="cred-card">
         <div class="cred-icon">🏆</div>
         <div class="cred-title">Industry-Leading Results</div>
-        <div class="cred-desc">4× award winner. 979 five-star reviews. Sandy Springs' most trusted med spa since 2014.</div>
+        <div class="cred-desc">4× award winner. 600+ five-star reviews. Sandy Springs' most trusted med spa since 2014.</div>
       </div>
     </div>
-    <a class="cta-btn light" href="https://dashboard.boulevard.io/booking/businesses/23dc87b0-dc5b-4747-a222-f94a44ff0eff/widget?path=%2Fcart%2Fmenu%2FNeurotoxin%253A%2520Botox%252C%2520Dysport%252C%2520Daxxify%2520and%2520Xeomin&locationId=5f240ba5-42b5-4cac-9090-83e9701eccc6&visitType=SELF_VISIT" target="_blank">Book My $9/Unit Botox Appointment<span style="display:block;font-size:10px;font-weight:400;letter-spacing:3px;opacity:0.75;margin-top:4px;text-transform:uppercase;">Code: FIRSTTIME</span> →</a>
+    <a class="cta-btn light" href="https://dashboard.boulevard.io/booking/businesses/23dc87b0-dc5b-4747-a222-f94a44ff0eff/widget?path=%2Fcart%2Fmenu%2FNeurotoxin%253A%2520Botox%252C%2520Dysport%252C%2520Daxxify%2520and%2520Xeominhttps://skinsocialspa.com/#book-nowlocationId=5f240ba5-42b5-4cac-9090-83e9701eccc6https://skinsocialspa.com/#book-nowvisitType=SELF_VISIT" target="_blank">Meet Our Team & Book →</a>
+  </div>
+</div>
+
+<!-- ══ TREATMENTS ══ -->
+<div class="tx-section">
+  <div class="tx-inner">
+    <div class="section-label">Our Services</div>
+    <h2 class="section-title">Treatments We're Known For</h2>
+    <div class="accent-line"></div>
+    <p class="section-sub" style="margin-bottom:36px">From subtle enhancements to full facial rejuvenation — we do it all, and we do it beautifully.</p>
+    <div class="tx-grid">
+      <div class="tx-card">
+        <div class="tx-icon">💉</div>
+        <div class="tx-name">Botox & Xeomin</div>
+        <div class="tx-desc">Smooth lines naturally. Results that look like you — just refreshed.</div>
+      </div>
+      <div class="tx-card">
+        <div class="tx-icon">✨</div>
+        <div class="tx-name">Dermal Fillers</div>
+        <div class="tx-desc">Lips, cheeks, jawline & under eyes — subtle, natural volume that transforms.</div>
+      </div>
+      <div class="tx-card">
+        <div class="tx-icon">🌿</div>
+        <div class="tx-name">Organic Filler</div>
+        <div class="tx-desc">Our signature specialty using your body's own biology for natural enhancement.</div>
+      </div>
+      <div class="tx-card">
+        <div class="tx-icon">⚡</div>
+        <div class="tx-name">Agnes RF Microneedling</div>
+        <div class="tx-desc">Targeted radio frequency for tightening, lifting and fat reduction.</div>
+      </div>
+      <div class="tx-card">
+        <div class="tx-icon">🧵</div>
+        <div class="tx-name">PDO Thread Lift</div>
+        <div class="tx-desc">Non-surgical lift and contour with immediate and long-lasting results.</div>
+      </div>
+      <div class="tx-card">
+        <div class="tx-icon">🔬</div>
+        <div class="tx-name">PRP / PRF Therapy</div>
+        <div class="tx-desc">Your body's own growth factors for skin rejuvenation and hair restoration.</div>
+      </div>
+      <div class="tx-card">
+        <div class="tx-icon">💎</div>
+        <div class="tx-name">Microneedling</div>
+        <div class="tx-desc">Collagen induction for texture, tone, scars and hyperpigmentation.</div>
+      </div>
+      <div class="tx-card">
+        <div class="tx-icon">🌊</div>
+        <div class="tx-name">HydraFacial</div>
+        <div class="tx-desc">Deep cleanse, exfoliate, and hydrate. Zero downtime. Immediate glow.</div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:44px">
+      <a class="cta-btn" href="https://dashboard.boulevard.io/booking/businesses/23dc87b0-dc5b-4747-a222-f94a44ff0eff/widget?path=%2Fcart%2Fmenu%2FNeurotoxin%253A%2520Botox%252C%2520Dysport%252C%2520Daxxify%2520and%2520Xeominhttps://skinsocialspa.com/#book-nowlocationId=5f240ba5-42b5-4cac-9090-83e9701eccc6https://skinsocialspa.com/#book-nowvisitType=SELF_VISIT" target="_blank">Book My $9/Unit Botox</a>
+    </div>
   </div>
 </div>
 
@@ -611,7 +705,7 @@
 <div class="rv-section">
   <div class="rv-inner">
     <div class="section-label">Patient Testimonials</div>
-    <h2 class="section-title">979 Reasons to Choose Us</h2>
+    <h2 class="section-title">600+ Reasons to Choose Us</h2>
     <div class="accent-line"></div>
     <p class="section-sub">Our providers are praised by name. Here's what patients say about the Skin Social difference.</p>
     <div class="rv-grid">
@@ -622,7 +716,7 @@
       </div>
       <div class="rv-card">
         <div class="rv-stars">★★★★★</div>
-        <p class="rv-text">"Amanda walked me through every step. I was nervous about Botox and she completely put me at ease. The result is exactly what I wanted — subtle but life-changing."</p>
+        <p class="rv-text">"Amanda walked me through every step. I was nervous about filler and she completely put me at ease. The result is exactly what I wanted — subtle but life-changing."</p>
         <div class="rv-auth">✓ Verified Patient · Google Review</div>
       </div>
       <div class="rv-card">
@@ -634,72 +728,37 @@
   </div>
 </div>
 
-<!-- ══ FAQ ══ -->
-<div class="faq-section">
-  <div class="faq-inner">
-    <div class="section-label">Common Questions</div>
-    <h2 class="section-title" style="margin-bottom:10px">Everything You Need to Know</h2>
-    <div class="accent-line" style="margin-bottom:36px"></div>
-
-    <div class="faq-item">
-      <button class="faq-q" onclick="toggleFaq(this)">
-        How long does Botox take?
-        <span class="faq-arrow">▾</span>
-      </button>
-      <div class="faq-a">15–20 minutes. Most patients are in and out in under 30 minutes.</div>
-    </div>
-
-    <div class="faq-item">
-      <button class="faq-q" onclick="toggleFaq(this)">
-        Does it hurt?
-        <span class="faq-arrow">▾</span>
-      </button>
-      <div class="faq-a">Most patients describe it as a tiny pinch. We use the finest needles available.</div>
-    </div>
-
-    <div class="faq-item">
-      <button class="faq-q" onclick="toggleFaq(this)">
-        How long do results last?
-        <span class="faq-arrow">▾</span>
-      </button>
-      <div class="faq-a">Typically 3–4 months. With consistent treatments, results often last longer.</div>
-    </div>
-  </div>
-</div>
-
 <!-- ══ FINAL CTA ══ -->
 <div class="final-cta">
-  <h2>Claim Your $9/Unit Botox Today.</h2>
+  <h2>Your Best Self Starts Here.</h2>
   <div class="accent-line"></div>
-  <p>Limited to 10 new patient spots per month. Same-week appointments available — but filling fast. Expert providers. Zero pressure.</p>
-  <a class="cta-btn" href="https://dashboard.boulevard.io/booking/businesses/23dc87b0-dc5b-4747-a222-f94a44ff0eff/widget?path=%2Fcart%2Fmenu%2FNeurotoxin%253A%2520Botox%252C%2520Dysport%252C%2520Daxxify%2520and%2520Xeomin&locationId=5f240ba5-42b5-4cac-9090-83e9701eccc6&visitType=SELF_VISIT" target="_blank">Book My $9/Unit Botox Appointment<span style="display:block;font-size:10px;font-weight:400;letter-spacing:3px;opacity:0.75;margin-top:4px;text-transform:uppercase;">Code: FIRSTTIME</span> →</a>
-  <div class="location-note">📍 5840 Roswell Rd, Sandy Springs, GA &nbsp;·&nbsp; 📞 <a href="tel:+14708237842">(470) 823-7842</a></div>
+  <p>Free consultations. Same-week appointments available. Expert guidance with zero pressure. Come see why Sandy Springs trusts Skin Social.</p>
+  <a class="cta-btn" href="https://dashboard.boulevard.io/booking/businesses/23dc87b0-dc5b-4747-a222-f94a44ff0eff/widget?path=%2Fcart%2Fmenu%2FNeurotoxin%253A%2520Botox%252C%2520Dysport%252C%2520Daxxify%2520and%2520Xeominhttps://skinsocialspa.com/#book-nowlocationId=5f240ba5-42b5-4cac-9090-83e9701eccc6https://skinsocialspa.com/#book-nowvisitType=SELF_VISIT" target="_blank">Book My $9/Unit Botox →</a>
+  <div class="location-note">📍 5840 Roswell Rd, Sandy Springs, GA &nbsp;·&nbsp; 📞 (470) 823-7842 &nbsp;·&nbsp; ⭐ 5.0 (600+ reviews) &nbsp;·&nbsp; <a href="https://skinsocialspa.com">skinsocialspa.com</a></div>
 </div>
 
 <footer>
-  <span style="color:var(--blush)">Skin Social Med Spa</span> &nbsp;·&nbsp; 5840 Roswell Rd, Sandy Springs, GA &nbsp;·&nbsp; <a href="https://skinsocialspa.com">skinsocialspa.com</a>
+  <span style="color:var(--soft-pink)">Skin Social Med Spa</span> &nbsp;·&nbsp; 5840 Roswell Rd, Sandy Springs, GA &nbsp;·&nbsp; <a href="https://skinsocialspa.com">skinsocialspa.com</a>
 </footer>
 
 <!-- STICKY MOBILE -->
 <div class="sticky">
-  <a href="https://dashboard.boulevard.io/booking/businesses/23dc87b0-dc5b-4747-a222-f94a44ff0eff/widget?path=%2Fcart%2Fmenu%2FNeurotoxin%253A%2520Botox%252C%2520Dysport%252C%2520Daxxify%2520and%2520Xeomin&locationId=5f240ba5-42b5-4cac-9090-83e9701eccc6&visitType=SELF_VISIT" target="_blank" class="blvd-trigger">Book $9/Unit Botox</a>  &nbsp;·&nbsp;  <a href="tel:+14708237842">📞 (470) 823-7842</a>
+  <a href="https://dashboard.boulevard.io/booking/businesses/23dc87b0-dc5b-4747-a222-f94a44ff0eff/widget?path=%2Fcart%2Fmenu%2FNeurotoxin%253A%2520Botox%252C%2520Dysport%252C%2520Daxxify%2520and%2520Xeominhttps://skinsocialspa.com/#book-nowlocationId=5f240ba5-42b5-4cac-9090-83e9701eccc6https://skinsocialspa.com/#book-nowvisitType=SELF_VISIT" target="_blank">Book $9/Unit Botox</a>  &nbsp;·&nbsp;  <a href="tel:+14708237842">📞 (470) 823-7842</a>
 </div>
-
-<!-- FAQ SCRIPT -->
-<script>
-  function toggleFaq(btn){
-    var item=btn.parentElement;
-    var isOpen=item.classList.contains('open');
-    document.querySelectorAll('.faq-item').forEach(function(el){el.classList.remove('open')});
-    if(!isOpen){item.classList.add('open')}
-  }
-</script>
 
 <!-- BOULEVARD BOOKING -->
 <script>
+  // Preconnect hint injected via JS for early connection
+  (function(){
+    var pre=document.createElement('link');
+    pre.rel='preconnect';pre.href='https://static.joinboulevard.com';pre.crossOrigin='anonymous';
+    document.head.appendChild(pre);
+    var pre2=document.createElement('link');
+    pre2.rel='dns-prefetch';pre2.href='https://app.joinboulevard.com';
+    document.head.appendChild(pre2);
+  })();
   (function(a){
     var b={businessId:'23dc87b0-dc5b-4747-a222-f94a44ff0eff',locationId:'5f240ba5-42b5-4cac-9090-83e9701eccc6'};
-    var BLVD_URL='https://dashboard.boulevard.io/booking/businesses/23dc87b0-dc5b-4747-a222-f94a44ff0eff/widget?path=%2Fcart%2Fmenu%2FNeurotoxin%253A%2520Botox%252C%2520Dysport%252C%2520Daxxify%2520and%2520Xeomin&locationId=5f240ba5-42b5-4cac-9090-83e9701eccc6&visitType=SELF_VISIT';
     var c=a.createElement('script');
     var d=a.querySelector('script');
     c.src='https://static.joinboulevard.com/injector.min.js';
@@ -711,26 +770,33 @@
         btns.forEach(function(btn){
           btn.addEventListener('click',function(e){
             e.preventDefault();
+            if(typeof gtag !== 'undefined'){
+              gtag('event','conversion',{'send_to':'AW-11244919819/6Z_eCKb9kqkZEIu4__Ep','value':350,'currency':'USD'});
+            }
             if(typeof blvd !== 'undefined'){
               try{ blvd.openBooking(); }
-              catch(err){ window.open(BLVD_URL,'_blank'); }
-            } else { window.open(BLVD_URL,'_blank'); }
+              catch(err){ window.open('https://dashboard.boulevard.io/booking/businesses/23dc87b0-dc5b-4747-a222-f94a44ff0eff/widget?locationId=5f240ba5-42b5-4cac-9090-83e9701eccc6https://dashboard.boulevard.io/booking/businesses/23dc87b0-dc5b-4747-a222-f94a44ff0eff/widget?path=%2Fcart%2Fmenu%2FNeurotoxin%253A%2520Botox%252C%2520Dysport%252C%2520Daxxify%2520and%2520Xeomin&locationId=5f240ba5-42b5-4cac-9090-83e9701eccc6&visitType=SELF_VISITvisitType=SELF_VISIT','_blank'); }
+            } else {
+              window.open('https://dashboard.boulevard.io/booking/businesses/23dc87b0-dc5b-4747-a222-f94a44ff0eff/widget?locationId=5f240ba5-42b5-4cac-9090-83e9701eccc6https://dashboard.boulevard.io/booking/businesses/23dc87b0-dc5b-4747-a222-f94a44ff0eff/widget?path=%2Fcart%2Fmenu%2FNeurotoxin%253A%2520Botox%252C%2520Dysport%252C%2520Daxxify%2520and%2520Xeomin&locationId=5f240ba5-42b5-4cac-9090-83e9701eccc6&visitType=SELF_VISITvisitType=SELF_VISIT','_blank');
+            }
           });
         });
-        var sticky=document.querySelector('.blvd-trigger');
+        var sticky=document.querySelector('.sticky a:first-child');
         if(sticky){sticky.addEventListener('click',function(e){
           e.preventDefault();
           if(typeof blvd !== 'undefined'){
             try{ blvd.openBooking(); }
-            catch(err){ window.open(BLVD_URL,'_blank'); }
-          } else { window.open(BLVD_URL,'_blank'); }
+            catch(err){ window.open('https://dashboard.boulevard.io/booking/businesses/23dc87b0-dc5b-4747-a222-f94a44ff0eff/widget?locationId=5f240ba5-42b5-4cac-9090-83e9701eccc6https://dashboard.boulevard.io/booking/businesses/23dc87b0-dc5b-4747-a222-f94a44ff0eff/widget?path=%2Fcart%2Fmenu%2FNeurotoxin%253A%2520Botox%252C%2520Dysport%252C%2520Daxxify%2520and%2520Xeomin&locationId=5f240ba5-42b5-4cac-9090-83e9701eccc6&visitType=SELF_VISITvisitType=SELF_VISIT','_blank'); }
+          } else {
+            window.open('https://dashboard.boulevard.io/booking/businesses/23dc87b0-dc5b-4747-a222-f94a44ff0eff/widget?locationId=5f240ba5-42b5-4cac-9090-83e9701eccc6https://dashboard.boulevard.io/booking/businesses/23dc87b0-dc5b-4747-a222-f94a44ff0eff/widget?path=%2Fcart%2Fmenu%2FNeurotoxin%253A%2520Botox%252C%2520Dysport%252C%2520Daxxify%2520and%2520Xeomin&locationId=5f240ba5-42b5-4cac-9090-83e9701eccc6&visitType=SELF_VISITvisitType=SELF_VISIT','_blank');
+          }
         });}
       }catch(e){
-        // If Boulevard fails entirely, let buttons fall back
+        // If Boulevard fails entirely, let buttons work as normal links
       }
     };
     c.onerror=function(){
-      // Boulevard failed to load
+      // Boulevard failed to load — buttons fall back to href naturally
     };
     d.parentNode.insertBefore(c,d);
   })(document);
