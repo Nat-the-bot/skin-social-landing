@@ -762,7 +762,7 @@
     var c=a.createElement('script');
     var d=a.querySelector('script');
     c.src='https://static.joinboulevard.com/injector.min.js';
-    c.async=false; // load synchronously for faster widget init
+    c.async=true;
     c.onload=function(){
       try{
         blvd.init(b);
@@ -773,15 +773,23 @@
             if(typeof gtag !== 'undefined'){
               gtag('event','conversion',{'send_to':'AW-11244919819/6Z_eCKb9kqkZEIu4__Ep','value':350,'currency':'USD'});
             }
-            try{ blvd.openBooking(); }
-            catch(err){ window.open('https://skinsocialspa.com/#book-now','_blank'); }
+            if(typeof blvd !== 'undefined'){
+              try{ blvd.openBooking(); }
+              catch(err){ window.open('https://go.joinboulevard.com/skin-social-med-spa-sandy-springs-ga/book','_blank'); }
+            } else {
+              window.open('https://go.joinboulevard.com/skin-social-med-spa-sandy-springs-ga/book','_blank');
+            }
           });
         });
         var sticky=document.querySelector('.sticky a:first-child');
         if(sticky){sticky.addEventListener('click',function(e){
           e.preventDefault();
-          try{ blvd.openBooking(); }
-          catch(err){ window.open('https://skinsocialspa.com/#book-now','_blank'); }
+          if(typeof blvd !== 'undefined'){
+            try{ blvd.openBooking(); }
+            catch(err){ window.open('https://go.joinboulevard.com/skin-social-med-spa-sandy-springs-ga/book','_blank'); }
+          } else {
+            window.open('https://go.joinboulevard.com/skin-social-med-spa-sandy-springs-ga/book','_blank');
+          }
         });}
       }catch(e){
         // If Boulevard fails entirely, let buttons work as normal links
