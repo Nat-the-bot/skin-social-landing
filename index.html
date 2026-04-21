@@ -61,7 +61,7 @@
     }
     .hero-bg{
       position:absolute;inset:0;
-      background:url('images/team6_hero.jpg') center center/cover no-repeat;
+      background:url('images/team6_hero.jpg') center top/cover no-repeat;
       transform:scale(1.02);
       filter:brightness(0.45) saturate(0.80);
     }
@@ -370,7 +370,13 @@
 
     /* ─── RESPONSIVE ─── */
     @media(max-width:720px){
-      /* Hero */
+      /* Hero — show full team on mobile */
+      .hero-bg{
+        background-image: url('images/team6_hero_orig.jpg') !important;
+        background-position: center center !important;
+        background-size: contain !important;
+        background-color: #2a2a2a;
+      }
       .hero{min-height:100svh}
       .hero-content{padding:80px 20px 90px}
       .hero h1{font-size:clamp(32px,9vw,48px)}
