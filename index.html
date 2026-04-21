@@ -290,6 +290,10 @@ footer a{color:var(--tan);text-decoration:none}
           </div>
         </div>
         <div class="form-group">
+          <label for="femail">Email Address</label>
+          <input type="email" id="femail" name="email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-group">
           <label for="fservice">I'm Interested In</label>
           <select id="fservice" name="service" required>
             <option value="" disabled selected>Select a treatment</option>
@@ -435,6 +439,7 @@ footer a{color:var(--tan);text-decoration:none}
     gd.append('entry.1442050862',data.get('name')||'');
     gd.append('entry.802955561',data.get('phone')||'');
     gd.append('entry.1422360635',data.get('service')||'');
+    gd.append('entry.793711658',data.get('email')||'');
     fetch('https://docs.google.com/forms/d/e/1FAIpQLSdxWAU0qn_XAsNgJUoa-_Y5Z5x9M9L_jzbuiCoC-l3w2JUJTA/formResponse',{method:'POST',body:gd,mode:'no-cors'});
   });
 </script>
