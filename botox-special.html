@@ -394,24 +394,43 @@
 
     /* ─── RESPONSIVE ─── */
     @media(max-width:720px){
-      /* Hero — show full team */
+      /* Hero — full team photo, content centered cleanly */
+      .hero{
+        min-height:100svh;
+        align-items:flex-end;
+      }
       .hero-bg{
         background-image: url('images/team6_hero_orig.jpg') !important;
-        background-position: center center !important;
-        background-size: contain !important;
+        background-position: center top !important;
+        background-size: cover !important;
         background-color: #2a2a2a;
       }
-      .hero{min-height:100svh}
-      .hero-content{padding:80px 20px 90px}
-      .hero h1{font-size:clamp(32px,9vw,48px)}
-      .hero-sub{font-size:15px;margin-bottom:28px}
-      .awards-row{gap:5px;margin-bottom:24px;flex-direction:row;justify-content:center;flex-wrap:nowrap}
-      .chip{font-size:9.5px;padding:5px 10px;white-space:nowrap;letter-spacing:0.2px}
-      .promo-code{font-size:20px}
+      .hero-overlay{
+        background:linear-gradient(
+          to bottom,
+          rgba(20,14,10,0.05) 0%,
+          rgba(20,14,10,0.10) 40%,
+          rgba(20,14,10,0.75) 70%,
+          rgba(20,14,10,0.92) 100%
+        ) !important;
+      }
+      .hero-content{
+        padding:24px 24px 80px;
+        width:100%;
+      }
+      .eyebrow{font-size:9px;letter-spacing:3px;margin-bottom:12px}
+      .hero h1{font-size:36px;margin-bottom:12px}
+      .hero-sub{font-size:14px;margin-bottom:16px}
+      /* Hide chips on mobile — clean look */
+      .awards-row{display:none}
+      /* Single centered CTA button */
+      .hero-cta-wrap{gap:10px;align-items:center}
+      .cta-btn{width:100%;max-width:360px;text-align:center;padding:18px 24px;font-size:14px}
+      .call-btn{width:100%;max-width:360px;text-align:center;padding:13px 24px;font-size:13px}
+      .cta-note{font-size:11px}
+      /* Promo code */
+      .promo-code{font-size:22px}
       .promo-note{font-size:11px}
-      .hero-cta-wrap{gap:10px}
-      .cta-btn{width:100%;max-width:320px;text-align:center;padding:16px 20px;font-size:14px}
-      .call-btn{width:100%;max-width:320px;text-align:center;padding:12px 20px}
       /* Grids */
       .tx-grid{grid-template-columns:1fr 1fr}
       .creds-grid{grid-template-columns:1fr 1fr}
@@ -421,7 +440,7 @@
       .offer-price{font-size:64px}
       /* Sticky bar */
       .sticky{display:flex;gap:0}
-      .sticky a{flex:1;font-size:14px;padding:4px 0}
+      .sticky a{flex:1;font-size:14px;padding:4px 0;text-align:center}
       .sticky a:first-child{border-right:1px solid rgba(255,255,255,0.15)}
       body{padding-bottom:62px}
       /* Sections */
@@ -430,8 +449,7 @@
     @media(max-width:460px){
       .tx-grid{grid-template-columns:1fr}
       .creds-grid{grid-template-columns:1fr}
-      .hero h1{font-size:32px}
-      .cta-btn{padding:16px 20px}
+      .hero h1{font-size:30px}
     }
 
   
