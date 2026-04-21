@@ -858,9 +858,12 @@
   document.getElementById('leadForm').addEventListener('submit', function(e) {
     e.preventDefault();
     var form = this;
+    var data = new FormData(form);
+
+    // 1. Submit to Formspree (email notification)
     fetch(form.action, {
       method: 'POST',
-      body: new FormData(form),
+      body: data,
       headers: { 'Accept': 'application/json' }
     }).then(function(r) {
       if(r.ok) {
@@ -868,6 +871,17 @@
         document.getElementById('formSuccess').style.display = 'block';
         if(typeof gtag !== 'undefined') gtag('event','lead_form_submit',{'send_to':'AW-11244919819'});
       }
+    });
+
+    // 2. Also POST to Google Form silently (feeds Aesthetix CRM integration)
+    var gdata = new FormData();
+    gdata.append('entry.1442050862', data.get('name') || '');
+    gdata.append('entry.802955561', data.get('phone') || '');
+    gdata.append('entry.1422360635', data.get('service') || '');
+    fetch('https://docs.google.com/forms/d/e/1FAIpQLSdxWAU0qn_XAsNgJUoa-_Y5Z5x9M9L_jzbuiCoC-l3w2JUJTA/formResponse', {
+      method: 'POST',
+      body: gdata,
+      mode: 'no-cors'
     });
   });
 </script>
