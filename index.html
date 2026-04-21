@@ -61,7 +61,7 @@
     }
     .hero-bg{
       position:absolute;inset:0;
-      background:url('images/team6_hero.jpg') center 22%/cover no-repeat;
+      background:url('images/team6_hero.jpg') center center/cover no-repeat;
       transform:scale(1.02);
       filter:brightness(0.45) saturate(0.80);
     }
@@ -370,20 +370,48 @@
 
     /* ─── RESPONSIVE ─── */
     @media(max-width:720px){
+      /* Hero */
+      .hero{min-height:100svh}
+      .hero-content{padding:80px 20px 90px}
+      .hero h1{font-size:clamp(32px,9vw,48px)}
+      .hero-sub{font-size:15px;margin-bottom:28px}
+      .awards-row{gap:6px;margin-bottom:32px}
+      .chip{font-size:11px;padding:6px 14px}
+      .hero-cta-wrap{gap:10px}
+      .cta-btn{width:100%;max-width:340px;text-align:center;padding:18px 24px;font-size:15px}
+      .call-btn{width:100%;max-width:340px;text-align:center;padding:14px 24px}
+      /* Trust bar */
+      .trust-inner{gap:12px 32px}
+      .t-num{font-size:22px}
+      /* Sections */
+      .ba-section{padding:60px 16px}
+      .gallery-section{padding:60px 16px}
+      .creds-section{padding:60px 16px}
+      .tx-section{padding:60px 16px}
+      .rv-section{padding:60px 16px}
+      .final-cta{padding:60px 16px}
+      .section-title{font-size:28px}
+      /* Grids */
       .ba-grid{grid-template-columns:1fr}
-      .ba-img-wrap img{height:180px}
+      .ba-img-wrap img{height:200px}
       .masonry{columns:2}
       .creds-grid{grid-template-columns:1fr 1fr}
       .tx-grid{grid-template-columns:1fr 1fr}
       .rv-grid{grid-template-columns:1fr}
-      .sticky{display:block}
-      body{padding-bottom:58px}
-      .hero-content{padding:90px 20px 70px}
+      /* Final CTA button */
+      .final-cta .cta-btn{width:100%;max-width:340px}
+      /* Sticky bar */
+      .sticky{display:flex;gap:0}
+      .sticky a{flex:1;font-size:14px;padding:4px 0}
+      .sticky a:first-child{border-right:1px solid rgba(255,255,255,0.15)}
+      body{padding-bottom:62px}
     }
     @media(max-width:460px){
       .masonry{columns:1}
       .tx-grid{grid-template-columns:1fr}
       .creds-grid{grid-template-columns:1fr}
+      .hero h1{font-size:32px}
+      .cta-btn{padding:16px 20px}
     }
   </style>
 </head>
