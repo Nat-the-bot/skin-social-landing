@@ -183,6 +183,23 @@ body{font-family:'Lato',sans-serif;color:var(--charcoal);background:var(--white)
 footer{background:#1a1a1a;color:rgba(255,255,255,0.3);text-align:center;padding:24px 20px;font-size:11px;letter-spacing:0.3px}
 footer a{color:var(--tan);text-decoration:none}
 
+
+/* ── BEFORE/AFTER ── */
+.ba-section{background:var(--white);padding:72px 20px}
+.ba-inner{max-width:860px;margin:0 auto}
+.ba-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:40px}
+.ba-card{border-radius:16px;overflow:hidden;box-shadow:0 2px 20px rgba(58,58,58,0.08)}
+.ba-imgs{display:grid;grid-template-columns:1fr 1fr}
+.ba-img-wrap{position:relative;overflow:hidden}
+.ba-img-wrap img{width:100%;height:220px;object-fit:cover;object-position:center top;display:block}
+.ba-tag{position:absolute;bottom:8px;left:8px;font-family:'Poppins',sans-serif;font-size:9px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:4px 10px;border-radius:20px}
+.ba-tag.before{background:rgba(40,40,40,0.75);color:rgba(255,255,255,0.9)}
+.ba-tag.after{background:var(--pink);color:var(--charcoal)}
+.ba-info{padding:14px 18px;background:var(--oat)}
+.ba-treatment{font-family:'Poppins',sans-serif;font-size:15px;font-weight:500;color:var(--charcoal);margin-bottom:3px}
+.ba-desc{font-size:12px;color:var(--mid)}
+@media(max-width:720px){.ba-grid{grid-template-columns:1fr}.ba-img-wrap img{height:180px}}
+
 /* ── STICKY BAR ── */
 .sticky{
   display:none;position:fixed;bottom:0;left:0;right:0;z-index:100;
@@ -268,8 +285,7 @@ footer a{color:var(--tan);text-decoration:none}
     <div class="t-item"><div class="t-num">★★★★★</div><div class="t-lbl">5.0 Rating</div></div>
     <div class="t-item"><div class="t-num">3×</div><div class="t-lbl">Best Facial Award</div></div>
     <div class="t-item"><div class="t-num">2×</div><div class="t-lbl">Best Botox Award</div></div>
-    <div class="t-item"><div class="t-num">0</div><div class="t-lbl">Frozen Results</div></div>
-  </div>
+      </div>
 </div>
 
 <!-- ══ PROOF STRIP ══ -->
@@ -349,6 +365,50 @@ footer a{color:var(--tan);text-decoration:none}
         <div class="rv-stars">★★★★★</div>
         <p class="rv-text">"I've tried other med spas in Atlanta but Skin Social is on a completely different level. The care, the expertise, the atmosphere. Nothing compares. This is my forever place."</p>
         <div class="rv-auth">✓ Rita R. · Google Review</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══ BEFORE/AFTER ══ -->
+<div class="ba-section">
+  <div class="ba-inner">
+    <div class="section-label" style="text-align:center">Real Results</div>
+    <h2 class="section-title" style="text-align:center">Our Work Speaks for Itself</h2>
+    <div class="accent-line"></div>
+    <div class="ba-grid">
+      <div class="ba-card">
+        <div class="ba-imgs">
+          <div class="ba-img-wrap">
+            <img src="images/ba_lip_before.jpg" alt="Before filler treatment" loading="lazy">
+            <span class="ba-tag before">Before</span>
+          </div>
+          <div class="ba-img-wrap">
+            <img src="images/ba_lip_after.jpg" alt="After filler treatment" loading="lazy">
+            <span class="ba-tag after">After</span>
+          </div>
+        </div>
+        <div class="ba-info">
+          <div class="ba-treatment">Lip & Cheek Filler</div>
+          <div class="ba-desc">Natural volume & definition — subtle but transformative</div>
+        </div>
+      </div>
+      <div class="ba-card">
+        <div class="ba-imgs">
+          <div class="ba-img-wrap">
+            <img src="images/fb2a_before.jpg" alt="Before skin treatment" loading="lazy">
+            <span class="ba-tag before">Before</span>
+          </div>
+          <div class="ba-img-wrap">
+            <img src="images/fb2a_after.jpg" alt="After skin treatment" loading="lazy">
+            <span class="ba-tag after">After</span>
+          </div>
+        </div>
+        <div class="ba-info">
+          <div class="ba-treatment">Skin Treatment</div>
+          <div class="ba-desc">Clearer, smoother, more radiant skin</div>
+        </div>
       </div>
     </div>
   </div>
