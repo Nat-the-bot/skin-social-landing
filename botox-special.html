@@ -218,7 +218,7 @@ footer a{color:var(--tan);text-decoration:none}
 
 /* ── STICKY BAR ── */
 .sticky{
-  display:none;position:fixed;bottom:0;left:0;right:0;z-index:100;
+  display:block;position:fixed;bottom:0;left:0;right:0;z-index:100;
   background:var(--charcoal);padding:14px 20px;
   box-shadow:0 -4px 20px rgba(0,0,0,0.25);
 }
@@ -262,7 +262,6 @@ footer a{color:var(--tan);text-decoration:none}
   .offer-price{font-size:56px}
   .rv-grid{grid-template-columns:1fr}
   .why-grid{grid-template-columns:1fr 1fr}
-  .sticky{display:block}
   body{padding-bottom:72px}
 }
 @media(max-width:460px){
@@ -319,17 +318,17 @@ footer a{color:var(--tan);text-decoration:none}
     <div class="offer-label">New Patient Exclusive</div>
     <div class="offer-price">$9</div>
     <div class="offer-unit">per unit · Botox, Dysport, Daxxify & Xeomin</div>
-    <p class="offer-desc">New patients only. 20-unit minimum. Award-winning injectors. Natural results. Zero pressure consultation. Only 10 spots available each month.</p>
+    <p class="offer-desc">New patients only · <strong>20-unit minimum (total $180+)</strong><br>Award-winning injectors. Natural results. Zero pressure. Only 10 spots available each month.</p>
   </div>
 </div>
 
 <!-- ══ LEAD CAPTURE FORM ══ -->
 <div class="form-section">
   <div class="form-inner">
-    <div class="section-label">Claim Your Spot</div>
-    <h2 class="section-title">Reserve Your $9/Unit Appointment</h2>
+    <div class="section-label">Prefer a Callback?</div>
+    <h2 class="section-title">Have Us Reach Out to You</h2>
     <div class="accent-line"></div>
-    <p class="section-sub">Tell us what you're looking for. We'll reach out within a few hours to confirm your spot before it's gone.</p>
+    <p class="section-sub">Not ready to book online? Leave your info and we'll reach out within a few hours to confirm your $9/unit spot before it's gone.</p>
     <div class="form-card">
       <div class="form-success" id="formSuccess">
         <div class="s-icon">✨</div>
@@ -367,7 +366,7 @@ footer a{color:var(--tan);text-decoration:none}
             <option value="Not sure — want a consultation">Not sure — want a consultation</option>
           </select>
         </div>
-        <button type="submit" class="btn-submit">Connect With Our Team →</button>
+        <button type="submit" class="btn-submit">Send My Info — I'd Love a Callback →</button>
         <p class="form-privacy">🔒 Private & confidential. We never share your info.</p>
       </form>
     </div>
@@ -485,8 +484,8 @@ footer a{color:var(--tan);text-decoration:none}
 <!-- ══ STICKY BAR ══ -->
 <div class="sticky">
   <div class="sticky-inner">
-    <a href="#" class="sticky-book cta-btn">Claim $9/Unit Botox</a>
-    <a href="tel:+14708237842" class="sticky-call">📞 Call Us</a>
+    <a href="#" class="sticky-book cta-btn">📅 Claim $9/Unit Botox</a>
+    <a href="tel:+14708237842" class="sticky-call">📞 (470) 823-7842</a>
   </div>
 </div>
 
