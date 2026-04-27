@@ -4,6 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Free Consultation + $75 Credit | Skin Social</title>
+  <!-- Google Ads Conversion Tracking -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11244919819"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-11244919819');
+    // Fire conversion on Aesthetix form iframe submission
+    window.addEventListener('message', function(e) {
+      if (e.data && typeof e.data === 'string' && e.data.includes('submit')) {
+        gtag('event', 'conversion', {'send_to': 'AW-11244919819/6Z_eCKb9kqkZEIu4__Ep'});
+      }
+    });
+  </script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Lato:wght@300;400;700&display=swap');
     * { box-sizing: border-box; margin: 0; padding: 0; }
