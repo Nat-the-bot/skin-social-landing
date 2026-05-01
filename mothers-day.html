@@ -707,6 +707,38 @@ p{margin:0!important;}
       .btn.btn-lg { padding: 14px 28px !important; font-size: 13px !important; }
     }
 
+  
+    .above-fold { background:var(--oat); padding:28px 20px 32px; text-align:center; }
+    .above-fold-inner { max-width:960px; margin:0 auto; }
+    .af-eyebrow { font-family:'Poppins',sans-serif; font-size:10px; font-weight:600; letter-spacing:3px; text-transform:uppercase; color:var(--sand); margin-bottom:8px; }
+    .af-title { font-family:'Poppins',sans-serif; font-size:clamp(26px,5vw,44px); font-weight:300; line-height:1.1; color:var(--charcoal); margin-bottom:20px; letter-spacing:-0.5px; }
+    .af-title em { font-style:italic; color:var(--sand); }
+    .af-offers { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:20px; text-align:left; }
+    .af-offer-main { background:var(--white); border:2px solid var(--tan); border-radius:16px; padding:20px 16px; text-align:center; }
+    .af-pct { font-family:'Poppins',sans-serif; font-size:clamp(60px,10vw,80px); font-weight:700; color:var(--tan); line-height:1; letter-spacing:-2px; }
+    .af-pct-label { font-family:'Poppins',sans-serif; font-size:13px; font-weight:600; color:var(--charcoal); margin-bottom:4px; }
+    .af-pct-sub { font-size:11px; color:var(--mid); margin-bottom:10px; }
+    .af-tags { display:flex; flex-wrap:wrap; gap:4px; justify-content:center; }
+    .af-tag { background:var(--oat); border:1px solid var(--cream); font-family:'Poppins',sans-serif; font-size:10px; font-weight:500; color:var(--charcoal); padding:3px 9px; border-radius:100px; }
+    .af-gifts { background:var(--charcoal); border-radius:16px; padding:16px 14px; }
+    .af-gifts-label { font-family:'Poppins',sans-serif; font-size:10px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:var(--tan); margin-bottom:10px; text-align:center; }
+    .af-gift-row { display:flex; flex-direction:column; gap:7px; }
+    .af-gift { background:rgba(255,255,255,0.07); border:1px solid rgba(255,255,255,0.1); border-radius:10px; padding:9px 12px; display:flex; align-items:center; justify-content:space-between; position:relative; overflow:hidden; }
+    .af-gift--best { background:var(--tan) !important; border-color:var(--tan) !important; }
+    .af-gift-ribbon { position:absolute; top:0; right:0; background:var(--charcoal); color:var(--white); font-family:'Poppins',sans-serif; font-size:8px; font-weight:700; letter-spacing:1px; text-transform:uppercase; padding:3px 8px; border-radius:0 10px 0 8px; }
+    .af-gift-pay { font-family:'Poppins',sans-serif; font-size:20px; font-weight:600; color:var(--white); min-width:48px; }
+    .af-gift--best .af-gift-pay { color:var(--charcoal); }
+    .af-gift-gets { font-size:11px; color:rgba(255,255,255,0.5); flex:1; padding:0 8px; }
+    .af-gift--best .af-gift-gets { color:rgba(58,58,58,0.65); }
+    .af-gift-badge { font-family:'Poppins',sans-serif; font-size:9px; font-weight:700; background:var(--pink); color:var(--charcoal); padding:3px 7px; border-radius:100px; white-space:nowrap; }
+    .af-gift--best .af-gift-badge { background:var(--charcoal); color:var(--white); }
+    .af-cta { margin-bottom:14px; }
+    .af-phone { display:block; margin-top:8px; font-size:12px; color:var(--mid); }
+    .af-phone a { color:var(--charcoal); text-decoration:none; }
+    .af-proof { display:flex; justify-content:center; flex-wrap:wrap; gap:5px 14px; font-size:11px; color:var(--mid); }
+    .af-dot { color:var(--cream); }
+    @media(max-width:600px) { .af-offers { grid-template-columns:1fr; } .above-fold { padding:20px 16px 24px; } }
+
   </style>
 </head>
 <body>
@@ -728,99 +760,70 @@ p{margin:0!important;}
     >Book Now</a>
   </nav>
 
-  <!-- 3. Hero — Split Layout -->
-  <section class="hero">
-    <div class="hero-left">
-      <div class="hero-content">
-        <h1 class="hero-headline">
-          Treat Mom.<br>
-          <em>Treat Yourself.</em>
-        </h1>
-        <div class="hero-cta-wrap">
-          <a
-            href="https://dashboard.boulevard.io/booking/businesses/23dc87b0-dc5b-4747-a222-f94a44ff0eff/widget"
-            target="_blank"
-            rel="noopener"
-            class="btn btn-lg"
-            onclick="fbq('track','InitiateCheckout')"
-          >Book Our Appointments &rarr;</a>
-        </div>
-      </div>
-    </div>
-    <div class="hero-right" style="background-image:url('https://skinsocialspa.com/wp-content/uploads/2026/05/skin-social-team-hero-1.jpg');background-size:cover;background-position:center top;min-height:100vh;"></div>
-  </section>
+  <!-- ABOVE FOLD: Headline + All Offers -->
+  <section class="above-fold">
+    <div class="above-fold-inner">
 
-  <!-- 4. Gift Cards Section (moved above fold) -->
-  <section class="gift-section gift-section--highlight">
-    <div class="gift-inner">
-      <div class="gift-header">
-        <p class="section-eyebrow">Gift Card Specials</p>
-        <h2 class="section-title">Give the Gift of Confidence</h2>
-        <p class="section-sub" style="margin-top:12px;">Every gift card includes bonus value. Purchase in-office or over the phone.</p>
-      </div>
-      <div class="gift-grid">
+      <p class="af-eyebrow">Mother&#39;s Day Special &middot; May 1&ndash;31</p>
+      <h1 class="af-title">Treat Mom. <em>Treat Yourself.</em></h1>
 
-        <!-- Card 1 -->
-        <div class="gift-card">
-          <div class="gift-amount">$200</div>
-          <div class="gift-value">Valued at $250</div>
-          <div class="gift-badge">+$50 Bonus</div>
-          <p class="gift-desc">Perfect for a first-time facial or treatment.</p>
+      <div class="af-offers">
+
+        <!-- 15% Off -->
+        <div class="af-offer-main">
+          <div class="af-pct">15%</div>
+          <div class="af-pct-label">OFF for You &amp; Mom</div>
+          <p class="af-pct-sub">Book same day &mdash; automatically applied</p>
+          <div class="af-tags">
+            <span class="af-tag">Botox</span>
+            <span class="af-tag">Dysport</span>
+            <span class="af-tag">Filler</span>
+            <span class="af-tag">Microneedling</span>
+            <span class="af-tag">HydraFacial</span>
+            <span class="af-tag">&amp; More</span>
+          </div>
         </div>
 
-        <!-- Card 2 -->
-        <div class="gift-card">
-          <div class="gift-amount">$400</div>
-          <div class="gift-value">Valued at $500</div>
-          <div class="gift-badge">+$100 Bonus</div>
-          <p class="gift-desc">Great for Botox, filler, or a combination.</p>
-        </div>
-
-        <!-- Card 3 — Featured -->
-        <div class="gift-card featured">
-          <div class="gift-ribbon">Most Popular</div>
-          <div class="gift-amount">$800</div>
-          <div class="gift-value">Valued at $1,000 + Free Dysport</div>
-          <div class="gift-badge">+$200 + Free Dysport</div>
-          <p class="gift-desc">The ultimate gift — includes one complimentary area of Dysport.</p>
+        <!-- Gift Cards -->
+        <div class="af-gifts">
+          <div class="af-gifts-label">Gift Card Specials</div>
+          <div class="af-gift-row">
+            <div class="af-gift">
+              <div class="af-gift-pay">$200</div>
+              <div class="af-gift-gets">Worth $250</div>
+              <div class="af-gift-badge">+$50 Bonus</div>
+            </div>
+            <div class="af-gift">
+              <div class="af-gift-pay">$400</div>
+              <div class="af-gift-gets">Worth $500</div>
+              <div class="af-gift-badge">+$100 Bonus</div>
+            </div>
+            <div class="af-gift af-gift--best">
+              <div class="af-gift-ribbon">Most Popular</div>
+              <div class="af-gift-pay">$800</div>
+              <div class="af-gift-gets">Worth $1,000 + Dysport</div>
+              <div class="af-gift-badge">+$200 + Free Dysport</div>
+            </div>
+          </div>
         </div>
 
       </div>
-    </div>
-  </section>
 
-  <!-- 5. Offer Card Section -->
-  <section class="offer-section">
-    <div class="offer-inner">
-      <p class="section-eyebrow">This Month Only</p>
-      <h2 class="section-title">15% Off — For You &amp; Mom</h2>
-      <div class="accent-line"></div>
-      <p class="section-sub">
-        Book appointments on the same day. Both of you receive 15% off — automatically applied, no code needed.
-      </p>
-
-      <div class="offer-card">
-        <div class="offer-pct">15%</div>
-        <div class="offer-label">OFF for Both of You</div>
-        <div class="tags">
-          <span class="tag">Botox</span>
-          <span class="tag">Dysport</span>
-          <span class="tag">Lip Filler</span>
-          <span class="tag">Cheek Filler</span>
-          <span class="tag">Microneedling</span>
-          <span class="tag">Agnes RF</span>
-          <span class="tag">HydraFacial</span>
-          <span class="tag">&amp; More</span>
-        </div>
+      <div class="af-cta">
+        <a href="https://dashboard.boulevard.io/booking/businesses/23dc87b0-dc5b-4747-a222-f94a44ff0eff/widget"
+           target="_blank" rel="noopener" class="btn btn-lg"
+           onclick="fbq('track','InitiateCheckout')">Book Our Appointments &rarr;</a>
+        <span class="af-phone">or call <a href="tel:+14047488580">(404) 748-8580</a></span>
       </div>
 
-      <a
-        href="https://dashboard.boulevard.io/booking/businesses/23dc87b0-dc5b-4747-a222-f94a44ff0eff/widget"
-        target="_blank"
-        rel="noopener"
-        class="btn btn-lg"
-        onclick="fbq('track','InitiateCheckout')"
-      >Book Now &mdash; Limited Spots</a>
+      <div class="af-proof">
+        <span>&#11088; 979 Five-Star Reviews</span>
+        <span class="af-dot">&middot;</span>
+        <span>&#127942; Best Botox 2024 &amp; 2025</span>
+        <span class="af-dot">&middot;</span>
+        <span>&#128205; Sandy Springs, GA</span>
+      </div>
+
     </div>
   </section>
 
