@@ -3,30 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mother's Day at Skin Social — 15% Off for You & Mom | Sandy Springs</title>
-  <meta name="description" content="This Mother's Day, bring your mom and both receive 15% OFF at Skin Social Sandy Springs. Plus gift card specials up to $200 in bonus value. Book now — appointments are limited." />
+  <title>Mother's Day | Skin Social Sandy Springs</title>
+  <meta name="description" content="This Mother's Day, bring your mom and both receive 15% OFF at Skin Social Sandy Springs. Gift cards from $200. Book now — limited spots." />
   <link rel="canonical" href="https://skinsocialspa.com/mothers-day/" />
 
-  <!-- OG Tags -->
-  <meta property="og:title" content="Mother's Day at Skin Social — 15% Off for You & Mom" />
-  <meta property="og:description" content="This Mother's Day, bring your mom and both receive 15% OFF at Skin Social Sandy Springs. Plus gift card specials up to $200 in bonus value. Book now — appointments are limited." />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mother's Day at Skin Social — 15% OFF for You & Mom" />
+  <meta property="og:description" content="Bring your mom and both receive 15% OFF. Gift cards from $200. Book now at Skin Social Sandy Springs." />
   <meta property="og:url" content="https://skinsocialspa.com/mothers-day/" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://skinsocialspa.com/wp-content/uploads/2026/05/skin-social-team-hero-1.jpg" />
+  <meta property="og:image" content="https://skinsocialspa.com/og-mothers-day.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Mother's Day at Skin Social — 15% Off for You & Mom" />
-  <meta name="twitter:description" content="Bring your mom and both receive 15% OFF at Skin Social Sandy Springs. Book now." />
-  <meta name="twitter:image" content="https://skinsocialspa.com/wp-content/uploads/2026/05/skin-social-team-hero-1.jpg" />
+  <meta name="twitter:title" content="Mother's Day at Skin Social — 15% OFF for You & Mom" />
+  <meta name="twitter:description" content="Bring your mom and both receive 15% OFF. Gift cards from $200. Book now at Skin Social Sandy Springs." />
 
-  <!-- Preload hero image -->
-  <link rel="preload" as="image" href="https://skinsocialspa.com/wp-content/uploads/2026/05/skin-social-team-hero-1.jpg" />
-
-  <!-- Fonts (non-blocking) -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Lato:wght@300;400;700&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet" />
 
-  <!-- Google Tag (gtag.js) -->
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-HEL1Z848JS"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -46,9 +42,10 @@
     fbq('init', '907360934476769');
     fbq('track', 'PageView');
   </script>
-  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=907360934476769&ev=PageView&noscript=1"/></noscript>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=907360934476769&ev=PageView&noscript=1" /></noscript>
 
-  <!-- Schema: MedicalBusiness with Offer -->
+  <!-- Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -64,17 +61,21 @@
       "postalCode": "30328",
       "addressCountry": "US"
     },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "979"
+    },
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
-      "name": "Mother's Day Special",
+      "name": "Mother's Day Specials",
       "itemListElement": [
         {
           "@type": "Offer",
-          "name": "15% Off Mother's Day — For You & Mom",
-          "description": "Book appointments on the same day and both you and your mom receive 15% off Botox, filler, facials & more.",
+          "name": "15% Off for You & Mom",
+          "description": "Bring your mom and both receive 15% off same day. Auto applied.",
           "validFrom": "2026-05-01",
-          "validThrough": "2026-05-31",
-          "url": "https://skinsocialspa.com/mothers-day/"
+          "validThrough": "2026-05-31"
         }
       ]
     }
@@ -94,825 +95,872 @@
       --dark: #2a2a2a;
     }
 
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    html {
-      scroll-behavior: smooth;
-    }
+    html { font-size: 16px; -webkit-text-size-adjust: 100%; }
 
     body {
       font-family: 'Lato', sans-serif;
-      font-weight: 400;
+      background: var(--oat);
       color: var(--charcoal);
-      background: var(--white);
       -webkit-font-smoothing: antialiased;
-      padding-bottom: 72px; /* space for sticky bar */
+      padding-bottom: 64px; /* space for sticky bar */
     }
 
-    /* ── Announcement Bar ── */
-    .announce-bar {
+    /* ─── ANNOUNCEMENT BAR ─── */
+    .announcement-bar {
       background: var(--charcoal);
       color: var(--white);
       text-align: center;
-      padding: 10px 20px;
+      padding: 9px 20px;
       font-family: 'Poppins', sans-serif;
-      font-size: 13px;
-      font-weight: 400;
-      letter-spacing: 0.3px;
-    }
-    .announce-bar span {
-      color: var(--tan);
+      font-weight: 500;
+      font-size: 10px;
+      letter-spacing: 1px;
+      line-height: 1.4;
     }
 
-    /* ── Nav ── */
-    nav {
+    /* ─── NAV ─── */
+    .nav {
       background: var(--white);
       border-bottom: 1px solid var(--cream);
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0 48px;
-      height: 68px;
+      padding: 14px 20px;
       position: sticky;
       top: 0;
       z-index: 100;
     }
-    .nav-brand {
+
+    .nav-logo {
       font-family: 'Poppins', sans-serif;
       font-weight: 300;
-      font-size: 17px;
+      font-size: 15px;
       letter-spacing: 3px;
       color: var(--charcoal);
       text-decoration: none;
       text-transform: uppercase;
     }
-    .btn {
-      display: inline-block;
+
+    .nav-cta {
       background: var(--tan);
       color: var(--charcoal);
       font-family: 'Poppins', sans-serif;
       font-weight: 600;
-      font-size: 12px;
-      text-transform: uppercase;
+      font-size: 11px;
       letter-spacing: 0.5px;
-      border-radius: 100px;
+      text-transform: uppercase;
       border: none;
+      border-radius: 100px;
+      padding: 9px 20px;
       cursor: pointer;
       text-decoration: none;
-      transition: background 0.2s, transform 0.15s;
-    }
-    .btn:hover {
-      background: var(--sand);
-      transform: translateY(-1px);
-    }
-    .btn-sm { padding: 10px 22px; }
-    .btn-md { padding: 14px 32px; font-size: 13px; }
-    .btn-lg { padding: 18px 44px; font-size: 14px; }
-
-    /* ── Hero Split ── */
-    .hero {
-      display: flex;
-      height: calc(100vh - 68px - 40px); /* minus nav and announce bar */
-      min-height: 580px;
-    }
-    .hero-left {
-      flex: 0 0 50%;
-      background: var(--oat);
-      display: flex;
-      align-items: center;
-      padding: 80px 64px 80px 80px;
-    }
-    .hero-content { max-width: 480px; }
-    .hero-headline {
-      font-family: 'Poppins', sans-serif;
-      font-weight: 300;
-      font-size: clamp(44px, 5vw, 64px);
-      line-height: 1.1;
-      color: var(--charcoal);
-      margin-bottom: 6px;
-    }
-    .hero-headline em {
-      font-style: italic;
-      color: var(--sand);
-    }
-    .hero-sub {
-      font-family: 'Lato', sans-serif;
-      font-size: 14px;
-      font-weight: 400;
-      color: var(--mid);
-      line-height: 1.7;
-      margin: 24px 0 32px;
-      max-width: 360px;
-    }
-    .hero-cta-wrap {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 14px;
-    }
-    .hero-contact {
-      font-family: 'Lato', sans-serif;
-      font-size: 13px;
-      color: var(--mid);
-      letter-spacing: 0.2px;
-    }
-    .hero-proof {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-family: 'Lato', sans-serif;
-      font-size: 12px;
-      color: var(--mid);
-      margin-top: 28px;
-      flex-wrap: wrap;
-    }
-    .hero-proof-dot {
-      width: 3px;
-      height: 3px;
-      border-radius: 50%;
-      background: var(--tan);
       display: inline-block;
-    }
-    .hero-right {
-      flex: 0 0 50%;
-      overflow: hidden;
-    }
-    .hero-right img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center top;
-      display: block;
+      transition: opacity 0.2s ease;
     }
 
-    /* ── Section Common ── */
-    section { width: 100%; }
-    .section-eyebrow {
+    .nav-cta:hover { opacity: 0.85; }
+
+    /* ─── HERO ─── */
+    .hero {
+      background: var(--oat);
+      padding: 32px 20px 0;
+      text-align: center;
+    }
+
+    .eyebrow {
       font-family: 'Poppins', sans-serif;
-      font-size: 10px;
-      font-weight: 500;
+      font-weight: 600;
+      font-size: 9px;
       letter-spacing: 3px;
       text-transform: uppercase;
       color: var(--sand);
-      margin-bottom: 16px;
-    }
-    .section-title {
-      font-family: 'Poppins', sans-serif;
-      font-weight: 300;
-      font-size: clamp(28px, 3vw, 36px);
-      color: var(--charcoal);
-      line-height: 1.2;
-    }
-    .section-sub {
-      font-family: 'Lato', sans-serif;
-      font-size: 15px;
-      color: var(--mid);
-      line-height: 1.7;
-      max-width: 520px;
-    }
-    .accent-line {
-      width: 36px;
-      height: 1px;
-      background: var(--pink);
-      margin: 20px 0;
+      margin-bottom: 12px;
     }
 
-    /* ── Offer Section ── */
-    .offer-section {
-      background: var(--oat);
-      padding: 96px 24px;
-    }
-    .offer-inner {
-      max-width: 900px;
-      margin: 0 auto;
-      text-align: center;
-    }
-    .offer-inner .accent-line { margin: 20px auto; }
-    .offer-inner .section-sub { margin: 0 auto 48px; }
-    .offer-card {
-      background: var(--white);
-      border: 2px solid var(--tan);
-      border-radius: 20px;
-      max-width: 520px;
-      margin: 0 auto 40px;
-      padding: 52px 48px 44px;
-      box-shadow: 0 4px 32px rgba(58,58,58,0.08);
-    }
-    .offer-pct { font-size: 140px !important; letter-spacing: -4px !important;
+    .hero h1 {
       font-family: 'Poppins', sans-serif;
-      font-weight: 700;
-      font-size: 96px;
-      color: var(--tan);
-      line-height: 1;
+      font-weight: 300;
+      font-size: 36px;
+      color: var(--charcoal);
+      line-height: 1.1;
       margin-bottom: 4px;
     }
-    .offer-label {
-      font-family: 'Poppins', sans-serif;
-      font-weight: 500;
-      font-size: 20px;
-      color: var(--charcoal);
-      margin-bottom: 32px;
+
+    .hero h1 em {
+      font-style: italic;
+      color: var(--sand);
     }
-    .tags {
+
+    .accent-line {
+      width: 40px;
+      height: 1px;
+      background: var(--pink);
+      margin: 16px auto 24px;
+    }
+
+    /* ─── OFFERS GRID ─── */
+    .offers-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      padding: 0 20px;
+      margin-bottom: 22px;
+    }
+
+    /* LEFT CARD */
+    .card-discount {
+      background: var(--white);
+      border: 2px solid var(--tan);
+      border-radius: 14px;
+      padding: 20px 14px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .discount-number {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 64px;
+      color: var(--tan);
+      line-height: 1;
+      margin-bottom: 2px;
+    }
+
+    .discount-label {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 12px;
+      color: var(--charcoal);
+      line-height: 1.3;
+      margin-bottom: 6px;
+    }
+
+    .discount-sub {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 10px;
+      color: var(--mid);
+      margin-bottom: 12px;
+    }
+
+    .pill-group {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
+      gap: 5px;
       justify-content: center;
     }
-    .tag {
+
+    .pill {
       background: var(--oat);
       border: 1px solid var(--cream);
       border-radius: 100px;
-      padding: 6px 14px;
       font-family: 'Poppins', sans-serif;
-      font-size: 12px;
       font-weight: 500;
+      font-size: 9px;
       color: var(--charcoal);
+      padding: 4px 9px;
       white-space: nowrap;
     }
 
-    /* ── Gift Cards Section ── */
-    .gift-section {
-      background: var(--white);
-      padding: 96px 24px;
+    /* RIGHT CARD */
+    .card-gift {
+      background: var(--charcoal);
+      border-radius: 14px;
+      padding: 16px 14px;
+      display: flex;
+      flex-direction: column;
     }
-    .gift-inner {
-      max-width: 960px;
-      margin: 0 auto;
-    }
-    .gift-header {
-      margin-bottom: 52px;
-    }
-    .gift-header .section-sub { margin-top: 12px; }
-    .gift-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-    .gift-card {
-      background: var(--white);
-      border: 1px solid var(--cream);
-      border-radius: 20px;
-      padding: 40px 32px 36px;
-      position: relative;
-      overflow: hidden;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .gift-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 40px rgba(58,58,58,0.1);
-    }
-    .gift-card.featured {
-      background: var(--oat);
-      border: 2px solid var(--tan);
-    }
-    .gift-ribbon {
-      position: absolute;
-      top: 0;
-      right: 0;
-      background: var(--tan);
-      color: var(--charcoal);
+
+    .gift-title {
       font-family: 'Poppins', sans-serif;
-      font-size: 9px;
       font-weight: 600;
-      letter-spacing: 0.5px;
+      font-size: 9px;
+      letter-spacing: 2px;
       text-transform: uppercase;
-      padding: 6px 14px;
-      border-bottom-left-radius: 12px;
+      color: var(--tan);
+      margin-bottom: 12px;
     }
+
+    .gift-rows {
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+      flex: 1;
+      justify-content: center;
+    }
+
+    .gift-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 4px;
+    }
+
     .gift-amount {
       font-family: 'Poppins', sans-serif;
-      font-weight: 300;
-      font-size: 42px;
-      color: var(--charcoal);
-      line-height: 1;
-      margin-bottom: 6px;
+      font-weight: 500;
+      font-size: 18px;
+      color: var(--white);
+      flex-shrink: 0;
+      min-width: 42px;
     }
-    .gift-value {
+
+    .gift-arrow {
       font-family: 'Lato', sans-serif;
-      font-size: 14px;
-      color: var(--mid);
-      margin-bottom: 16px;
+      font-size: 10px;
+      color: rgba(255,255,255,0.45);
+      flex: 1;
+      text-align: center;
+      line-height: 1.2;
     }
+
     .gift-badge {
-      display: inline-block;
       background: var(--pink);
       color: var(--charcoal);
       font-family: 'Poppins', sans-serif;
-      font-size: 11px;
       font-weight: 600;
+      font-size: 8px;
       border-radius: 100px;
-      padding: 4px 12px;
-      margin-bottom: 20px;
-    }
-    .gift-desc {
-      font-family: 'Lato', sans-serif;
-      font-size: 13px;
-      color: var(--mid);
-      line-height: 1.6;
+      padding: 3px 7px;
+      white-space: nowrap;
+      flex-shrink: 0;
     }
 
-    /* ── Trust Bar ── */
-    .trust-bar {
-      background: var(--dark);
-      padding: 52px 24px;
+    .gift-row-featured {
+      background: var(--tan);
+      border-radius: 8px;
+      padding: 7px 10px;
+      margin-top: 2px;
     }
-    .trust-inner {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 48px;
-      flex-wrap: wrap;
-      max-width: 900px;
-      margin: 0 auto;
+
+    .gift-row-featured .gift-amount {
+      color: var(--charcoal);
+      font-size: 17px;
     }
-    .trust-stat {
-      text-align: center;
+
+    .gift-row-featured .gift-arrow {
+      color: rgba(58,58,58,0.55);
+      font-size: 9px;
     }
-    .trust-number {
+
+    .gift-badge-dark {
+      background: var(--charcoal);
+      color: var(--white);
       font-family: 'Poppins', sans-serif;
       font-weight: 600;
-      font-size: 32px;
-      color: var(--pink);
-      line-height: 1;
-      margin-bottom: 6px;
-    }
-    .trust-label {
-      font-family: 'Poppins', sans-serif;
-      font-size: 10px;
-      font-weight: 500;
-      letter-spacing: 2.5px;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.5);
-    }
-    .trust-divider {
-      width: 1px;
-      height: 48px;
-      background: rgba(255,255,255,0.1);
+      font-size: 8px;
+      border-radius: 100px;
+      padding: 3px 7px;
+      white-space: nowrap;
+      flex-shrink: 0;
     }
 
-    /* ── Reviews ── */
-    .reviews-section {
-      background: var(--cream);
-      padding: 88px 24px;
+    .most-popular-label {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 7px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: rgba(58,58,58,0.6);
+      margin-bottom: 4px;
+      padding-left: 2px;
     }
-    .reviews-inner {
-      max-width: 1040px;
-      margin: 0 auto;
-    }
-    .reviews-header {
+
+    /* ─── CTA SECTION ─── */
+    .cta-section {
       text-align: center;
-      margin-bottom: 52px;
-    }
-    .reviews-header .section-eyebrow { margin-bottom: 12px; }
-    .reviews-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-    .review-card {
-      background: var(--white);
-      border-radius: 16px;
-      padding: 36px 32px;
-      box-shadow: 0 2px 20px rgba(58,58,58,0.07);
-    }
-    .review-stars {
-      color: #D6BFA9;
-      font-size: 14px;
-      letter-spacing: 2px;
+      padding: 0 20px;
       margin-bottom: 16px;
     }
-    .review-text {
-      font-family: 'Lato', sans-serif;
-      font-size: 15px;
+
+    .btn-main {
+      display: inline-block;
+      background: var(--tan);
       color: var(--charcoal);
-      line-height: 1.75;
-      margin-bottom: 20px;
-      font-style: italic;
-    }
-    .review-author {
       font-family: 'Poppins', sans-serif;
-      font-size: 12px;
       font-weight: 600;
+      font-size: 13px;
       letter-spacing: 0.5px;
-      color: var(--mid);
       text-transform: uppercase;
+      border: none;
+      border-radius: 100px;
+      padding: 17px 44px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: opacity 0.2s ease, transform 0.15s ease;
+      width: 100%;
+      max-width: 320px;
     }
 
-    /* ── Final CTA ── */
+    .btn-main:hover { opacity: 0.88; transform: translateY(-1px); }
+
+    .cta-phone {
+      display: block;
+      margin-top: 10px;
+      font-family: 'Lato', sans-serif;
+      font-size: 12px;
+      color: var(--mid);
+      text-decoration: none;
+    }
+
+    .cta-phone:hover { color: var(--charcoal); }
+
+    /* ─── PROOF ROW ─── */
+    .proof-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      padding: 0 20px 28px;
+      font-family: 'Lato', sans-serif;
+      font-size: 11px;
+      color: var(--mid);
+    }
+
+    .proof-item {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      white-space: nowrap;
+    }
+
+    /* ─── SECTION DIVIDER ─── */
+    .section-divider {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      height: 32px;
+      background: var(--oat);
+    }
+
+    .section-divider::before {
+      content: '';
+      position: absolute;
+      left: 0; right: 0;
+      top: 50%;
+      height: 1px;
+      background: var(--cream);
+    }
+
+    .divider-dot {
+      position: relative;
+      z-index: 1;
+      background: var(--oat);
+      padding: 0 12px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .divider-dot::before,
+    .divider-dot::after {
+      content: '';
+      display: block;
+      width: 24px;
+      height: 1px;
+      background: var(--tan);
+    }
+
+    .divider-diamond {
+      width: 6px;
+      height: 6px;
+      background: var(--tan);
+      transform: rotate(45deg);
+      flex-shrink: 0;
+    }
+
+    /* ─── REVIEWS ─── */
+    .reviews-section {
+      background: var(--white);
+      padding: 56px 24px;
+    }
+
+    .section-eyebrow {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 9px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--sand);
+      text-align: center;
+      margin-bottom: 36px;
+    }
+
+    .reviews-inner {
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    .review-item {
+      padding: 28px 0;
+    }
+
+    .review-item:first-child { padding-top: 0; }
+    .review-item:last-child { padding-bottom: 0; }
+
+    .review-quote {
+      font-family: 'Lato', sans-serif;
+      font-style: italic;
+      font-weight: 300;
+      font-size: 14px;
+      color: var(--charcoal);
+      line-height: 1.8;
+    }
+
+    .review-author {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      font-size: 11px;
+      color: var(--sand);
+      margin-top: 10px;
+    }
+
+    .review-divider {
+      height: 1px;
+      background: var(--cream);
+    }
+
+    /* ─── SERVICES ─── */
+    .services-section {
+      background: var(--oat);
+      padding: 56px 24px;
+    }
+
+    .services-inner {
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    .services-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+      margin-top: 28px;
+    }
+
+    .service-pill {
+      background: var(--white);
+      border: 1.5px solid var(--tan);
+      border-radius: 100px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      font-size: 12px;
+      color: var(--charcoal);
+      padding: 9px 18px;
+      white-space: nowrap;
+    }
+
+    /* ─── WHY SKIN SOCIAL ─── */
+    .why-section {
+      background: var(--white);
+      padding: 56px 24px;
+    }
+
+    .why-inner {
+      max-width: 620px;
+      margin: 0 auto;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 28px;
+      margin-top: 32px;
+    }
+
+    @media (min-width: 640px) {
+      .why-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px 40px;
+      }
+    }
+
+    .why-item-label {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      color: var(--charcoal);
+      margin-bottom: 6px;
+    }
+
+    .why-item-desc {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 13px;
+      color: var(--mid);
+      line-height: 1.7;
+    }
+
+    /* ─── FINAL CTA ─── */
     .final-cta {
       background: var(--charcoal);
-      padding: 96px 24px;
+      padding: 72px 24px;
       text-align: center;
     }
+
     .final-cta h2 {
       font-family: 'Poppins', sans-serif;
       font-weight: 300;
-      font-size: clamp(32px, 4vw, 48px);
+      font-size: 32px;
       color: var(--white);
-      margin-bottom: 20px;
       line-height: 1.2;
+      margin-bottom: 16px;
     }
+
     .final-cta h2 em {
       font-style: italic;
       color: var(--pink);
     }
+
     .final-cta p {
       font-family: 'Lato', sans-serif;
-      font-size: 16px;
-      color: rgba(255,255,255,0.55);
-      margin-bottom: 40px;
-      max-width: 420px;
-      margin-left: auto;
-      margin-right: auto;
+      font-weight: 300;
+      font-size: 14px;
+      color: rgba(255,255,255,0.5);
       line-height: 1.7;
-    }
-    .final-note {
-      margin-top: 20px;
-      font-family: 'Lato', sans-serif;
-      font-size: 13px;
-      color: rgba(255,255,255,0.35);
+      max-width: 360px;
+      margin: 0 auto 28px;
     }
 
-    /* ── Fine Print + Footer ── */
+    .final-cta .btn-main {
+      margin-bottom: 20px;
+    }
+
+    .final-address {
+      font-family: 'Lato', sans-serif;
+      font-size: 12px;
+      color: rgba(255,255,255,0.3);
+      margin-top: 20px;
+    }
+
+    /* ─── FINE PRINT ─── */
     .fine-print {
-      background: var(--white);
-      padding: 32px 24px;
+      background: var(--oat);
+      padding: 28px 24px;
       text-align: center;
     }
+
     .fine-print p {
       font-family: 'Lato', sans-serif;
-      font-size: 11px;
-      color: rgba(58,58,58,0.4);
-      max-width: 700px;
-      margin: 0 auto;
+      font-size: 10px;
+      color: rgba(58,58,58,0.35);
       line-height: 1.7;
+      max-width: 600px;
+      margin: 0 auto;
     }
+
+    /* ─── FOOTER ─── */
     footer {
       background: #1a1a1a;
       padding: 20px 24px;
       text-align: center;
     }
+
     footer p {
       font-family: 'Lato', sans-serif;
-      font-size: 12px;
-      color: rgba(255,255,255,0.3);
+      font-size: 11px;
+      color: rgba(255,255,255,0.25);
+      line-height: 1.7;
     }
 
-    /* ── Sticky Bottom Bar ── */
+    footer a {
+      color: rgba(255,255,255,0.35);
+      text-decoration: none;
+    }
+
+    /* ─── STICKY BOTTOM BAR ─── */
     .sticky-bar {
       position: fixed;
       bottom: 0;
       left: 0;
       right: 0;
       background: var(--charcoal);
-      padding: 14px 32px;
+      padding: 12px 20px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      z-index: 999;
-      box-shadow: 0 -2px 20px rgba(0,0,0,0.2);
+      z-index: 200;
+      box-shadow: 0 -2px 16px rgba(0,0,0,0.15);
     }
+
     .sticky-bar-text {
       font-family: 'Poppins', sans-serif;
-      font-size: 13px;
       font-weight: 400;
+      font-size: 12px;
       color: var(--white);
+      line-height: 1.3;
     }
 
-    /* ── Mobile ── */
-    @media (max-width: 768px) {
-      nav {
-        padding: 0 20px;
-        height: 60px;
-      }
-      .nav-brand { font-size: 14px; letter-spacing: 2px; }
-
-      .hero {
-        flex-direction: column;
-        height: auto;
-        min-height: unset;
-      }
-      .hero-right {
-        flex: 0 0 auto;
-        height: 52vw;
-        min-height: 240px;
-        order: -1;
-      }
-      .hero-left {
-        flex: 0 0 auto;
-        padding: 48px 28px 56px;
-        background: var(--dark);
-      }
-      .hero-headline { color: var(--white); font-size: 40px; }
-      .hero-sub { color: rgba(255,255,255,0.65); }
-      .hero-contact { color: rgba(255,255,255,0.45); }
-      .hero-proof { color: rgba(255,255,255,0.5); }
-
-      .offer-card { padding: 40px 28px; }
-      .offer-pct { font-size: 140px !important; letter-spacing: -4px !important; font-size: 72px; }
-
-      .gift-grid { grid-template-columns: 1fr; }
-
-      .trust-inner { gap: 32px; }
-      .trust-divider { display: none; }
-
-      .reviews-grid { grid-template-columns: 1fr; }
-
-      .sticky-bar {
-        justify-content: center;
-        padding: 12px 24px;
-      }
-      .sticky-bar-text { display: none; }
+    .sticky-bar-btn {
+      background: var(--tan);
+      color: var(--charcoal);
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 11px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 100px;
+      padding: 10px 20px;
+      cursor: pointer;
+      text-decoration: none;
+      white-space: nowrap;
+      flex-shrink: 0;
+      transition: opacity 0.2s ease;
     }
 
-    @media (max-width: 480px) {
-      .hero-headline { font-size: 34px; }
-    }
-  
-/* ── THEME RESET — override Blocksy/WordPress defaults ── */
-.hero{display:grid!important;grid-template-columns:1fr 1fr!important;min-height:72vh!important;max-width:none!important;margin:0!important;padding:0!important;}
-.hero-left{display:flex!important;align-items:center!important;padding:80px 60px!important;background:var(--oat)!important;}
-.hero-right{position:relative!important;overflow:hidden!important;min-height:72vh!important;}
-.hero-right img{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:center top!important;}
-.hero-right picture{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;display:block!important;}
-.hero-right source{display:none!important;}
-p{margin:0!important;}
-.hero p,.offer-section p,.gift-section p,.trust p,.rv-section p,.final-cta p,.fine-print p,.footer-wrap p{margin:0!important;}
+    .sticky-bar-btn:hover { opacity: 0.85; }
 
-
-    /* Gift section highlight */
-    .gift-section--highlight {
-      background: var(--charcoal) !important;
-    }
-    .gift-section--highlight .section-eyebrow {
-      color: var(--tan) !important;
-    }
-    .gift-section--highlight .section-title {
-      color: var(--white) !important;
-    }
-    .gift-section--highlight .section-sub {
-      color: rgba(255,255,255,0.6) !important;
-    }
-    .gift-section--highlight .gift-card {
-      background: rgba(255,255,255,0.06) !important;
-      border-color: rgba(255,255,255,0.12) !important;
-    }
-    .gift-section--highlight .gift-amount {
-      color: var(--white) !important;
-      font-size: 48px !important;
-    }
-    .gift-section--highlight .gift-value {
-      color: rgba(255,255,255,0.6) !important;
-    }
-    .gift-section--highlight .gift-desc {
-      color: rgba(255,255,255,0.5) !important;
-    }
-    .gift-section--highlight .gift-card.featured {
-      background: var(--tan) !important;
-      border-color: var(--tan) !important;
-    }
-    .gift-section--highlight .gift-card.featured .gift-amount,
-    .gift-section--highlight .gift-card.featured .gift-badge {
-      color: var(--charcoal) !important;
-    }
-    .gift-section--highlight .gift-card.featured .gift-value,
-    .gift-section--highlight .gift-card.featured .gift-desc {
-      color: rgba(58,58,58,0.75) !important;
-    }
-    .gift-section--highlight .gift-ribbon {
-      background: var(--charcoal) !important;
-      color: var(--white) !important;
-    }
-    /* Bigger 15% */
-    .offer-pct {
-      font-size: 140px !important;
-      letter-spacing: -4px !important;
-      line-height: 1 !important;
-    }
-    .offer-card {
-      padding: 56px 40px !important;
+    /* ─── RESPONSIVE ─── */
+    @media (min-width: 640px) {
+      .hero h1 { font-size: 44px; }
+      .discount-number { font-size: 72px; }
+      .offers-grid { max-width: 600px; margin-left: auto; margin-right: auto; }
     }
 
-  
-    @media(max-width: 768px) {
-      .hero { min-height: 0 !important; max-height: 55vh !important; height: 55vh !important; }
-      .hero-right { min-height: 0 !important; max-height: 55vh !important; height: 55vh !important; }
-      .hero-left { min-height: 0 !important; max-height: 55vh !important; padding: 24px 20px !important; justify-content: center; }
-      .hero-headline { font-size: 32px !important; margin-bottom: 16px !important; }
-      .btn.btn-lg { padding: 14px 28px !important; font-size: 13px !important; }
+    @media (min-width: 960px) {
+      .hero { padding: 48px 40px 0; }
+      .offers-grid { padding: 0 40px; max-width: 720px; }
+      .cta-section { padding: 0 40px; }
+      .proof-row { padding: 0 40px 36px; }
     }
-
-  
-    .above-fold { background:var(--oat); padding:28px 20px 32px; text-align:center; }
-    .above-fold-inner { max-width:960px; margin:0 auto; }
-    .af-eyebrow { font-family:'Poppins',sans-serif; font-size:10px; font-weight:600; letter-spacing:3px; text-transform:uppercase; color:var(--sand); margin-bottom:8px; }
-    .af-title { font-family:'Poppins',sans-serif; font-size:clamp(26px,5vw,44px); font-weight:300; line-height:1.1; color:var(--charcoal); margin-bottom:20px; letter-spacing:-0.5px; }
-    .af-title em { font-style:italic; color:var(--sand); }
-    .af-offers { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:20px; text-align:left; }
-    .af-offer-main { background:var(--white); border:2px solid var(--tan); border-radius:16px; padding:20px 16px; text-align:center; }
-    .af-pct { font-family:'Poppins',sans-serif; font-size:clamp(60px,10vw,80px); font-weight:700; color:var(--tan); line-height:1; letter-spacing:-2px; }
-    .af-pct-label { font-family:'Poppins',sans-serif; font-size:13px; font-weight:600; color:var(--charcoal); margin-bottom:4px; }
-    .af-pct-sub { font-size:11px; color:var(--mid); margin-bottom:10px; }
-    .af-tags { display:flex; flex-wrap:wrap; gap:4px; justify-content:center; }
-    .af-tag { background:var(--oat); border:1px solid var(--cream); font-family:'Poppins',sans-serif; font-size:10px; font-weight:500; color:var(--charcoal); padding:3px 9px; border-radius:100px; }
-    .af-gifts { background:var(--charcoal); border-radius:16px; padding:16px 14px; }
-    .af-gifts-label { font-family:'Poppins',sans-serif; font-size:10px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:var(--tan); margin-bottom:10px; text-align:center; }
-    .af-gift-row { display:flex; flex-direction:column; gap:7px; }
-    .af-gift { background:rgba(255,255,255,0.07); border:1px solid rgba(255,255,255,0.1); border-radius:10px; padding:9px 12px; display:flex; align-items:center; justify-content:space-between; position:relative; overflow:hidden; }
-    .af-gift--best { background:var(--tan) !important; border-color:var(--tan) !important; }
-    .af-gift-ribbon { position:absolute; top:0; right:0; background:var(--charcoal); color:var(--white); font-family:'Poppins',sans-serif; font-size:8px; font-weight:700; letter-spacing:1px; text-transform:uppercase; padding:3px 8px; border-radius:0 10px 0 8px; }
-    .af-gift-pay { font-family:'Poppins',sans-serif; font-size:20px; font-weight:600; color:var(--white); min-width:48px; }
-    .af-gift--best .af-gift-pay { color:var(--charcoal); }
-    .af-gift-gets { font-size:11px; color:rgba(255,255,255,0.5); flex:1; padding:0 8px; }
-    .af-gift--best .af-gift-gets { color:rgba(58,58,58,0.65); }
-    .af-gift-badge { font-family:'Poppins',sans-serif; font-size:9px; font-weight:700; background:var(--pink); color:var(--charcoal); padding:3px 7px; border-radius:100px; white-space:nowrap; }
-    .af-gift--best .af-gift-badge { background:var(--charcoal); color:var(--white); }
-    .af-cta { margin-bottom:14px; }
-    .af-phone { display:block; margin-top:8px; font-size:12px; color:var(--mid); }
-    .af-phone a { color:var(--charcoal); text-decoration:none; }
-    .af-proof { display:flex; justify-content:center; flex-wrap:wrap; gap:5px 14px; font-size:11px; color:var(--mid); }
-    .af-dot { color:var(--cream); }
-    @media(max-width:600px) { .af-offers { grid-template-columns:1fr; } .above-fold { padding:20px 16px 24px; } }
-
   </style>
 </head>
 <body>
 
-  <!-- 1. Announcement Bar -->
-  <div class="announce-bar">
-    🌸 <span>Mother's Day is May 11</span> — Book now before spots fill up
+  <!-- ─── ANNOUNCEMENT BAR ─── -->
+  <div class="announcement-bar">
+    🌸 Mother's Day is May 11 — Book now before spots fill up
   </div>
 
-  <!-- 2. Nav -->
-  <nav>
-    <a href="https://skinsocialspa.com" class="nav-brand">Skin Social</a>
+  <!-- ─── NAV ─── -->
+  <nav class="nav">
+    <a href="https://skinsocialspa.com" class="nav-logo">Skin Social</a>
     <a
       href="https://dashboard.boulevard.io/booking/businesses/23dc87b0-dc5b-4747-a222-f94a44ff0eff/widget"
       target="_blank"
       rel="noopener"
-      class="btn btn-sm"
+      class="nav-cta"
       onclick="fbq('track','InitiateCheckout')"
     >Book Now</a>
   </nav>
 
-  <!-- ABOVE FOLD: Headline + All Offers -->
-  <section class="above-fold">
-    <div class="above-fold-inner">
-
-      <p class="af-eyebrow">Mother&#39;s Day Special &middot; May 1&ndash;31</p>
-      <h1 class="af-title">Treat Mom. <em>Treat Yourself.</em></h1>
-
-      <div class="af-offers">
-
-        <!-- 15% Off -->
-        <div class="af-offer-main">
-          <div class="af-pct">15%</div>
-          <div class="af-pct-label">OFF for You &amp; Mom</div>
-          <p class="af-pct-sub">Book same day &mdash; automatically applied</p>
-          <div class="af-tags">
-            <span class="af-tag">Botox</span>
-            <span class="af-tag">Dysport</span>
-            <span class="af-tag">Filler</span>
-            <span class="af-tag">Microneedling</span>
-            <span class="af-tag">HydraFacial</span>
-            <span class="af-tag">&amp; More</span>
-          </div>
-        </div>
-
-        <!-- Gift Cards -->
-        <div class="af-gifts">
-          <div class="af-gifts-label">Gift Card Specials</div>
-          <div class="af-gift-row">
-            <div class="af-gift">
-              <div class="af-gift-pay">$200</div>
-              <div class="af-gift-gets">Worth $250</div>
-              <div class="af-gift-badge">+$50 Bonus</div>
-            </div>
-            <div class="af-gift">
-              <div class="af-gift-pay">$400</div>
-              <div class="af-gift-gets">Worth $500</div>
-              <div class="af-gift-badge">+$100 Bonus</div>
-            </div>
-            <div class="af-gift af-gift--best">
-              <div class="af-gift-ribbon">Most Popular</div>
-              <div class="af-gift-pay">$800</div>
-              <div class="af-gift-gets">Worth $1,000 + Dysport</div>
-              <div class="af-gift-badge">+$200 + Free Dysport</div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="af-cta">
-        <a href="https://dashboard.boulevard.io/booking/businesses/23dc87b0-dc5b-4747-a222-f94a44ff0eff/widget"
-           target="_blank" rel="noopener" class="btn btn-lg"
-           onclick="fbq('track','InitiateCheckout')">Book Our Appointments &rarr;</a>
-        <span class="af-phone">or call <a href="tel:+14047488580">(404) 748-8580</a></span>
-      </div>
-
-      <div class="af-proof">
-        <span>&#11088; 979 Five-Star Reviews</span>
-        <span class="af-dot">&middot;</span>
-        <span>&#127942; Best Botox 2024 &amp; 2025</span>
-        <span class="af-dot">&middot;</span>
-        <span>&#128205; Sandy Springs, GA</span>
-      </div>
-
-    </div>
+  <!-- ─── HERO ─── -->
+  <section class="hero">
+    <p class="eyebrow">Mother's Day Special · May 1–31</p>
+    <h1>Treat Mom.<br><em>Treat Yourself.</em></h1>
+    <div class="accent-line"></div>
   </section>
 
-  <!-- 6. Trust Bar -->
-  <div class="trust-bar">
-    <div class="trust-inner">
-      <div class="trust-stat">
-        <div class="trust-number">979</div>
-        <div class="trust-label">Five-Star Reviews</div>
+  <!-- ─── OFFERS GRID ─── -->
+  <div class="offers-grid">
+
+    <!-- LEFT: 15% Off -->
+    <div class="card-discount">
+      <div class="discount-number">15%</div>
+      <div class="discount-label">OFF for You &amp; Mom</div>
+      <div class="discount-sub">Same day · Auto applied</div>
+      <div class="pill-group">
+        <span class="pill">Botox</span>
+        <span class="pill">Filler</span>
+        <span class="pill">Microneedling</span>
+        <span class="pill">+ More</span>
       </div>
-      <div class="trust-divider"></div>
-      <div class="trust-stat">
-        <div class="trust-number">2&times;</div>
-        <div class="trust-label">Best Botox Award</div>
+    </div>
+
+    <!-- RIGHT: Gift Cards -->
+    <div class="card-gift">
+      <div class="gift-title">Gift Card Specials</div>
+      <div class="gift-rows">
+
+        <div class="gift-row">
+          <span class="gift-amount">$200</span>
+          <span class="gift-arrow">→ $250</span>
+          <span class="gift-badge">+$50</span>
+        </div>
+
+        <div class="gift-row">
+          <span class="gift-amount">$400</span>
+          <span class="gift-arrow">→ $500</span>
+          <span class="gift-badge">+$100</span>
+        </div>
+
+        <div>
+          <div class="most-popular-label">Most Popular</div>
+          <div class="gift-row gift-row-featured">
+            <span class="gift-amount">$800</span>
+            <span class="gift-arrow">→ $1,000<br>+ Dysport</span>
+            <span class="gift-badge-dark">+$200 ★</span>
+          </div>
+        </div>
+
       </div>
-      <div class="trust-divider"></div>
-      <div class="trust-stat">
-        <div class="trust-number">15%</div>
-        <div class="trust-label">Off for Both</div>
-      </div>
-      <div class="trust-divider"></div>
-      <div class="trust-stat">
-        <div class="trust-number">May 11</div>
-        <div class="trust-label">Mother's Day</div>
-      </div>
+    </div>
+
+  </div>
+
+  <!-- ─── CTA ─── -->
+  <div class="cta-section">
+    <a
+      href="https://dashboard.boulevard.io/booking/businesses/23dc87b0-dc5b-4747-a222-f94a44ff0eff/widget"
+      target="_blank"
+      rel="noopener"
+      class="btn-main"
+      onclick="fbq('track','InitiateCheckout')"
+    >Book Our Appointments →</a>
+    <a href="tel:4047488580" class="cta-phone">or call (404) 748-8580</a>
+  </div>
+
+  <!-- ─── PROOF ROW ─── -->
+  <div class="proof-row">
+    <span class="proof-item">⭐ 979 Five-Star Reviews</span>
+    <span class="proof-item">🏆 Best Botox 2024 &amp; 2025</span>
+    <span class="proof-item">📍 Sandy Springs</span>
+  </div>
+
+  <!-- ─── SECTION DIVIDER ─── -->
+  <div class="section-divider" style="background: var(--white);">
+    <div class="divider-dot">
+      <div class="divider-diamond"></div>
     </div>
   </div>
 
-  <!-- 7. Reviews -->
+  <!-- ─── REVIEWS ─── -->
   <section class="reviews-section">
+    <p class="section-eyebrow">What Clients Are Saying</p>
     <div class="reviews-inner">
-      <div class="reviews-header">
-        <p class="section-eyebrow">What Our Patients Say</p>
-        <h2 class="section-title">979 Five-Star Reviews</h2>
+
+      <div class="review-item">
+        <p class="review-quote">"I've been coming to Skin Social for two years and I genuinely cannot imagine going anywhere else. The results are always natural, never overdone — exactly what I ask for every time."</p>
+        <p class="review-author">— Ashley M., Sandy Springs</p>
       </div>
-      <div class="reviews-grid">
 
-        <div class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p class="review-text">"Natalie is absolutely amazing. She listened to exactly what I wanted and the results were perfect. I've been coming here for two years and won't go anywhere else."</p>
-          <div class="review-author">Sarah M. &mdash; Sandy Springs</div>
+      <div class="review-divider"></div>
+
+      <div class="review-item">
+        <p class="review-quote">"Brought my mom for the first time and we both left obsessed. The injectors listened to everything we said and the results were stunning. We're already booked for next month."</p>
+        <p class="review-author">— Jordan K., Atlanta</p>
+      </div>
+
+      <div class="review-divider"></div>
+
+      <div class="review-item">
+        <p class="review-quote">"Clean space, warm staff, and results that speak for themselves. I've tried other places but nothing compares. Best Botox in Atlanta — those awards are well deserved."</p>
+        <p class="review-author">— Rachel T., Buckhead</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── SECTION DIVIDER ─── -->
+  <div class="section-divider" style="background: var(--oat);">
+    <div class="divider-dot" style="background: var(--oat);">
+      <div class="divider-diamond"></div>
+    </div>
+  </div>
+
+  <!-- ─── SERVICES ─── -->
+  <section class="services-section">
+    <div class="services-inner">
+      <p class="section-eyebrow" style="text-align:center;">Available Services</p>
+      <div class="services-grid">
+        <span class="service-pill">Botox</span>
+        <span class="service-pill">Dysport</span>
+        <span class="service-pill">Lip Filler</span>
+        <span class="service-pill">Cheek Filler</span>
+        <span class="service-pill">Microneedling</span>
+        <span class="service-pill">Agnes RF</span>
+        <span class="service-pill">HydraFacial</span>
+        <span class="service-pill">Facials &amp; Peels</span>
+        <span class="service-pill">NAD+ Therapy</span>
+        <span class="service-pill">Body Contouring</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SECTION DIVIDER ─── -->
+  <div class="section-divider" style="background: var(--white);">
+    <div class="divider-dot">
+      <div class="divider-diamond"></div>
+    </div>
+  </div>
+
+  <!-- ─── WHY SKIN SOCIAL ─── -->
+  <section class="why-section">
+    <div class="why-inner">
+      <p class="section-eyebrow" style="text-align:center;">Why Skin Social</p>
+      <div class="why-grid">
+
+        <div class="why-item">
+          <div class="why-item-label">Award-Winning Injectors</div>
+          <div class="why-item-desc">Named Best Botox in Atlanta two years running. Our team is recognized for artistry, precision, and consistently natural results.</div>
         </div>
 
-        <div class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p class="review-text">"I brought my mom last Mother's Day and we both had the best experience. The discount made it feel even more special."</p>
-          <div class="review-author">Jennifer K. &mdash; Atlanta</div>
+        <div class="why-item">
+          <div class="why-item-label">Certified Nurse Practitioners</div>
+          <div class="why-item-desc">Every treatment is performed by licensed, board-certified NPs with advanced training in aesthetic medicine.</div>
         </div>
 
-        <div class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p class="review-text">"The most comfortable and professional med spa I've been to. My results look so natural — exactly what I wanted."</p>
-          <div class="review-author">Michelle T. &mdash; Buckhead</div>
+        <div class="why-item">
+          <div class="why-item-label">Natural-Looking Results</div>
+          <div class="why-item-desc">We believe in enhancement, not alteration. Our approach is subtle, intentional, and tailored to your unique features.</div>
+        </div>
+
+        <div class="why-item">
+          <div class="why-item-label">Same-Week Appointments</div>
+          <div class="why-item-desc">No six-week waitlists. We keep our schedule open so you can get in when it works for you — and your mom.</div>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- 8. Final CTA -->
+  <!-- ─── FINAL CTA ─── -->
   <section class="final-cta">
     <h2>Mother's Day is <em>May 11.</em></h2>
-    <p>Spots fill fast before the holiday. Book now to get the time that works for both of you.</p>
+    <p>Appointments fill up fast. Book now to get the time that works for both of you.</p>
     <a
       href="https://dashboard.boulevard.io/booking/businesses/23dc87b0-dc5b-4747-a222-f94a44ff0eff/widget"
       target="_blank"
       rel="noopener"
-      class="btn btn-lg"
+      class="btn-main"
       onclick="fbq('track','InitiateCheckout')"
-    >Book Our Appointments &rarr;</a>
-    <p class="final-note">📍 5840 Roswell Rd, Sandy Springs &nbsp;&middot;&nbsp; (404) 748-8580</p>
+    >Book Our Appointments →</a>
+    <p class="final-address">📍 5840 Roswell Rd, Sandy Springs · (404) 748-8580</p>
   </section>
 
-  <!-- 9. Fine Print + Footer -->
+  <!-- ─── FINE PRINT ─── -->
   <div class="fine-print">
-    <p>Offer valid May 1–31, 2026. Both guests must book on the same day. 15% discount automatically applied. Some exclusions may apply. Gift cards loaded at time of purchase. Cannot be combined with other offers.</p>
+    <p>15% discount applies when two guests book and are treated on the same day. Valid May 1–31, 2026. Discount applied automatically at checkout. Cannot be combined with other offers or used toward gift card purchases. Gift card values credited as stated; Dysport bonus applied to $800+ purchases. Offer valid while supplies last. All services performed by licensed medical professionals. Results may vary.</p>
   </div>
+
+  <!-- ─── FOOTER ─── -->
   <footer>
-    <p>&copy; 2026 Skin Social &nbsp;&middot;&nbsp; 5840 Roswell Rd, Sandy Springs, GA &nbsp;&middot;&nbsp; skinsocialspa.com</p>
+    <p>
+      © 2026 Skin Social · 5840 Roswell Rd, Sandy Springs, GA 30328<br />
+      <a href="tel:4047488580">(404) 748-8580</a> ·
+      <a href="https://skinsocialspa.com/privacy">Privacy Policy</a> ·
+      <a href="https://skinsocialspa.com/terms">Terms</a>
+    </p>
   </footer>
 
-  <!-- 10. Sticky Bottom Bar -->
+  <!-- ─── STICKY BOTTOM BAR ─── -->
   <div class="sticky-bar">
-    <span class="sticky-bar-text">🌸 15% off when you bring mom — May 11</span>
+    <span class="sticky-bar-text">🌸 15% off when you bring mom</span>
     <a
       href="https://dashboard.boulevard.io/booking/businesses/23dc87b0-dc5b-4747-a222-f94a44ff0eff/widget"
       target="_blank"
       rel="noopener"
-      class="btn btn-sm"
+      class="sticky-bar-btn"
       onclick="fbq('track','InitiateCheckout')"
     >Book Now</a>
   </div>
