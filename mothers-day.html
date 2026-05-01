@@ -302,7 +302,7 @@
       padding: 52px 48px 44px;
       box-shadow: 0 4px 32px rgba(58,58,58,0.08);
     }
-    .offer-pct {
+    .offer-pct { font-size: 140px !important; letter-spacing: -4px !important;
       font-family: 'Poppins', sans-serif;
       font-weight: 700;
       font-size: 96px;
@@ -614,7 +614,7 @@
       .hero-proof { color: rgba(255,255,255,0.5); }
 
       .offer-card { padding: 40px 28px; }
-      .offer-pct { font-size: 72px; }
+      .offer-pct { font-size: 140px !important; letter-spacing: -4px !important; font-size: 72px; }
 
       .gift-grid { grid-template-columns: 1fr; }
 
@@ -644,7 +644,61 @@
 p{margin:0!important;}
 .hero p,.offer-section p,.gift-section p,.trust p,.rv-section p,.final-cta p,.fine-print p,.footer-wrap p{margin:0!important;}
 
-</style>
+
+    /* Gift section highlight */
+    .gift-section--highlight {
+      background: var(--charcoal) !important;
+    }
+    .gift-section--highlight .section-eyebrow {
+      color: var(--tan) !important;
+    }
+    .gift-section--highlight .section-title {
+      color: var(--white) !important;
+    }
+    .gift-section--highlight .section-sub {
+      color: rgba(255,255,255,0.6) !important;
+    }
+    .gift-section--highlight .gift-card {
+      background: rgba(255,255,255,0.06) !important;
+      border-color: rgba(255,255,255,0.12) !important;
+    }
+    .gift-section--highlight .gift-amount {
+      color: var(--white) !important;
+      font-size: 48px !important;
+    }
+    .gift-section--highlight .gift-value {
+      color: rgba(255,255,255,0.6) !important;
+    }
+    .gift-section--highlight .gift-desc {
+      color: rgba(255,255,255,0.5) !important;
+    }
+    .gift-section--highlight .gift-card.featured {
+      background: var(--tan) !important;
+      border-color: var(--tan) !important;
+    }
+    .gift-section--highlight .gift-card.featured .gift-amount,
+    .gift-section--highlight .gift-card.featured .gift-badge {
+      color: var(--charcoal) !important;
+    }
+    .gift-section--highlight .gift-card.featured .gift-value,
+    .gift-section--highlight .gift-card.featured .gift-desc {
+      color: rgba(58,58,58,0.75) !important;
+    }
+    .gift-section--highlight .gift-ribbon {
+      background: var(--charcoal) !important;
+      color: var(--white) !important;
+    }
+    /* Bigger 15% */
+    .offer-pct {
+      font-size: 140px !important;
+      letter-spacing: -4px !important;
+      line-height: 1 !important;
+    }
+    .offer-card {
+      padding: 56px 40px !important;
+    }
+
+  </style>
 </head>
 <body>
 
@@ -697,7 +751,7 @@ p{margin:0!important;}
   </section>
 
   <!-- 4. Gift Cards Section (moved above fold) -->
-  <section class="gift-section">
+  <section class="gift-section gift-section--highlight">
     <div class="gift-inner">
       <div class="gift-header">
         <p class="section-eyebrow">Gift Card Specials</p>
