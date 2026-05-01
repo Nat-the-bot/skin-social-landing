@@ -3,26 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mother's Day | Skin Social Sandy Springs</title>
-  <meta name="description" content="This Mother's Day, bring your mom and both receive 15% OFF at Skin Social Sandy Springs. Gift cards from $200. Book now — limited spots." />
+  <title>Mother's Day Special — Skin Social Med Spa | Sandy Springs</title>
+  <meta name="description" content="Celebrate Mother's Day at Skin Social. Get 15% off when you and mom book together, or give the gift of luxury with our Mother's Day gift cards. Sandy Springs' most trusted med spa." />
   <link rel="canonical" href="https://skinsocialspa.com/mothers-day/" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Mother's Day at Skin Social — 15% OFF for You & Mom" />
-  <meta property="og:description" content="Bring your mom and both receive 15% OFF. Gift cards from $200. Book now at Skin Social Sandy Springs." />
+  <meta property="og:title" content="Mother's Day Special — Skin Social Med Spa" />
+  <meta property="og:description" content="15% off when you and mom book together. Gift cards from $200. Sandy Springs' award-winning med spa." />
   <meta property="og:url" content="https://skinsocialspa.com/mothers-day/" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://skinsocialspa.com/og-mothers-day.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Mother's Day at Skin Social — 15% OFF for You & Mom" />
-  <meta name="twitter:description" content="Bring your mom and both receive 15% OFF. Gift cards from $200. Book now at Skin Social Sandy Springs." />
+  <meta property="og:image" content="https://skinsocialspa.com/wp-content/uploads/2026/05/skin-social-team-hero-1.jpg" />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300;1,400&family=Poppins:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500&display=swap" rel="stylesheet" />
 
-  <!-- Google Analytics -->
+  <!-- Google Tag Manager / Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-HEL1Z848JS"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -43,16 +40,16 @@
     fbq('track', 'PageView');
   </script>
   <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=907360934476769&ev=PageView&noscript=1" /></noscript>
+    src="https://www.facebook.com/tr?id=907360934476769&ev=PageView&noscript=1"/></noscript>
 
   <!-- Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "MedicalBusiness",
-    "name": "Skin Social",
+    "name": "Skin Social Med Spa",
     "url": "https://skinsocialspa.com",
-    "telephone": "(404) 748-8580",
+    "description": "Sandy Springs' most trusted med spa. Award-winning injectors, natural-looking results.",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "5840 Roswell Rd",
@@ -61,23 +58,13 @@
       "postalCode": "30328",
       "addressCountry": "US"
     },
+    "telephone": "+14047488580",
+    "image": "https://skinsocialspa.com/wp-content/uploads/2026/05/skin-social-team-hero-1.jpg",
+    "priceRange": "$$",
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "5",
       "reviewCount": "979"
-    },
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Mother's Day Specials",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "name": "15% Off for You & Mom",
-          "description": "Bring your mom and both receive 15% off same day. Auto applied.",
-          "validFrom": "2026-05-01",
-          "validThrough": "2026-05-31"
-        }
-      ]
     }
   }
   </script>
@@ -91,516 +78,450 @@
       --sand: #CBB8A0;
       --charcoal: #3A3A3A;
       --mid: #6a6a6a;
-      --white: #ffffff;
+      --white: #fff;
       --dark: #2a2a2a;
     }
 
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-    html { font-size: 16px; -webkit-text-size-adjust: 100%; }
+    html {
+      -webkit-text-size-adjust: 100%;
+    }
 
     body {
       font-family: 'Lato', sans-serif;
-      background: var(--oat);
+      background: var(--white);
       color: var(--charcoal);
-      -webkit-font-smoothing: antialiased;
-      padding-bottom: 64px; /* space for sticky bar */
+      padding-bottom: 60px;
     }
 
-    /* ─── ANNOUNCEMENT BAR ─── */
-    .announcement-bar {
+    /* ─── 1. ANNOUNCEMENT BAR ─── */
+    .announce {
       background: var(--charcoal);
       color: var(--white);
-      text-align: center;
-      padding: 9px 20px;
       font-family: 'Poppins', sans-serif;
-      font-weight: 500;
       font-size: 10px;
+      font-weight: 500;
       letter-spacing: 1px;
-      line-height: 1.4;
+      text-align: center;
+      padding: 10px 16px;
     }
 
-    /* ─── NAV ─── */
-    .nav {
+    /* ─── 2. NAV ─── */
+    nav {
       background: var(--white);
       border-bottom: 1px solid var(--cream);
+      padding: 14px 20px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 14px 20px;
-      position: sticky;
-      top: 0;
-      z-index: 100;
     }
 
     .nav-logo {
       font-family: 'Poppins', sans-serif;
       font-weight: 300;
-      font-size: 15px;
+      font-size: 14px;
       letter-spacing: 3px;
       color: var(--charcoal);
       text-decoration: none;
-      text-transform: uppercase;
     }
 
-    .nav-cta {
-      background: var(--tan);
-      color: var(--charcoal);
+    .nav-book {
       font-family: 'Poppins', sans-serif;
       font-weight: 600;
       font-size: 11px;
       letter-spacing: 0.5px;
-      text-transform: uppercase;
-      border: none;
+      color: var(--charcoal);
+      background: var(--tan);
+      padding: 8px 16px;
       border-radius: 100px;
-      padding: 9px 20px;
-      cursor: pointer;
       text-decoration: none;
-      display: inline-block;
-      transition: opacity 0.2s ease;
+      white-space: nowrap;
     }
 
-    .nav-cta:hover { opacity: 0.85; }
+    /* ─── 3. HERO ─── */
+    .hero-photo {
+      width: 100%;
+      height: 52vw;
+      max-height: 420px;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+    }
 
-    /* ─── HERO ─── */
-    .hero {
+    /* ─── 4. HEADLINE ─── */
+    .headline {
       background: var(--oat);
-      padding: 32px 20px 0;
-      text-align: center;
+      padding: 24px 20px 0;
     }
 
     .eyebrow {
       font-family: 'Poppins', sans-serif;
       font-weight: 600;
       font-size: 9px;
+      color: var(--sand);
       letter-spacing: 3px;
       text-transform: uppercase;
-      color: var(--sand);
       margin-bottom: 12px;
     }
 
-    .hero h1 {
+    .headline h1 {
       font-family: 'Poppins', sans-serif;
       font-weight: 300;
-      font-size: 36px;
+      font-size: 38px;
       color: var(--charcoal);
-      line-height: 1.1;
-      margin-bottom: 4px;
+      line-height: 1.05;
+      letter-spacing: -0.5px;
     }
 
-    .hero h1 em {
+    .headline h1 em {
       font-style: italic;
       color: var(--sand);
+      display: block;
     }
 
-    .accent-line {
-      width: 40px;
+    .pink-rule {
+      display: block;
+      width: 36px;
       height: 1px;
       background: var(--pink);
-      margin: 16px auto 24px;
+      margin: 16px auto 20px;
     }
 
-    /* ─── OFFERS GRID ─── */
-    .offers-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
+    /* ─── 5. OFFERS ─── */
+    .offers {
+      background: var(--oat);
       padding: 0 20px;
-      margin-bottom: 22px;
     }
 
-    /* LEFT CARD */
-    .card-discount {
-      background: var(--white);
-      border: 2px solid var(--tan);
-      border-radius: 14px;
-      padding: 20px 14px;
-      text-align: center;
+    .offers-row {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
+      align-items: flex-start;
+      width: 100%;
     }
 
-    .discount-number {
+    .offer-left {
+      flex: 1;
+      padding: 0 16px 0 0;
+      border-right: 1px solid var(--cream);
+    }
+
+    .offer-right {
+      flex: 1;
+      padding: 0 0 0 16px;
+    }
+
+    .big-pct {
       font-family: 'Poppins', sans-serif;
       font-weight: 700;
-      font-size: 64px;
+      font-size: 80px;
       color: var(--tan);
       line-height: 1;
-      margin-bottom: 2px;
     }
 
-    .discount-label {
+    .big-off {
       font-family: 'Poppins', sans-serif;
-      font-weight: 600;
-      font-size: 12px;
-      color: var(--charcoal);
-      line-height: 1.3;
+      font-weight: 300;
+      font-size: 18px;
+      color: var(--mid);
+      letter-spacing: 2px;
       margin-bottom: 6px;
     }
 
-    .discount-sub {
-      font-family: 'Lato', sans-serif;
-      font-weight: 300;
-      font-size: 10px;
-      color: var(--mid);
-      margin-bottom: 12px;
-    }
-
-    .pill-group {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 5px;
-      justify-content: center;
-    }
-
-    .pill {
-      background: var(--oat);
-      border: 1px solid var(--cream);
-      border-radius: 100px;
+    .offer-label {
       font-family: 'Poppins', sans-serif;
       font-weight: 500;
-      font-size: 9px;
+      font-size: 13px;
       color: var(--charcoal);
-      padding: 4px 9px;
-      white-space: nowrap;
+      margin-bottom: 8px;
     }
 
-    /* RIGHT CARD */
-    .card-gift {
-      background: var(--charcoal);
-      border-radius: 14px;
-      padding: 16px 14px;
+    .offer-sub {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 11px;
+      color: var(--mid);
+    }
+
+    .offer-tags {
       display: flex;
-      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-top: 10px;
     }
 
-    .gift-title {
+    .offer-tag {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      font-size: 10px;
+      color: var(--charcoal);
+      background: var(--oat);
+      border: 1px solid var(--cream);
+      padding: 4px 8px;
+      border-radius: 100px;
+    }
+
+    /* Gift cards */
+    .gc-label {
       font-family: 'Poppins', sans-serif;
       font-weight: 600;
       font-size: 9px;
+      color: var(--sand);
       letter-spacing: 2px;
       text-transform: uppercase;
-      color: var(--tan);
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
-    .gift-rows {
+    .gc-rows {
       display: flex;
       flex-direction: column;
-      gap: 9px;
-      flex: 1;
-      justify-content: center;
     }
 
-    .gift-row {
+    .gc-most-popular {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 8px;
+      color: var(--sand);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .gc-row {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 4px;
+      padding: 10px 0;
+      border-top: 1px solid var(--cream);
     }
 
-    .gift-amount {
+    .gc-row:first-child {
+      border-top: none;
+    }
+
+    .gc-amount {
       font-family: 'Poppins', sans-serif;
       font-weight: 500;
       font-size: 18px;
-      color: var(--white);
+      color: var(--charcoal);
       flex-shrink: 0;
-      min-width: 42px;
     }
 
-    .gift-arrow {
+    .gc-value {
       font-family: 'Lato', sans-serif;
-      font-size: 10px;
-      color: rgba(255,255,255,0.45);
+      font-weight: 300;
+      font-size: 11px;
+      color: var(--mid);
       flex: 1;
-      text-align: center;
-      line-height: 1.2;
+      padding: 0 6px;
     }
 
-    .gift-badge {
+    .gc-bonus {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 9px;
+      padding: 3px 7px;
+      border-radius: 100px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .gc-bonus-pink {
       background: var(--pink);
       color: var(--charcoal);
-      font-family: 'Poppins', sans-serif;
-      font-weight: 600;
-      font-size: 8px;
-      border-radius: 100px;
-      padding: 3px 7px;
-      white-space: nowrap;
-      flex-shrink: 0;
     }
 
-    .gift-row-featured {
+    .gc-bonus-tan {
       background: var(--tan);
-      border-radius: 8px;
-      padding: 7px 10px;
-      margin-top: 2px;
-    }
-
-    .gift-row-featured .gift-amount {
       color: var(--charcoal);
-      font-size: 17px;
     }
 
-    .gift-row-featured .gift-arrow {
-      color: rgba(58,58,58,0.55);
-      font-size: 9px;
-    }
-
-    .gift-badge-dark {
-      background: var(--charcoal);
-      color: var(--white);
-      font-family: 'Poppins', sans-serif;
-      font-weight: 600;
-      font-size: 8px;
-      border-radius: 100px;
-      padding: 3px 7px;
-      white-space: nowrap;
-      flex-shrink: 0;
-    }
-
-    .most-popular-label {
-      font-family: 'Poppins', sans-serif;
-      font-weight: 600;
-      font-size: 7px;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      color: rgba(58,58,58,0.6);
-      margin-bottom: 4px;
-      padding-left: 2px;
-    }
-
-    /* ─── CTA SECTION ─── */
+    /* ─── 6. CTA ─── */
     .cta-section {
+      background: var(--oat);
+      padding: 24px 20px 0;
       text-align: center;
-      padding: 0 20px;
-      margin-bottom: 16px;
     }
 
-    .btn-main {
+    .btn-tan {
       display: inline-block;
-      background: var(--tan);
-      color: var(--charcoal);
       font-family: 'Poppins', sans-serif;
       font-weight: 600;
-      font-size: 13px;
-      letter-spacing: 0.5px;
+      font-size: 14px;
       text-transform: uppercase;
-      border: none;
-      border-radius: 100px;
-      padding: 17px 44px;
-      cursor: pointer;
-      text-decoration: none;
-      transition: opacity 0.2s ease, transform 0.15s ease;
+      letter-spacing: 0.5px;
+      color: var(--charcoal);
+      background: var(--tan);
+      padding: 16px;
       width: 100%;
-      max-width: 320px;
+      max-width: 360px;
+      border-radius: 100px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
     }
 
-    .btn-main:hover { opacity: 0.88; transform: translateY(-1px); }
-
-    .cta-phone {
+    .cta-call {
       display: block;
-      margin-top: 10px;
       font-family: 'Lato', sans-serif;
       font-size: 12px;
       color: var(--mid);
+      margin-top: 10px;
       text-decoration: none;
     }
 
-    .cta-phone:hover { color: var(--charcoal); }
+    .cta-call:hover {
+      color: var(--charcoal);
+    }
 
-    /* ─── PROOF ROW ─── */
-    .proof-row {
+    /* ─── 7. PROOF ─── */
+    .proof {
+      background: var(--oat);
+      padding: 16px 20px 24px;
+      text-align: center;
+    }
+
+    .proof-items {
       display: flex;
-      align-items: center;
-      justify-content: center;
       flex-wrap: wrap;
-      gap: 10px 14px;
-      padding: 0 20px 28px;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    .proof-item {
       font-family: 'Lato', sans-serif;
       font-size: 11px;
       color: var(--mid);
     }
 
-    .proof-item {
-      display: flex;
-      align-items: center;
-      gap: 4px;
-      white-space: nowrap;
+    /* ─── 8. REVIEWS ─── */
+    .reviews {
+      background: var(--white);
+      padding: 52px 24px;
     }
 
-    /* ─── SECTION DIVIDER ─── */
-    .section-divider {
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0;
-      height: 32px;
-      background: var(--oat);
+    .reviews-inner {
+      max-width: 520px;
+      margin: 0 auto;
     }
 
-    .section-divider::before {
-      content: '';
-      position: absolute;
-      left: 0; right: 0;
-      top: 50%;
+    .review-block {
+      padding: 32px 0;
+    }
+
+    .review-block:first-child {
+      padding-top: 0;
+    }
+
+    .review-block:last-child {
+      padding-bottom: 0;
+    }
+
+    .review-divider {
+      width: 100%;
       height: 1px;
       background: var(--cream);
     }
 
-    .divider-dot {
-      position: relative;
-      z-index: 1;
-      background: var(--oat);
-      padding: 0 12px;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .divider-dot::before,
-    .divider-dot::after {
-      content: '';
-      display: block;
-      width: 24px;
-      height: 1px;
-      background: var(--tan);
-    }
-
-    .divider-diamond {
-      width: 6px;
-      height: 6px;
-      background: var(--tan);
-      transform: rotate(45deg);
-      flex-shrink: 0;
-    }
-
-    /* ─── REVIEWS ─── */
-    .reviews-section {
-      background: var(--white);
-      padding: 56px 24px;
-    }
-
-    .section-eyebrow {
-      font-family: 'Poppins', sans-serif;
-      font-weight: 600;
-      font-size: 9px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      color: var(--sand);
-      text-align: center;
-      margin-bottom: 36px;
-    }
-
-    .reviews-inner {
-      max-width: 560px;
-      margin: 0 auto;
-    }
-
-    .review-item {
-      padding: 28px 0;
-    }
-
-    .review-item:first-child { padding-top: 0; }
-    .review-item:last-child { padding-bottom: 0; }
-
     .review-quote {
       font-family: 'Lato', sans-serif;
-      font-style: italic;
       font-weight: 300;
-      font-size: 14px;
+      font-style: italic;
+      font-size: 15px;
       color: var(--charcoal);
-      line-height: 1.8;
+      line-height: 1.85;
     }
 
     .review-author {
       font-family: 'Poppins', sans-serif;
       font-weight: 500;
-      font-size: 11px;
+      font-size: 10px;
       color: var(--sand);
+      letter-spacing: 1px;
+      text-transform: uppercase;
       margin-top: 10px;
     }
 
-    .review-divider {
-      height: 1px;
-      background: var(--cream);
-    }
-
-    /* ─── SERVICES ─── */
-    .services-section {
+    /* ─── 9. SERVICES ─── */
+    .services {
       background: var(--oat);
-      padding: 56px 24px;
+      padding: 52px 24px;
+      text-align: center;
     }
 
-    .services-inner {
-      max-width: 560px;
-      margin: 0 auto;
-    }
-
-    .services-grid {
+    .services-pills {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
       justify-content: center;
-      margin-top: 28px;
+      gap: 8px;
+      margin-top: 20px;
     }
 
     .service-pill {
-      background: var(--white);
-      border: 1.5px solid var(--tan);
-      border-radius: 100px;
       font-family: 'Poppins', sans-serif;
       font-weight: 500;
       font-size: 12px;
       color: var(--charcoal);
-      padding: 9px 18px;
-      white-space: nowrap;
+      background: var(--white);
+      border: 1.5px solid var(--tan);
+      padding: 8px 18px;
+      border-radius: 100px;
     }
 
-    /* ─── WHY SKIN SOCIAL ─── */
-    .why-section {
+    /* ─── 10. WHY SKIN SOCIAL ─── */
+    .why {
       background: var(--white);
-      padding: 56px 24px;
+      padding: 52px 24px;
     }
 
     .why-inner {
-      max-width: 620px;
+      max-width: 560px;
       margin: 0 auto;
     }
 
-    .why-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 28px;
-      margin-top: 32px;
+    .why-items {
+      margin-top: 24px;
     }
 
-    @media (min-width: 640px) {
-      .why-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 32px 40px;
-      }
+    .why-item {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 18px 0;
+      border-top: 1px solid var(--cream);
     }
 
-    .why-item-label {
+    .why-item:first-child {
+      border-top: none;
+      padding-top: 0;
+    }
+
+    .why-label {
       font-family: 'Poppins', sans-serif;
       font-weight: 600;
-      font-size: 13px;
+      font-size: 14px;
       color: var(--charcoal);
-      margin-bottom: 6px;
+      flex: 0 0 auto;
+      max-width: 48%;
+      line-height: 1.4;
     }
 
-    .why-item-desc {
+    .why-desc {
       font-family: 'Lato', sans-serif;
       font-weight: 300;
-      font-size: 13px;
+      font-size: 12px;
       color: var(--mid);
-      line-height: 1.7;
+      text-align: right;
+      line-height: 1.6;
+      max-width: 50%;
     }
 
-    /* ─── FINAL CTA ─── */
+    /* ─── 11. FINAL CTA ─── */
     .final-cta {
       background: var(--charcoal);
       padding: 72px 24px;
@@ -610,10 +531,9 @@
     .final-cta h2 {
       font-family: 'Poppins', sans-serif;
       font-weight: 300;
-      font-size: 32px;
+      font-size: 30px;
       color: var(--white);
       line-height: 1.2;
-      margin-bottom: 16px;
     }
 
     .final-cta h2 em {
@@ -623,29 +543,25 @@
 
     .final-cta p {
       font-family: 'Lato', sans-serif;
-      font-weight: 300;
       font-size: 14px;
       color: rgba(255,255,255,0.5);
+      max-width: 380px;
+      margin: 12px auto 28px;
       line-height: 1.7;
-      max-width: 360px;
-      margin: 0 auto 28px;
-    }
-
-    .final-cta .btn-main {
-      margin-bottom: 20px;
     }
 
     .final-address {
+      display: block;
       font-family: 'Lato', sans-serif;
       font-size: 12px;
-      color: rgba(255,255,255,0.3);
+      color: rgba(255,255,255,0.28);
       margin-top: 20px;
     }
 
-    /* ─── FINE PRINT ─── */
+    /* ─── 12. FINE PRINT ─── */
     .fine-print {
-      background: var(--oat);
-      padding: 28px 24px;
+      background: var(--white);
+      padding: 20px 24px;
       text-align: center;
     }
 
@@ -653,12 +569,12 @@
       font-family: 'Lato', sans-serif;
       font-size: 10px;
       color: rgba(58,58,58,0.35);
-      line-height: 1.7;
       max-width: 600px;
       margin: 0 auto;
+      line-height: 1.7;
     }
 
-    /* ─── FOOTER ─── */
+    /* ─── 13. FOOTER ─── */
     footer {
       background: #1a1a1a;
       padding: 20px 24px;
@@ -669,15 +585,14 @@
       font-family: 'Lato', sans-serif;
       font-size: 11px;
       color: rgba(255,255,255,0.25);
-      line-height: 1.7;
     }
 
     footer a {
-      color: rgba(255,255,255,0.35);
+      color: rgba(255,255,255,0.25);
       text-decoration: none;
     }
 
-    /* ─── STICKY BOTTOM BAR ─── */
+    /* ─── 14. STICKY BAR ─── */
     .sticky-bar {
       position: fixed;
       bottom: 0;
@@ -688,281 +603,303 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      z-index: 200;
-      box-shadow: 0 -2px 16px rgba(0,0,0,0.15);
+      z-index: 1000;
     }
 
-    .sticky-bar-text {
+    .sticky-text {
       font-family: 'Poppins', sans-serif;
-      font-weight: 400;
-      font-size: 12px;
+      font-size: 13px;
       color: var(--white);
-      line-height: 1.3;
+      font-weight: 400;
     }
 
-    .sticky-bar-btn {
-      background: var(--tan);
-      color: var(--charcoal);
+    .sticky-btn {
       font-family: 'Poppins', sans-serif;
       font-weight: 600;
       font-size: 11px;
-      letter-spacing: 0.5px;
-      text-transform: uppercase;
-      border: none;
-      border-radius: 100px;
+      color: var(--charcoal);
+      background: var(--tan);
       padding: 10px 20px;
-      cursor: pointer;
+      border-radius: 100px;
       text-decoration: none;
       white-space: nowrap;
       flex-shrink: 0;
-      transition: opacity 0.2s ease;
     }
 
-    .sticky-bar-btn:hover { opacity: 0.85; }
+    /* ─── DESKTOP OVERRIDES (>768px) ─── */
+    @media (min-width: 769px) {
+      .hero-section {
+        display: flex;
+        align-items: stretch;
+        background: var(--oat);
+        min-height: 480px;
+      }
 
-    /* ─── RESPONSIVE ─── */
-    @media (min-width: 640px) {
-      .hero h1 { font-size: 44px; }
-      .discount-number { font-size: 72px; }
-      .offers-grid { max-width: 600px; margin-left: auto; margin-right: auto; }
-    }
+      .hero-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 60px 48px;
+        order: 1;
+      }
 
-    @media (min-width: 960px) {
-      .hero { padding: 48px 40px 0; }
-      .offers-grid { padding: 0 40px; max-width: 720px; }
-      .cta-section { padding: 0 40px; }
-      .proof-row { padding: 0 40px 36px; }
+      .hero-photo-wrap {
+        flex: 1;
+        order: 2;
+      }
+
+      .hero-photo {
+        width: 100%;
+        height: 100%;
+        max-height: none;
+        min-height: 480px;
+        object-fit: cover;
+        object-position: center top;
+      }
+
+      .headline {
+        background: transparent;
+        padding: 0;
+      }
+
+      .headline h1 {
+        font-size: 52px;
+      }
+
+      .offers {
+        padding: 0 48px;
+      }
+
+      .cta-section {
+        padding: 32px 48px 0;
+        text-align: left;
+      }
+
+      .proof {
+        padding: 20px 48px 32px;
+        text-align: left;
+      }
+
+      .proof-items {
+        justify-content: flex-start;
+      }
+
+      .btn-tan {
+        max-width: 280px;
+      }
+
+      .big-pct {
+        font-size: 96px;
+      }
     }
   </style>
 </head>
+
 <body>
 
-  <!-- ─── ANNOUNCEMENT BAR ─── -->
-  <div class="announcement-bar">
-    🌸 Mother's Day is May 11 — Book now before spots fill up
-  </div>
+  <!-- 1. Announcement Bar -->
+  <div class="announce">🌸 Mother's Day is May 11 — Book now before spots fill up</div>
 
-  <!-- ─── NAV ─── -->
-  <nav class="nav">
-    <a href="https://skinsocialspa.com" class="nav-logo">Skin Social</a>
-    <a
-      href="https://dashboard.boulevard.io/booking/businesses/23dc87b0-dc5b-4747-a222-f94a44ff0eff/widget"
-      target="_blank"
-      rel="noopener"
-      class="nav-cta"
-      onclick="fbq('track','InitiateCheckout')"
-    >Book Now</a>
+  <!-- 2. Nav -->
+  <nav>
+    <a href="https://skinsocialspa.com" class="nav-logo">SKIN SOCIAL</a>
+    <a href="https://dashboard.boulevard.io/booking/businesses/23dc87b0-dc5b-4747-a222-f94a44ff0eff/widget"
+       class="nav-book"
+       target="_blank"
+       onclick="fbq('track','InitiateCheckout')">BOOK NOW</a>
   </nav>
 
-  <!-- ─── HERO ─── -->
-  <section class="hero">
-    <p class="eyebrow">Mother's Day Special · May 1–31</p>
-    <h1>Treat Mom.<br><em>Treat Yourself.</em></h1>
-    <div class="accent-line"></div>
-  </section>
+  <!-- 3–6. Hero + Headline + Offers + CTA wrapped for desktop split -->
+  <div class="hero-section">
 
-  <!-- ─── OFFERS GRID ─── -->
-  <div class="offers-grid">
-
-    <!-- LEFT: 15% Off -->
-    <div class="card-discount">
-      <div class="discount-number">15%</div>
-      <div class="discount-label">OFF for You &amp; Mom</div>
-      <div class="discount-sub">Same day · Auto applied</div>
-      <div class="pill-group">
-        <span class="pill">Botox</span>
-        <span class="pill">Filler</span>
-        <span class="pill">Microneedling</span>
-        <span class="pill">+ More</span>
-      </div>
+    <!-- Mobile: photo sits above content -->
+    <div class="hero-photo-wrap">
+      <img
+        src="https://skinsocialspa.com/wp-content/uploads/2026/05/skin-social-team-hero-1.jpg"
+        alt="Skin Social team — Sandy Springs med spa"
+        class="hero-photo"
+        loading="eager"
+      />
     </div>
 
-    <!-- RIGHT: Gift Cards -->
-    <div class="card-gift">
-      <div class="gift-title">Gift Card Specials</div>
-      <div class="gift-rows">
+    <!-- Content column -->
+    <div class="hero-content">
 
-        <div class="gift-row">
-          <span class="gift-amount">$200</span>
-          <span class="gift-arrow">→ $250</span>
-          <span class="gift-badge">+$50</span>
-        </div>
+      <!-- 4. Headline -->
+      <div class="headline">
+        <p class="eyebrow">Mother's Day Special · May 1–31</p>
+        <h1>Treat Mom.<em>Treat Yourself.</em></h1>
+        <span class="pink-rule"></span>
+      </div>
 
-        <div class="gift-row">
-          <span class="gift-amount">$400</span>
-          <span class="gift-arrow">→ $500</span>
-          <span class="gift-badge">+$100</span>
-        </div>
+      <!-- 5. Offers -->
+      <div class="offers">
+        <div class="offers-row">
 
-        <div>
-          <div class="most-popular-label">Most Popular</div>
-          <div class="gift-row gift-row-featured">
-            <span class="gift-amount">$800</span>
-            <span class="gift-arrow">→ $1,000<br>+ Dysport</span>
-            <span class="gift-badge-dark">+$200 ★</span>
+          <!-- Left: 15% off -->
+          <div class="offer-left">
+            <div class="big-pct">15%</div>
+            <div class="big-off">OFF</div>
+            <div class="offer-label">for You &amp; Mom</div>
+            <div class="offer-sub">Book same day — automatically applied</div>
+            <div class="offer-tags">
+              <span class="offer-tag">Botox</span>
+              <span class="offer-tag">Filler</span>
+              <span class="offer-tag">Microneedling</span>
+              <span class="offer-tag">More</span>
+            </div>
           </div>
+
+          <!-- Right: Gift cards -->
+          <div class="offer-right">
+            <div class="gc-label">Gift Cards</div>
+            <div class="gc-rows">
+              <div class="gc-row">
+                <span class="gc-amount">$200</span>
+                <span class="gc-value">Worth $250</span>
+                <span class="gc-bonus gc-bonus-pink">+$50</span>
+              </div>
+              <div class="gc-row">
+                <span class="gc-amount">$400</span>
+                <span class="gc-value">Worth $500</span>
+                <span class="gc-bonus gc-bonus-pink">+$100</span>
+              </div>
+              <div style="padding-top:4px;">
+                <div class="gc-most-popular">Most Popular</div>
+                <div class="gc-row" style="border-top:1px solid var(--cream); padding-top:8px;">
+                  <span class="gc-amount">$800</span>
+                  <span class="gc-value">Worth $1,000 + Dysport</span>
+                  <span class="gc-bonus gc-bonus-tan">+$200★</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
+      </div><!-- /offers -->
 
+      <!-- 6. CTA -->
+      <div class="cta-section">
+        <a href="https://dashboard.boulevard.io/booking/businesses/23dc87b0-dc5b-4747-a222-f94a44ff0eff/widget"
+           class="btn-tan"
+           target="_blank"
+           onclick="fbq('track','InitiateCheckout')">Book Our Appointments →</a>
+        <a href="tel:+14047488580" class="cta-call">or call (404) 748-8580</a>
       </div>
-    </div>
 
-  </div>
+      <!-- 7. Proof -->
+      <div class="proof">
+        <div class="proof-items">
+          <span class="proof-item">⭐ 979 Five-Star Reviews</span>
+          <span class="proof-item">🏆 Best Botox 2024 &amp; 2025</span>
+          <span class="proof-item">📍 Sandy Springs</span>
+        </div>
+      </div>
 
-  <!-- ─── CTA ─── -->
-  <div class="cta-section">
-    <a
-      href="https://dashboard.boulevard.io/booking/businesses/23dc87b0-dc5b-4747-a222-f94a44ff0eff/widget"
-      target="_blank"
-      rel="noopener"
-      class="btn-main"
-      onclick="fbq('track','InitiateCheckout')"
-    >Book Our Appointments →</a>
-    <a href="tel:4047488580" class="cta-phone">or call (404) 748-8580</a>
-  </div>
+    </div><!-- /hero-content -->
+  </div><!-- /hero-section -->
 
-  <!-- ─── PROOF ROW ─── -->
-  <div class="proof-row">
-    <span class="proof-item">⭐ 979 Five-Star Reviews</span>
-    <span class="proof-item">🏆 Best Botox 2024 &amp; 2025</span>
-    <span class="proof-item">📍 Sandy Springs</span>
-  </div>
-
-  <!-- ─── SECTION DIVIDER ─── -->
-  <div class="section-divider" style="background: var(--white);">
-    <div class="divider-dot">
-      <div class="divider-diamond"></div>
-    </div>
-  </div>
-
-  <!-- ─── REVIEWS ─── -->
-  <section class="reviews-section">
-    <p class="section-eyebrow">What Clients Are Saying</p>
+  <!-- 8. Reviews -->
+  <section class="reviews">
     <div class="reviews-inner">
 
-      <div class="review-item">
-        <p class="review-quote">"I've been coming to Skin Social for two years and I genuinely cannot imagine going anywhere else. The results are always natural, never overdone — exactly what I ask for every time."</p>
-        <p class="review-author">— Ashley M., Sandy Springs</p>
+      <div class="review-block">
+        <p class="review-quote">"Natalie is absolutely amazing. She listened to exactly what I wanted and the results were perfect. I've been coming here for two years and won't go anywhere else."</p>
+        <p class="review-author">— Sarah M., Sandy Springs</p>
       </div>
 
       <div class="review-divider"></div>
 
-      <div class="review-item">
-        <p class="review-quote">"Brought my mom for the first time and we both left obsessed. The injectors listened to everything we said and the results were stunning. We're already booked for next month."</p>
-        <p class="review-author">— Jordan K., Atlanta</p>
+      <div class="review-block">
+        <p class="review-quote">"I brought my mom last Mother's Day and we both had the best experience. The discount made it feel even more special."</p>
+        <p class="review-author">— Jennifer K., Atlanta</p>
       </div>
 
       <div class="review-divider"></div>
 
-      <div class="review-item">
-        <p class="review-quote">"Clean space, warm staff, and results that speak for themselves. I've tried other places but nothing compares. Best Botox in Atlanta — those awards are well deserved."</p>
-        <p class="review-author">— Rachel T., Buckhead</p>
+      <div class="review-block">
+        <p class="review-quote">"The most comfortable and professional med spa I've been to. My results look so natural — exactly what I wanted."</p>
+        <p class="review-author">— Michelle T., Buckhead</p>
       </div>
 
     </div>
   </section>
 
-  <!-- ─── SECTION DIVIDER ─── -->
-  <div class="section-divider" style="background: var(--oat);">
-    <div class="divider-dot" style="background: var(--oat);">
-      <div class="divider-diamond"></div>
-    </div>
-  </div>
-
-  <!-- ─── SERVICES ─── -->
-  <section class="services-section">
-    <div class="services-inner">
-      <p class="section-eyebrow" style="text-align:center;">Available Services</p>
-      <div class="services-grid">
-        <span class="service-pill">Botox</span>
-        <span class="service-pill">Dysport</span>
-        <span class="service-pill">Lip Filler</span>
-        <span class="service-pill">Cheek Filler</span>
-        <span class="service-pill">Microneedling</span>
-        <span class="service-pill">Agnes RF</span>
-        <span class="service-pill">HydraFacial</span>
-        <span class="service-pill">Facials &amp; Peels</span>
-        <span class="service-pill">NAD+ Therapy</span>
-        <span class="service-pill">Body Contouring</span>
-      </div>
+  <!-- 9. Services -->
+  <section class="services">
+    <p class="eyebrow" style="margin-bottom:0;">Available Services</p>
+    <div class="services-pills">
+      <span class="service-pill">Botox</span>
+      <span class="service-pill">Dysport</span>
+      <span class="service-pill">Lip Filler</span>
+      <span class="service-pill">Cheek Filler</span>
+      <span class="service-pill">Microneedling</span>
+      <span class="service-pill">Agnes RF</span>
+      <span class="service-pill">HydraFacial</span>
+      <span class="service-pill">Facials &amp; Peels</span>
+      <span class="service-pill">NAD+ Therapy</span>
     </div>
   </section>
 
-  <!-- ─── SECTION DIVIDER ─── -->
-  <div class="section-divider" style="background: var(--white);">
-    <div class="divider-dot">
-      <div class="divider-diamond"></div>
-    </div>
-  </div>
-
-  <!-- ─── WHY SKIN SOCIAL ─── -->
-  <section class="why-section">
+  <!-- 10. Why Skin Social -->
+  <section class="why">
     <div class="why-inner">
-      <p class="section-eyebrow" style="text-align:center;">Why Skin Social</p>
-      <div class="why-grid">
+      <p class="eyebrow">Why Skin Social</p>
+      <div class="why-items">
 
         <div class="why-item">
-          <div class="why-item-label">Award-Winning Injectors</div>
-          <div class="why-item-desc">Named Best Botox in Atlanta two years running. Our team is recognized for artistry, precision, and consistently natural results.</div>
+          <span class="why-label">Award-Winning Injectors</span>
+          <span class="why-desc">Best Botox 2024 &amp; 2025 · Sandy Springs' most trusted</span>
         </div>
 
         <div class="why-item">
-          <div class="why-item-label">Certified Nurse Practitioners</div>
-          <div class="why-item-desc">Every treatment is performed by licensed, board-certified NPs with advanced training in aesthetic medicine.</div>
+          <span class="why-label">Certified Nurse Practitioners</span>
+          <span class="why-desc">Board-certified experts with natural-result philosophy</span>
         </div>
 
         <div class="why-item">
-          <div class="why-item-label">Natural-Looking Results</div>
-          <div class="why-item-desc">We believe in enhancement, not alteration. Our approach is subtle, intentional, and tailored to your unique features.</div>
+          <span class="why-label">Natural-Looking Results</span>
+          <span class="why-desc">We enhance, never overcorrect</span>
         </div>
 
         <div class="why-item">
-          <div class="why-item-label">Same-Week Appointments</div>
-          <div class="why-item-desc">No six-week waitlists. We keep our schedule open so you can get in when it works for you — and your mom.</div>
+          <span class="why-label">Same-Week Appointments</span>
+          <span class="why-desc">Book online in under 2 minutes</span>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- ─── FINAL CTA ─── -->
+  <!-- 11. Final CTA -->
   <section class="final-cta">
     <h2>Mother's Day is <em>May 11.</em></h2>
     <p>Appointments fill up fast. Book now to get the time that works for both of you.</p>
-    <a
-      href="https://dashboard.boulevard.io/booking/businesses/23dc87b0-dc5b-4747-a222-f94a44ff0eff/widget"
-      target="_blank"
-      rel="noopener"
-      class="btn-main"
-      onclick="fbq('track','InitiateCheckout')"
-    >Book Our Appointments →</a>
-    <p class="final-address">📍 5840 Roswell Rd, Sandy Springs · (404) 748-8580</p>
+    <a href="https://dashboard.boulevard.io/booking/businesses/23dc87b0-dc5b-4747-a222-f94a44ff0eff/widget"
+       class="btn-tan"
+       target="_blank"
+       onclick="fbq('track','InitiateCheckout')">Book Our Appointments →</a>
+    <span class="final-address">📍 5840 Roswell Rd, Sandy Springs · (404) 748-8580</span>
   </section>
 
-  <!-- ─── FINE PRINT ─── -->
+  <!-- 12. Fine Print -->
   <div class="fine-print">
-    <p>15% discount applies when two guests book and are treated on the same day. Valid May 1–31, 2026. Discount applied automatically at checkout. Cannot be combined with other offers or used toward gift card purchases. Gift card values credited as stated; Dysport bonus applied to $800+ purchases. Offer valid while supplies last. All services performed by licensed medical professionals. Results may vary.</p>
+    <p>Offer valid May 1–31, 2026. Both guests must book on the same day. 15% discount automatically applied. Some exclusions may apply. Gift cards loaded at time of purchase. Cannot be combined with other offers.</p>
   </div>
 
-  <!-- ─── FOOTER ─── -->
+  <!-- 13. Footer -->
   <footer>
-    <p>
-      © 2026 Skin Social · 5840 Roswell Rd, Sandy Springs, GA 30328<br />
-      <a href="tel:4047488580">(404) 748-8580</a> ·
-      <a href="https://skinsocialspa.com/privacy">Privacy Policy</a> ·
-      <a href="https://skinsocialspa.com/terms">Terms</a>
-    </p>
+    <p>© 2026 Skin Social · 5840 Roswell Rd, Sandy Springs, GA · <a href="https://skinsocialspa.com">skinsocialspa.com</a></p>
   </footer>
 
-  <!-- ─── STICKY BOTTOM BAR ─── -->
+  <!-- 14. Sticky Bottom Bar -->
   <div class="sticky-bar">
-    <span class="sticky-bar-text">🌸 15% off when you bring mom</span>
-    <a
-      href="https://dashboard.boulevard.io/booking/businesses/23dc87b0-dc5b-4747-a222-f94a44ff0eff/widget"
-      target="_blank"
-      rel="noopener"
-      class="sticky-bar-btn"
-      onclick="fbq('track','InitiateCheckout')"
-    >Book Now</a>
+    <span class="sticky-text">🌸 15% off when you bring mom</span>
+    <a href="https://dashboard.boulevard.io/booking/businesses/23dc87b0-dc5b-4747-a222-f94a44ff0eff/widget"
+       class="sticky-btn"
+       target="_blank"
+       onclick="fbq('track','InitiateCheckout')">Book Now</a>
   </div>
 
 </body>
